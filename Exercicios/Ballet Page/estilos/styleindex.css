@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+
+
+:root {
+    --fonte-principal: 'Ms Madi', cursive;
+    --fonte-detalhe: 'Knewave', cursive;
+    --fonte-padrao: 'Baloo Tamma 2', cursive;
+
+    --cor01: #EBDDD6;
+    --cor02: #DDD3CD;
+    --cor03: #F4C2AE;
+    --cor04: #E8C7B9;
+    --cor05: #B9B1A8;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header > div {
+    background-image: url("../imagens/header.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+}
+
+h1 {
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    font-size: 4em;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
+    padding-top: 150px;
+}
+
+nav {
+    background-color: var(--cor05);
+    padding: 305px 0px 5px 0px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
+    border-radius: 0px 0px 5px 5px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--fonte-padrao);
+    padding: 5px 10px;
+    font-size: 1.2em;
+}
+
+nav > a:hover {
+    background-color: var(--cor01);
+    color: var(--cor05);
+    font-weight: bold;
+
+}
+
+body {
+    background-color: var(--cor02);
+}
+
+main {
+    background-color: white;
+    width: 600px;
+    margin: auto;
+    max-width: 950px;
+    min-width: 280px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.473);
+    border-radius: 10px ;
+    width: 85%;
+}
+
+article {
+    width: 85%;
+    text-align: justify;
+    position: center;
+    margin: auto;
+}
+
+article > ul {
+    columns: 2;
+    list-style-type: none;
+}
+
+article > ul > li > a {
+    text-decoration: none;
+    color: var(--cor03);
+    font-family: var(--fonte-padrao);
+    padding: 5px;
+    font-weight: bold;
+}
+
+article > ul > li > a:hover {
+    background-color: var(--cor02);
+    color: white;
+    padding: 5px;
+
+}
+
+h2 {
+    font-family: var(--fonte-principal);
+    font-size: 2em;
+    color: var(--cor03);
+    padding: 0px 10px 20px 10px;
+    text-indent: 20px;
+}
+
+p {
+    text-indent: 20px;
+    font-family: var(--fonte-padrao);
+    padding: 0px 10px 10px 10px;
+}
+
+picture > img {
+    max-width: 1000px;
+    min-width: 320px;
+    width: 100%;
+    position: center;
+
+}
+aside {
+    text-align: center;
+}
+
+aside > h2{
+    color: white;
+}
+
+li > a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--fonte-padrao);
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+li > a:hover {
+    font-weight: bold;
+    padding: 20px 10px 5px 10px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+ul {
+    columns: 3;
+    list-style-type: none;
+}
+
+li {
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+
+footer {
+    background-color: var(--cor04);
+    color: white;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.173);
+}
+
+footer > p {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
