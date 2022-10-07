@@ -19,6 +19,7 @@ body {
 header {
     background-image: url(../imagens/cachoeira3.jpg);
     height: 50vh;
+
     margin: auto;
     background-position: center center;
     box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.438);;
@@ -38,6 +39,10 @@ h1 {
     padding: 10vh;
     font-size: 5vh;
 
+}
+
+.titulo1{
+    padding-top: 25vh;
 }
 
 menu {
@@ -62,6 +67,9 @@ menu {
     cursor: pointer;
 
 }
+
+
+
 
 a {
     text-decoration: none;
