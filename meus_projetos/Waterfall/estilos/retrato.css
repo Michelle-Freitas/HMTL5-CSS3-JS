@@ -12,6 +12,10 @@
 
 }
 
+body {
+    background-color: rgb(195, 202, 209);
+}
+
 header {
     background-image: url(../imagens/cachoeira3.jpg);
     height: 50vh;
@@ -21,25 +25,102 @@ header {
 
 }
 
+header.contato {
+    background-image: url(../imagens/cachoeira4.jpeg);
+    height: 35vh;
+
+}
+
 h1 {
     color: white;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.658);
     text-align: center;
-    padding: 15vh;
-    font-size: 7vh;
+    padding: 10vh;
+    font-size: 5vh;
 
 }
+
+menu {
+    text-align: center;
+    background-color: gainsboro;
+    display: none;
+}
+
+
 
 #id-icone {
     background-color: rgba(128, 128, 128, 0.603);
     text-align: center;
-    height: 26px;
+    display: block;
+
+    height: 3vh;
 }
 
+#id-icone:hover {
+    background-color: rgba(128, 128, 128, 0.637);
+    color: white;
+    cursor: pointer;
+
+}
 
 a {
     text-decoration: none;
     color: white;
-    font-weight: bolder;
-    font-size: 3.5vh;
+    font-weight: bold;
+    font-size: 2vh;
+    line-height: 4vh;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.815);
+
+}
+
+li {
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: rgba(128, 128, 128, 0.63);
+
+}
+
+main {
+    background-color: whitesmoke;
+    width: 80vw;
+    border-radius: 5px;
+    margin: auto;
+    padding: 15px;
+    margin-top: 14vh;
+}
+
+#principal{
+
+    padding: 0.5vh;
+}
+
+h2 {
+    padding-bottom: 15px;
+}
+
+p {
+    line-height: 2em;
+    text-align: justify;
+}
+
+#caixatexto {
+    text-align: center;
+}
+
+#botao {
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(77, 76, 76, 0.753);
+    margin-top: 4vh;
+
+}
+
+footer > p {
+    color: white;
+    font-weight: bold;
+    text-align: center;
 }

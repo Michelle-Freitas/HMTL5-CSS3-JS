@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait">
+    <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+</head>
+<body>
+    <header class="contato">
+        <h1>WaterFalls Guia</h1>
+        <i id="id-icone" class="material-symbols-outlined" onclick="clicarMenu()">Menu</i>
+        <menu class="contato" id="itens">
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="#"><li>Cachoeiras</li></a>
+                <a href="contato.html"><li>Contato</li></a>
+            </ul>
+        </menu>
+    </header>
+    <main id="principal">
+        <article>
+            <h2>Entre em contato com a gente!</h2>
+            <form action="contato.php" method="post">
+                <fieldset>
+                    <legend> Dados Pessoais</legend>
+                    <p><label for="nome">Nome: <input type="text" size="30" required></label></p>
+                    <p><label for="email">E-mail: <input type="email" name="email" id="email" size="30" required minlength="5" maxlength="25"></label></p>
+                    <p><label for="fone">Telefone: <input type="tel" name="fone" id="fone" required autocomplete="tel" pattern="^\(\d{2}\)[0-9]{4,5}-[0-9]{4}$" placeholder="(xx)xxxxx-xxxx"></label></p>
+                    <p id="caixatexto"><label for="texto">Mensagem: </label><br>
+                    <textarea name="msg" id="texto" cols="30" rows="10" required placeholder="Digite aqui sua mensagem..."></textarea></p>
+                    <p id="botao">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                      </p>
+                </fieldset>
+            </form>
+
+        </article>
+
+    </main>
+    <footer>
+        <p>Site criado por <a href="https://michelle-freitas.github.io/HMTL5-CSS3/" target="_blank">Michelle Freitas</a></p>
+
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
