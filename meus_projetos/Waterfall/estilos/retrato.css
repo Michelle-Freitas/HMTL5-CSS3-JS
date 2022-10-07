@@ -32,6 +32,12 @@ header.contato {
 
 }
 
+header.cachoeira {
+    background-image: url(../imagens/cachoeira2.jpg);
+    height: 35vh;
+
+}
+
 h1 {
     color: white;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.658);
@@ -85,7 +91,7 @@ li {
     text-decoration: none;
 }
 
-li:hover {
+header li:hover {
     background-color: rgba(128, 128, 128, 0.63);
 
 }
@@ -119,6 +125,25 @@ p {
 
 #botao {
     text-align: center;
+}
+
+
+h3 {
+    padding-bottom: 5px;
+    text-decoration: underline;
+}
+
+.lista-cachoeira > ul{
+    list-style-type: none;
+}
+
+.lista-cachoeira {
+    padding: 8px;
+    line-height: 4.5vh;
+}
+
+.lista-cachoeira li:hover{
+    background-color: rgba(212, 206, 206, 0.411);
 }
 
 footer {
