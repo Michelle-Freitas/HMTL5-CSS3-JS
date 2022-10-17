@@ -12,7 +12,6 @@
     --cinza: #A5A692;
     --verde01: #025E73;
     --verde02: #011F26;
-
     --fonte-principal: 'Arial', sans-serif;
 }
 
@@ -121,3 +120,24 @@ p > a:hover {
     padding: 10px;
 }
 
+label {
+    color: white;
+    padding: 10px;
+    font-family: 'Roboto Mono',monospace;
+    border-style: none;
+    border-radious: 5px;
+    }
+
+    button {
+    padding: 10px;
+    margin: 10px;
+    color: #F2E3D5;
+    background-color: #026773;
+    font-family: 'Roboto Mono',monospace;
+    border-style: none;
+    cursor: pointer;
+    }
+
+    button:hover {
+    background-color: #023535;
+    }
