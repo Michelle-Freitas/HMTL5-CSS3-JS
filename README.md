@@ -5,8 +5,8 @@
 
 <div align="center">
 
-## Michelle Freitas <br>
-     Portifólio de uma estudante de ADS - 2º Semestre
+<h2> Michelle Freitas
+     <p>Portifólio de uma estudante de ADS - 2º Semestre</p>
 </div>
 
 ![Status](https://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
@@ -27,19 +27,27 @@
 <!--   <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Login/index.html" target="_blank">Tela Login</a> - finalizando módulo 04</li> -->
  </ul>
 
-<!--
+
 ## Imersão Alura - JavaScript
  JavaScript com <a href="https://www.alura.com.br/" target="_blank"> **<kbd> Imersão Alura </kbd>** </a>
 
  <ul>
-  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Ballet%20Page/index.html" target="_blank">Notas</a> - Calculadora de notas </li>
+  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/media/index.html" target="_blank">Notas</a> - Calculadora de notas </li>
   </ul>
--->
+
 
 #
 
 <div align="center">
 
-<a href="https://www.linkedin.com/in/michelle-afreitas/" >![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)</a>
+<!-- <a href="https://www.linkedin.com/in/michelle-afreitas/" >![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)</a>
 <a href="https://github.com/Michelle-Freitas" >![Githube](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)</a>
+-->
+<a href="https://www.linkedin.com/in/michelle-afreitas/" ><img width="5%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" /> LinkedIn</a>
+<a href="https://github.com/Michelle-Freitas" ><img width="5%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> GitHub</a>
+
 </div>
+
+
+
+          
