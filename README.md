@@ -1,16 +1,18 @@
 <div align="center">
     <img src="meus_projetos/perfil.png" width="30%">
+    <br>
+</div>
 
-     Michelle Freitas
+<div align="center">
+
+## Michelle Freitas <br>
      Portifólio de uma estudante de ADS - 2º Semestre
-
-
 </div>
 
 ![Status](https://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
 
-# HMTL5-CSS3-JS
+## HMTL5-CSS3-JS
  Aprendendo HTML5, CSS3 e JavaScript com <a href="https://www.cursoemvideo.com/" target="_blank"> **<kbd> CursoemVídeo </kbd>** </a>
 
 
@@ -26,7 +28,7 @@
  </ul>
 
 <!--
-# Imersão Alura - JavaScript
+## Imersão Alura - JavaScript
  JavaScript com <a href="https://www.alura.com.br/" target="_blank"> **<kbd> Imersão Alura </kbd>** </a>
 
  <ul>
