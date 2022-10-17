@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de média</title>
+    <link rel="stylesheet" href="estilo/retrato.css" media="screen and (orientation: portrait)">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 class="page-title">Calculadora de média</h1>
+        <p class="page-subtitle">Descubra qual a sua média de nota de todas as provas!</p>
+    </header>
+    <main>
+        <form action="#">
+            <div class="imagem"><img src="https://cdn-icons-png.flaticon.com/512/4681/4681580.png" alt="Imagem de materiais escolares"></div>
+            <div class="aluno">
+                <label for="aluno">Nome do aluno(a):</label>
+                <input type="text" id="nomeAluno" size="35" required minlength="8" placeholder="Nome completo">
+                <br>
+                <label for="notaB1">Digite a nota do 1º Bimestre: </label>
+                <input type="number" size="2" id="notaB1" required  minlength="1" min="0" max="10" placeholder="0 à 10">
+                <br>
+                <label for="notaB2">Digite a nota do 2º Bimestre: </label>
+                <input type="number" size="2" id="notaB2" required minlength="1" min="0" max="10" placeholder="0 à 10">
+                <br>
+                <label for="notaB3">Digite a nota do 3º Bimestre: </label>
+                <input type="number" size="2" id="notaB3" required minlength="1" min="0" max="10" placeholder="0 à 10">
+                <br>
+                <label for="notaB4">Digite a nota do 4º Bimestre: </label>
+                <input type="number" size="2" id="notaB4" required minlength="1" min="0" max="10" placeholder="0 à 10">
+                <p>
+                    <button type="submit" onclick="Media()">Calcular sua média</button>
+                    <button type="reset" onclick="Limpar()">Limpar</button>
+                </p>
+                <p id="respostaNota"> </p>
+            </div>
+        </form>
+
+    </main>
+    <footer>
+        <p>Site criado por <a href="https://github.com/Michelle-Freitas">Michelle Freitas</a></p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
