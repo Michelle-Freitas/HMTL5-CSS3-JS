@@ -16,6 +16,11 @@
   <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/media/index.html" target="_blank">Notas</a> - Calculadora de notas </li>
 </ul>
  
+#
+<a href="https://www.linkedin.com/in/michelle-afreitas/" ><img width="5%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" /> LinkedIn</a>
+<a href="https://github.com/Michelle-Freitas" ><img width="5%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> GitHub</a>
+
+
 
 <!-- <a href="https://www.linkedin.com/in/michelle-afreitas/" >![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)</a>
 <a href="https://github.com/Michelle-Freitas" >![Githube](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)</a>
