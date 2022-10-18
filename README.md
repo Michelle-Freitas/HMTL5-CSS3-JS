@@ -73,7 +73,6 @@
 
   <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Waterfall/index.html" target="_blank">Aprendendo formulário</a> - módulo 04</li>
 
-  <!--   <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Login/index.html" target="_blank">Tela Login</a> - finalizando módulo 04</li> -->
 </ul>
 
 #
