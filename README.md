@@ -1,12 +1,17 @@
+<img src="meus_projetos/perfil.png" width="30%">
+
+# Michelle Freitas
+Estudante de ADS - 2º Semestre
+
 
 # HMTL5-CSS3-JS
  Aprendendo HTML5, CSS3 e JavaScript com <a href="https://www.cursoemvideo.com/" target="_blank"> CursoemVídeo </a>
 
  <ul>
  
-  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Ballet%20Page/index.html" target="_blank">Primeiro site</a> - módulo 02</li>
-  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Barber/index.html" target="_blank">Aprendendo Efeito Parallax</a> - módulo 03</li>
-  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Waterfall/index.html" target="_blank">Aprendendo formulário</a> - módulo 04</li>
+  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Ballet%20Page/index.html" target="_blank">Primeiro site</a> - Finalizando módulo 02</li>
+  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Barber/index.html" target="_blank">Aprendendo Efeito Parallax</a> - Finalizando módulo 03</li>
+  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Waterfall/contato.html" target="_blank">Aprendendo formulário</a> - módulo 04</li>
  </ul>
 
 # Imersão Alura - JavaScript
@@ -17,6 +22,7 @@
 </ul>
  
 #
+
 <a href="https://www.linkedin.com/in/michelle-afreitas/" ><img width="5%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" /> LinkedIn</a>
 <a href="https://github.com/Michelle-Freitas" ><img width="5%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> GitHub</a>
 
