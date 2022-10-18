@@ -1,9 +1,8 @@
 <div align="center">
     <img src="meus_projetos/perfil.png" width="30%">
     <br>
-</div>
 
-<div align="center">
+
   <h2> Michelle Freitas
   <p>Portifólio de uma estudante de ADS - 2º Semestre</p>
 </div>
@@ -11,27 +10,21 @@
 #
 
 ## HMTL5-CSS3-JS
- <p>Aprendendo HTML5, CSS3 e JavaScript com <a href="https://www.cursoemvideo.com/" target="_blank"> **<kbd> CursoemVídeo </kbd>** </a></p>
+    
+Aprendendo HTML5, CSS3 e JavaScript com <a href="https://www.cursoemvideo.com/" target="_blank"> <kbd> CursoemVídeo </kbd> </a>
 
+- <a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Ballet%20Page/index.html" target="_blank">Primeiro site</a> - finalizando o módulo 02
 
-<ul>
-  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Ballet%20Page/index.html" target="_blank">Primeiro site</a> - finalizando o módulo 02</li>
+- <a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Barber/index.html" target="_blank">Aprendendo Efeito Parallax</a> - finalizando módulo 03
 
-  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Barber/index.html" target="_blank">Aprendendo Efeito Parallax</a> - finalizando módulo 03</li>
-
-  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Waterfall/index.html" target="_blank">Aprendendo formulário</a> - módulo 04</li>
-
-  <!--   <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Login/index.html" target="_blank">Tela Login</a> - finalizando módulo 04</li> -->
-</ul>
+- <a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Waterfall/index.html" target="_blank">Aprendendo formulário</a> - módulo 04
 
 #
 ## Imersão Alura - JavaScript
-<p>JavaScript com <a href="https://www.alura.com.br/" target="_blank"> **<kbd> Imersão Alura </kbd>** </a></p>
 
-<ul>
-  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/media/index.html" target="_blank">Notas</a> - Calculadora de notas </li>
-</ul>
+JavaScript com <a href="https://www.alura.com.br/" target="_blank"> <kbd> Imersão Alura </kbd> </a>
 
+- <a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/media/index.html" target="_blank">Notas</a> - Calculadora de notas 
 
 #
 
