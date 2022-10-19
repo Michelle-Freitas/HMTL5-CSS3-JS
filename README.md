@@ -8,10 +8,13 @@ Estudante de ADS - 2º Semestre
  Aprendendo HTML5, CSS3 e JavaScript com <a href="https://www.cursoemvideo.com/" target="_blank"> CursoemVídeo </a>
 
  <ul>
- 
+
   <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Ballet%20Page/index.html" target="_blank">Primeiro site</a> - Finalizando módulo 02</li>
   <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Barber/index.html" target="_blank">Aprendendo Efeito Parallax</a> - Finalizando módulo 03</li>
-  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Waterfall/contato.html" target="_blank">Aprendendo formulário</a> - módulo 04</li>
+  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Waterfall/contato.html" target="_blank">Aprendendo formulário</a> - Módulo 04</li>
+   <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Login/index.html" target="_blank">Tela de Login</a> - Finalizando módulo 04</li>
+
+
  </ul>
 
 # Imersão Alura - JavaScript
@@ -20,7 +23,8 @@ Estudante de ADS - 2º Semestre
 <ul>
   <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/media/index.html" target="_blank">Notas</a> - Calculadora de notas </li>
 </ul>
- 
+
+
 #
 
 <a href="https://www.linkedin.com/in/michelle-afreitas/" ><img width="5%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" /> LinkedIn</a>
@@ -33,7 +37,7 @@ Estudante de ADS - 2º Semestre
 -->
 
 
-<!-- 
+<!--
 <div align="center">
     <img src="meus_projetos/perfil.png" width="30%">
     <br>
