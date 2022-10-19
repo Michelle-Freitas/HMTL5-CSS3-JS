@@ -57,15 +57,19 @@
     .campo > input {
         height: 40px;
         width: 80%;
+        margin: auto;
     }
 
     .botao {
         padding: 10px;
         margin-top: 15px;
+        margin: auto;
     }
 
     .esqueci-senha {
         font-size: 1em;
+        margin: auto;
+        margin-top: 10px;
     }
 
     .esqueci-senha:hover {
@@ -128,16 +132,20 @@
     .campo > input {
         height: 40px;
         width: 80%;
+        margin: auto;
     }
 
     .botao {
         padding: 10px;
-        margin: 15px 0px 15px 60px;
+        margin: auto;
+        margin-top: 30px;
         width: 60%;
     }
 
     .esqueci-senha {
         font-size: 1em;
+        margin: auto;
+        margin-top: 15px;
     }
 
     .esqueci-senha:hover {
