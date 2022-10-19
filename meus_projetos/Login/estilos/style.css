@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --verde: #A9D9D9;
+    --lilas: #6663A6;
+    --roxo: #653E8C;
+    --magenta: #8B3E8C;
+    --rosa: #D9A3CA;
+    --fontgame: 'Silkscreen', cursive;
+    --fontpadrao: 'Arial' , sans-serif;
+}
+
+body html {
+    background-color: var(--lilas);
+    font-family: var(--fontpadrao);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--lilas);
+}
+
+section#login {
+    background-color: var(--verde);
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.479);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    transition: width 0.3s, heigth .3s;
+    transition-timing-function: ease;
+}
+
+
+section#login > div#imagem{
+    background: var(--verde) url(../imagens/imagem.jpg) no-repeat;
+    display: block;
+    background-size: cover;
+    height: 160px;
+    background-position: left bottom;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#formulario > h1 {
+    font-family: var(--fontgame);
+    font-size: 2.5em;
+    text-align: center;
+    color: var(--roxo);
+    font-weight: bolder;
+    margin: 10px;
+}
+
+#formulario > h3 {
+    font-family: var(--fontgame);
+    color: var(--magenta);
+    text-align: center;
+    padding: 5px;
+}
+
+#formulario > p {
+    font-family: var(--fontgame);
+    color: var(--magenta);
+    padding: 15px;
+
+}
+
+.campo {
+    text-align: center;
+
+}
+
+#principal {
+    border-radius: 10px;
+    background-color: white;
+    margin: 0px 5px 0px 15px;
+    padding-bottom: 10px;
+}
+
+i {
+    color: var(--roxo);
+    margin-top: 5px;
+    font-size: 30px;
+
+
+}
+
+.campo > input {
+    height: 30px;
+    width: 80%;
+    border: 1px solid #653e8c6b;
+    padding: 5px 0px 5px 0px;
+}
