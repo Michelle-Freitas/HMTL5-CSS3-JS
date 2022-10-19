@@ -67,6 +67,7 @@ section#login > div#imagem{
     color: var(--roxo);
     font-weight: bolder;
     margin: 10px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.363);
 }
 
 #formulario > h3 {
@@ -74,12 +75,14 @@ section#login > div#imagem{
     color: var(--magenta);
     text-align: center;
     padding: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.199);
 }
 
 #formulario > p {
     font-family: var(--fontgame);
     color: var(--magenta);
     padding: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.199);
 
 }
 
@@ -91,16 +94,14 @@ section#login > div#imagem{
 #principal {
     border-radius: 10px;
     background-color: white;
-    margin: 0px 5px 0px 15px;
+    margin: 0px 5px 0px 5px;
     padding-bottom: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.192);
 }
 
 i {
     color: var(--roxo);
     margin-top: 5px;
-    font-size: 30px;
-
-
 }
 
 .campo > input {
@@ -108,4 +109,71 @@ i {
     width: 80%;
     border: 1px solid #653e8c6b;
     padding: 5px 0px 5px 0px;
+}
+
+input:focus-within {
+    color: var(--roxo);
+}
+
+.botao {
+    display: block;
+    text-align: center;
+    color: var(--roxo);
+    background-color: #d9a3cab9;
+    border-radius: 7px;
+    width: 90%;
+    padding: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-family: var(--fontgame);
+    border: none;
+    margin-left: 5%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.192);
+}
+
+.botao:hover {
+    background-color: var(--lilas);
+    color: white;
+    font-size: 1.3em;
+}
+
+.esqueci-senha {
+    display: block;
+    text-align: center;
+    color: var(--roxo);
+    border-radius: 2px;
+    padding: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+
+.esqueci-senha:hover {
+    color: white;
+    font-size: 0.85em;
+}
+
+footer {
+    background-color: var(--rosa);
+    color: white;
+    font-family: var(--fontpadrao);
+    padding: 8px 0px 8px 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.85em;
+    width: 100vw;
+}
+
+footer > p > a {
+    color: white;
+    text-decoration: none;
+
+}
+
+footer > p > a:hover {
+    color: var(--magenta);
 }
