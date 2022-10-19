@@ -20,6 +20,11 @@
     --fontpadrao: 'Arial' , sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
 body html {
     background-color: var(--lilas);
     font-family: var(--fontpadrao);
@@ -46,7 +51,7 @@ section#login {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    transition: width 0.3s, heigth .3s;
+    transition: width 0.2s, heigth .2s;
     transition-timing-function: ease;
 }
 
@@ -83,7 +88,6 @@ section#login > div#imagem{
     color: var(--magenta);
     padding: 15px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.199);
-
 }
 
 .campo {
@@ -109,6 +113,7 @@ i {
     width: 80%;
     border: 1px solid #653e8c6b;
     padding: 5px 0px 5px 0px;
+    border-radius: 10px;
 }
 
 input:focus-within {
