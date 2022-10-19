@@ -85,7 +85,7 @@
 
 @media screen and (min-width: 992px) { /*desktop*/
     body html {
-        background-image: linear-gradient(to top, var(--verde), var(--rosa), var(--magenta), var(--roxo));
+        /*background-image: linear-gradient(to top, var(--verde), var(--rosa), var(--magenta), var(--roxo));*/
     }
 
     section#login {
@@ -95,13 +95,15 @@
 
     section#login > div#imagem{
         float: right;
-        width: 40%;
+        width: 50%;
         height: 100%;
         border-radius: 0px 10px 10px 0px;
     }
     #formulario {
         float: left top;
-        width: 80%;
+        width: 50%;
+        text-align: center;
+        display: block;
     }
 
     #formulario > h1 {
@@ -123,9 +125,11 @@
     }
 
     #principal {
-        width: 70%;
+        width: 80%;
         margin-left: 20px;
         padding: 30px 0px;
+        text-align: center;
+        margin: auto;
 
     }
 
@@ -133,6 +137,7 @@
         height: 40px;
         width: 80%;
         margin: auto;
+        text-align: center;
     }
 
     .botao {
