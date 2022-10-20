@@ -30,7 +30,7 @@ main {
 
 #game {
     background-image: linear-gradient(to bottom, black, var(--sepia), var(--marrom), var(--laranja));
-    height: 50vh;
+    height: 60vh;
 }
 
 h1 {
@@ -43,12 +43,44 @@ h3 {
     font-size: 1.5em;
 }
 
+input {
+    width: 30vw;
+    height: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: var(--marrom);
+    border: 5px solid var(--marrom);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.226);
+}
 
+button {
+    width: 30vw;
+    height: 35px;
+    margin-top: 10px;
+    background-color: var(--laranja);
+    color: var(--bege1);
+    font-weight: bolder;
+    border-radius: 10px;
+    border: 1px solid var(--marrom);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.226);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--bege2);
+    color: var(--sepia);
+}
+
+#resposta {
+    padding-top: 10px;
+    font-size: 1.2em;
+
+}
 
 #image {
     background-image: url(../imagens/ball.jpg);
     display: block;
-    height: 50vh;
+    height: 40vh;
     background-size: cover;
 }
 
