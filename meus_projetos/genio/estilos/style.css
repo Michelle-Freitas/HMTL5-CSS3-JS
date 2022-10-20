@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --bege1: #F2D3AC;
+    --bege2: #D99F6C;
+    --laranja: #A65E44;
+    --marrom: #735032;
+    --sepia: #261F11;
+    --font: 'Yusei Magic', sans-serif;
+}
+
+body {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--font);
+}
+
+main {
+    color: white;
+    text-align: center;
+}
+
+#game {
+    background-image: linear-gradient(to bottom, black, var(--sepia), var(--marrom), var(--laranja));
+    height: 50vh;
+}
+
+h1 {
+    padding: 20px 0px 20px 0px;
+    font-size: 3em;
+}
+
+h3 {
+    padding: 0px 0px 10px 0px;
+    font-size: 1.5em;
+}
+
+
+
+#image {
+    background-image: url(../imagens/ball.jpg);
+    display: block;
+    height: 50vh;
+    background-size: cover;
+}
+
