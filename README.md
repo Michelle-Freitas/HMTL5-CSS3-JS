@@ -22,10 +22,11 @@ Estudante de ADS - 2º Semestre
 
 <ul>
   <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/media/index.html" target="_blank">Notas</a> - Calculadora de notas </li>
+    <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/genio/index.html" target="_blank">Gênio</a> - Adivinhe o número </li>
 </ul>
 
 
-#
+# .
 
 <a href="https://www.linkedin.com/in/michelle-afreitas/" ><img width="5%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" /> LinkedIn</a>
 <a href="https://github.com/Michelle-Freitas" ><img width="5%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> GitHub</a>
