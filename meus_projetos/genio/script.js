@@ -1,6 +1,7 @@
 var numSecreto = parseInt(Math.random()*11)
 var tentativa = 0
 var maxTentativa = 3
+var chutes = []
 
 console.log(`Secreto ${numSecreto}`)
 //console.log((String(numSecreto)).length)
@@ -17,7 +18,10 @@ function Chutar() {
         numChutado = parseInt(numChutado)
         if (numChutado > 10 || numChutado < 0) {
             alert("Por favor digite um valor entre 0 e 10")
+        } else if (chutes.indexOf(numChutado) != -1) {
+            alert(`${numChutado} já foi tentado anteriormente, escolha outro número`)
         } else {
+            chutes.push(numChutado)
             tentativa += 1
             if (tentativa < maxTentativa) {
                 resp.innerText = "OK"
@@ -39,6 +43,7 @@ function Chutar() {
         }
     }
     document.getElementById("inumber").value=''
+    console.log(chutes)
 
 
 }
