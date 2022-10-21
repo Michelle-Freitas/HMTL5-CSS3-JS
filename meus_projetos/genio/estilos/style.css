@@ -51,6 +51,9 @@ input {
     background-color: var(--marrom);
     border: 5px solid var(--marrom);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.226);
+    color: white;
+    font-weight: bolder;
+    text-align: center;
 }
 
 button {

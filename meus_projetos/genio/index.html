@@ -10,19 +10,20 @@
 </head>
 <body>
     <main>
-        <section id="game">
-            <h1>Crystal Ball</h1>
-            <h3>Digite um número de 0 a 10.</h3>
-            <p>Você tem 3 tentativas, boa sorte!</p>
-            <div id="pergunta">
-                <label for="inumber"></label>
-                <input type="number" name="number" id="inumber" required placeholder="Digite aqui seu chute"><br>
-                <button type="submit" onclick="Chutar()">Chutar</button>
-                <button type="reset">Limpar</button>
-            </div>
-            <h3 id="resposta">TESTE</h3>
-
-        </section>
+        <form action="#" id="form">
+            <section id="game">
+                <h1>Crystal Ball</h1>
+                <h3>Digite um número de 0 a 10.</h3>
+                <p>Você tem 3 tentativas, boa sorte!</p>
+                <div id="pergunta">
+                    <label for="inumber"></label>
+                    <input type="number" name="number" id="inumber" class="input" placeholder="Digite aqui seu chute" min="0" max="10" autofocus maxlength="2" size="2"><br>
+                    <button type="submit" onclick="Chutar()">Chutar</button>
+                    <button type="reset" onclick="TentarDeNovo()">Recomeçar</button>
+                </div>
+                <h3 id="resposta"></h3>
+            </section>
+        </form>
         <section id="image">
 
         </section>
