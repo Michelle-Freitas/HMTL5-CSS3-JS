@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*tablet*/
+    input {
+        width: 15vw;
+    }
+
+    button {
+        width: 25vw;
+        height: 35px;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        transition: width 0.1s, heigth .1s;
+        transition-timing-function: ease;
+    }
+
+    input {
+        width: 15vw;
+    }
+
+    button {
+        width: 15vw;
+        height: 35px;
+        margin-top: 15px;
+    }
+ }
+
+
+
+

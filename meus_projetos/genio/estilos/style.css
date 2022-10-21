@@ -85,5 +85,6 @@ button:hover {
     display: block;
     height: 40vh;
     background-size: cover;
+    background-position: center center;
 }
 
