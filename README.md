@@ -5,7 +5,8 @@ Estudante de ADS - 2º Semestre
 
 
 # HMTL5-CSS3-JS
- Aprendendo HTML5, CSS3 e JavaScript com <a href="https://www.cursoemvideo.com/" target="_blank"> CursoemVídeo </a>
+ Aprendendo HTML5, CSS3 e JavaScript com <a href="https://www.cursoemvideo.com/" target="_blank"> CursoemVídeo </a><br>
+ Páginas criadas baseadas no aprendizado e projetos desenvolvidos no curso
 
  <ul>
 
@@ -18,7 +19,7 @@ Estudante de ADS - 2º Semestre
  </ul>
 
 # Imersão Alura - JavaScript
-  JavaScript com <a href="https://www.alura.com.br/" target="_blank"> Imersão Alura </a>
+  JavaScript com <a href="https://www.alura.com.br/" target="_blank"> Imersão Alura </a> com algumas inclusões pesquisadas.
 
 <ul>
   <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/media/index.html" target="_blank">Notas</a> - Calculadora de notas </li>
