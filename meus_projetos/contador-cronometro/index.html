@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Contador</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>Contador Online</h1>
+        <div id="contador">
+            <p>Contagem..</p>
+        </div>
+        <div>
+            <h3>Escolha uma opção ou digite: </h3>
+            <fieldset>
+                <label for="cinco"><input type="radio" name="opcao" id="cinco" class="opcao" value="5" onfocus="HabilitarInicio()">05:00</label>
+                <label for="dez"><input type="radio" name="opcao" id="dez" class="opcao" value="10" onfocus="HabilitarInicio()">10:00</label>
+                <label for="quinze"><input type="radio" name="opcao" id="quinze" class="opcao" value="15" onfocus="HabilitarInicio()">15:00</label>
+            </fieldset>
+            <input onfocus="HabilitarInicio()" type="time" name="escolhaDigitada" id="escolhaDigitada" step="2">
+
+
+        </div>
+        <div>
+            <button onclick="Iniciar()" disabled id="btnIniciar">Começar / Continuar</button>
+            <button disabled id="btnPausar">Pausar</button>
+            <button type="reset" id="btnResetar" disabled>Recomeçar</button>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="javascript/index.js"></script>
+</body>
+</html>
