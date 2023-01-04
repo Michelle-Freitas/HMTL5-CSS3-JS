@@ -16,21 +16,28 @@
         <div id="contador">
             <p>Contagem..</p>
         </div>
+        <div id="info">
+            <ul>
+                <li>Hr</li>
+                <li>Min</li>
+                <li>Seg</li>
+            </ul>
+        </div>
         <div>
-            <h3>Escolha uma opção ou digite: </h3>
-            <fieldset>
-                <label for="cinco"><input type="radio" name="opcao" id="cinco" class="opcao" value="5" onfocus="HabilitarInicio()">05:00</label>
-                <label for="dez"><input type="radio" name="opcao" id="dez" class="opcao" value="10" onfocus="HabilitarInicio()">10:00</label>
-                <label for="quinze"><input type="radio" name="opcao" id="quinze" class="opcao" value="15" onfocus="HabilitarInicio()">15:00</label>
-            </fieldset>
-            <input onfocus="HabilitarInicio()" type="time" name="escolhaDigitada" id="escolhaDigitada" step="2">
-
-
+            <form action="#">
+                <h3>Escolha uma opção ou digite: </h3>
+                <fieldset>
+                    <label for="cinco"><input type="radio" name="opcao" id="cinco" class="opcao" value="5" onfocus="HabilitarInicio()">05:00</label>
+                    <label for="dez"><input type="radio" name="opcao" id="dez" class="opcao" value="10" onfocus="HabilitarInicio()">10:00</label>
+                    <label for="quinze"><input type="radio" name="opcao" id="quinze" class="opcao" value="15" onfocus="HabilitarInicio()">15:00</label>
+                    <input onfocus="HabilitarInicio()" type="time" name="escolhaDigitada" id="escolhaDigitada" step="2" class="opcao">
+                </fieldset>
+            </form>
         </div>
         <div>
             <button onclick="Iniciar()" disabled id="btnIniciar">Começar / Continuar</button>
-            <button disabled id="btnPausar">Pausar</button>
-            <button type="reset" id="btnResetar" disabled>Recomeçar</button>
+            <button onclick="Pausar()" disabled id="btnPausar">Pausar</button>
+            <button onclick="Resetar()" type="reset" id="btnResetar" disabled>Resetar</button>
         </div>
 
     </main>
