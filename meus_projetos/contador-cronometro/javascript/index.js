@@ -3,29 +3,64 @@ let btnResetar = document.querySelector('#btnResetar')
 let btnPausar = document.querySelector('#btnPausar')
 let formRadio = document.querySelector('#formRadio')
 let formDigitar = document.querySelector('#formDigitar')
-let segundos = 60
-let horas = 0
-
-let horaDigitada = document.querySelector('#hora')
-let minutoDigitado = document.querySelector('#minuto')
-let segundoDigitado = document.querySelector('#segundo')
 
 
-function Iniciar(){ //iniciar digitado
-    console.log(horaDigitada.value, minutoDigitado.value, segundoDigitado.value)
+let segundos = 59
+var horas = 0
+
+
+function Iniciar(){
+    if (document.querySelector('input[name="opcao"]:checked')){
+        ContagemRadio()
+    } else {
+        const horaDigitada = document.querySelector('#hora')
+        const minutoDigitado = document.querySelector('#minuto')
+        const segundoDigitado = document.querySelector('#segundo')
+
+        if (horaDigitada.value == 0 && minutoDigitado.value == 0 && segundoDigitado.value == 0){
+            alert('Preencha pelo menos um campo com informações válidas antes de continuar')
+            //Resetar()
+        } else {
+            horas = horaDigitada.value
+            let minutos = minutoDigitado.value
+            let segundos = segundoDigitado.value
+            ContagemDigitada(horas, minutos, segundos)
+        }
+    }
+
+}
+
+
+function ContagemRadio(){ //iniciar contagem do radio
+    let valorContagem = Number.parseInt(document.querySelector('input[name="opcao"]:checked').value)
+    console.log(valorContagem)
+
+    valorContagem = 2
     HabilitarPausarReset()
     HabilitarInicio()
     DesabilitarInicio()
 
-    horas = horaDigitada.value
-    let minutos = minutoDigitado.value
-    let segundos = segundoDigitado.value
 
-    if (horas == 0 && minutos == 0 && segundos == 0){
-        alert('Preencha pelo menos um campo com informações válidas antes de continuar')
-        Resetar()
-        horas = minutos = segundos = -1
-    }
+    contagem = setInterval(function(){
+
+
+        if (segundos > 0) {
+            segundos-= 1
+        } else if (segundos == 0 && valorContagem == 0) {
+            segundos = 59
+        } else {
+            Resetar()
+        }
+        contador.innerHTML = ` ${0} : ${valorContagem-1} : ${segundos} `
+    }, 1000)
+
+}
+
+
+function ContagemDigitada(horas=0, minutos=0, segundos=0) { //iniciar contagem pelos valores digitados
+
+    HabilitarPausarReset()
+    DesabilitarInicio()
 
     if (horas === ''){
         horas = 0
@@ -35,7 +70,29 @@ function Iniciar(){ //iniciar digitado
         segundos = 0
     }
 
-    if (horas >= 0 || minutos >= 0 || segundos >= 0) {
+    contagem = setInterval(function(){
+        contador.innerHTML = ` ${horas} : ${minutos} : ${segundos} `
+
+        if (horas > 0 && segundos === 0 && minutos === 0) {
+            horas -= 1
+            segundos = 59
+            minutos = 59
+        } else {
+            if (segundos === 0) {
+                segundos = 59
+                minutos -= 1
+            } else if (segundos > 0) {
+                segundos-= 1
+            } else if (minutos > 0) {
+                minutos-= 1
+                segundos = 59
+            }
+        }
+
+    }, 1000)
+
+
+    /*if (horas >= 0 || minutos >= 0 || segundos >= 0) {
         contagem = setInterval(function(){
                 if (segundos > 0) {
                     segundos -= 1
@@ -45,32 +102,32 @@ function Iniciar(){ //iniciar digitado
                 }
             contador.innerHTML = ` ${horas} : ${minutos} : ${segundos} `
         }, 1000)
-    }
-}
-
-
-/*function Iniciar(){ //iniciar radio
-    let valorContagem = Number.parseInt(document.querySelector('input[name="opcao"]:checked').value)
-    console.log(valorContagem)
-
-    HabilitarPausarReset()
-    HabilitarInicio()
-    DesabilitarInicio()
-
-    contagem = setInterval(function(){
-        if (segundos > 0) {
-            segundos-= 1
-        } else {
-            segundos = 59
+    } else {
+        if (horas == 0 && minutos == 0 && segundos == 0){
+            alert('Preencha pelo menos um campo com informações válidas antes de continuar')
+            Resetar()
+            //horas = minutos = segundos = -1
         }
-        contador.innerHTML = ` ${0} : ${valorContagem-1} : ${segundos} `
-    }, 1000)
+
+        if (horas === ''){
+            horas = 0
+        } else if (minutos === ''){
+            minutos = 0
+        } else if (segundos === ''){
+            segundos = 0
+        }
+    }*/
+
+    formDigitar.reset()
 }
-*/
+
+
+
 
 function FinalizarContagem(){
     contador.innerHTML = ` 00 : 00 : 00 `
-    contador.innerHTML += '<p id="esgotado">Tempo Esgotado!</p>'
+    alert('tempo esgotado!')
+    clearInterval(contagem)
 }
 
 
