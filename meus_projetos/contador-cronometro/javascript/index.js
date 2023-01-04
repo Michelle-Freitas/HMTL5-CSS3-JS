@@ -1,10 +1,55 @@
-const contador = document.querySelector('#contador')
+const contador = document.querySelector('#contagem')
 let btnResetar = document.querySelector('#btnResetar')
 let btnPausar = document.querySelector('#btnPausar')
+let formRadio = document.querySelector('#formRadio')
+let formDigitar = document.querySelector('#formDigitar')
 let segundos = 60
 let horas = 0
 
-function Iniciar(){
+let horaDigitada = document.querySelector('#hora')
+let minutoDigitado = document.querySelector('#minuto')
+let segundoDigitado = document.querySelector('#segundo')
+
+
+function Iniciar(){ //iniciar digitado
+    console.log(horaDigitada.value, minutoDigitado.value, segundoDigitado.value)
+    HabilitarPausarReset()
+    HabilitarInicio()
+    DesabilitarInicio()
+
+    horas = horaDigitada.value
+    let minutos = minutoDigitado.value
+    let segundos = segundoDigitado.value
+
+    if (horas == 0 && minutos == 0 && segundos == 0){
+        alert('Preencha pelo menos um campo com informações válidas antes de continuar')
+        Resetar()
+        horas = minutos = segundos = -1
+    }
+
+    if (horas === ''){
+        horas = 0
+    } else if (minutos === ''){
+        minutos = 0
+    } else if (segundos === ''){
+        segundos = 0
+    }
+
+    if (horas >= 0 || minutos >= 0 || segundos >= 0) {
+        contagem = setInterval(function(){
+                if (segundos > 0) {
+                    segundos -= 1
+                } else {
+                    minutos -= 1
+                    segundos = 59
+                }
+            contador.innerHTML = ` ${horas} : ${minutos} : ${segundos} `
+        }, 1000)
+    }
+}
+
+
+/*function Iniciar(){ //iniciar radio
     let valorContagem = Number.parseInt(document.querySelector('input[name="opcao"]:checked').value)
     console.log(valorContagem)
 
@@ -21,7 +66,7 @@ function Iniciar(){
         contador.innerHTML = ` ${0} : ${valorContagem-1} : ${segundos} `
     }, 1000)
 }
-
+*/
 
 function FinalizarContagem(){
     contador.innerHTML = ` 00 : 00 : 00 `
@@ -30,7 +75,8 @@ function FinalizarContagem(){
 
 
 function Resetar(){
-    document.querySelector('form').reset();
+    formRadio.reset();
+    formDigitar.reset();
     clearInterval(contagem)
     minutos = 0
     segundos = 0
@@ -45,7 +91,6 @@ function Resetar(){
 function Pausar(){
     clearInterval(contagem)
     HabilitarInicio()
-
 }
 
 
@@ -61,11 +106,13 @@ function HabilitarInicio(){
     }
 }
 
+
 function DesabilitarInicio(){
     if (document.querySelector('#btnIniciar').disabled == false) {
         document.querySelector('#btnIniciar').disabled = true
     }
 }
+
 
 function HabilitarPausarReset(){
     if (btnPausar.disabled == true) {
@@ -76,3 +123,18 @@ function HabilitarPausarReset(){
         btnResetar.disabled = false
     }
 }
+
+function DesabilitarRadio(){
+    formRadio.reset()
+    formRadio.blur()
+
+    HabilitarInicio()
+
+}
+
+function DesabilitarDigitacao(){
+    formDigitar.reset()
+    formDigitar.blur()
+}
+
+

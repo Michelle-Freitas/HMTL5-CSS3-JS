@@ -12,33 +12,51 @@
 
     </header>
     <main>
-        <h1>Contador Online</h1>
-        <div id="contador">
-            <p>Contagem..</p>
-        </div>
-        <div id="info">
-            <ul>
-                <li>Hr</li>
-                <li>Min</li>
-                <li>Seg</li>
-            </ul>
-        </div>
-        <div>
-            <form action="#">
-                <h3>Escolha uma opção ou digite: </h3>
-                <fieldset>
-                    <label for="cinco"><input type="radio" name="opcao" id="cinco" class="opcao" value="5" onfocus="HabilitarInicio()">05:00</label>
-                    <label for="dez"><input type="radio" name="opcao" id="dez" class="opcao" value="10" onfocus="HabilitarInicio()">10:00</label>
-                    <label for="quinze"><input type="radio" name="opcao" id="quinze" class="opcao" value="15" onfocus="HabilitarInicio()">15:00</label>
-                    <input onfocus="HabilitarInicio()" type="time" name="escolhaDigitada" id="escolhaDigitada" step="2" class="opcao">
-                </fieldset>
-            </form>
-        </div>
-        <div>
-            <button onclick="Iniciar()" disabled id="btnIniciar">Começar / Continuar</button>
-            <button onclick="Pausar()" disabled id="btnPausar">Pausar</button>
-            <button onclick="Resetar()" type="reset" id="btnResetar" disabled>Resetar</button>
-        </div>
+        <section id="contador">
+            <h1>Contador Online</h1>
+            <div id="contagem">
+                <p>Contagem..</p>
+            </div>
+            <div id="info">
+                <ul>
+                    <li>Hr</li>
+                    <li>Min</li>
+                    <li>Seg</li>
+                </ul>
+            </div>
+            <div>
+                <form action="#" id="formRadio">
+                    <h3>Escolha uma opção ou digite: </h3>
+                    <label for="cinco" onclick="DesabilitarDigitacao()">
+                        <input type="radio" name="opcao" id="cinco" class="opcao" value="5" onfocus="HabilitarInicio()">05:00
+                    </label>
+                    <label for="dez" onclick="DesabilitarDigitacao()">
+                        <input type="radio" name="opcao" id="dez" class="opcao" value="10" onfocus="HabilitarInicio()">10:00
+                    </label>
+                    <label for="quinze" onclick="DesabilitarDigitacao()">
+                        <input type="radio" name="opcao" id="quinze" class="opcao" value="15" onfocus="HabilitarInicio()">15:00
+                    </label>
+
+                </form>
+
+                <form action="#" id="formDigitar">
+                    <label for="hora" onclick="DesabilitarRadio()">Hora:
+                        <input type="number" name="hora" id="hora" min="0" max="24" maxlength="2" size="2">
+                    </label>
+                    <label for="minuto" onclick="DesabilitarRadio()">Minuto:
+                        <input type="number" name="minuto" id="minuto" min="0" max="60" maxlength="2" size="2">
+                    </label>
+                    <label for="segundo" onclick="DesabilitarRadio()">Segundos:
+                        <input type="number" name="segundo" id="segundo" min="0" max="60" maxlength="2" size="2">
+                    </label>
+                </form>
+            </div>
+            <div>
+                <button onclick="Iniciar()" disabled id="btnIniciar">Começar / Continuar</button>
+                <button onclick="Pausar()" disabled id="btnPausar">Pausar</button>
+                <button onclick="Resetar()" type="reset" id="btnResetar" disabled>Resetar</button>
+            </div>
+        </section>
 
     </main>
     <footer>
