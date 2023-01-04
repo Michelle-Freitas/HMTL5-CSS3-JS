@@ -35,7 +35,8 @@ function ContagemRadio(){ //iniciar contagem do radio
     let valorContagem = Number.parseInt(document.querySelector('input[name="opcao"]:checked').value)
     console.log(valorContagem)
 
-    valorContagem = 2
+    valorContagem = 1
+    valorContagem -= 1
     HabilitarPausarReset()
     HabilitarInicio()
     DesabilitarInicio()
@@ -46,12 +47,13 @@ function ContagemRadio(){ //iniciar contagem do radio
 
         if (segundos > 0) {
             segundos-= 1
-        } else if (segundos == 0 && valorContagem == 0) {
+        } else if (segundos == 0 && valorContagem >= 0) {
             segundos = 59
-        } else {
+            valorContagem -= 1
+        } else if (valorContagem < 0) {
             Resetar()
         }
-        contador.innerHTML = ` ${0} : ${valorContagem-1} : ${segundos} `
+        contador.innerHTML = ` ${0} : ${valorContagem} : ${segundos} `
     }, 1000)
 
 }
