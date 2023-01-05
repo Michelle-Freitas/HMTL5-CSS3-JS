@@ -33,11 +33,6 @@ h1 {
     text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.315);
 }
 
-#contador {
-
-
-}
-
 #contagem {
     text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.315);
     font-size: 7vw;
@@ -63,7 +58,7 @@ h3 {
     font-weight: normal;
     padding-bottom: 10px;
     text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.205);
-    margin-bottom: 10px;
+    margin-bottom: 5vw;
 }
 
 .radioBtn {
