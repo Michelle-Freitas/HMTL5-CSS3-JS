@@ -18,23 +18,21 @@
             <div id="contagem">
                 <p>Contagem..</p>
             </div>
-            <div class="info">
-                <ul>
-                    <li>Hr</li>
-                    <li>Min</li>
-                    <li>Seg</li>
-                </ul>
-            </div>
+            <ul id="listaInfo">
+                <li class="info">Hr</li>
+                <li class="info">Min</li>
+                <li class="info">Seg</li>
+            </ul>
             <div>
                 <form action="#" id="formRadio">
                     <h3>Escolha uma opção ou digite: </h3>
-                    <label for="cinco" onclick="DesabilitarDigitacao()">
+                    <label for="cinco" onclick="DesabilitarDigitacao()" class="radioBtn">
                         <input type="radio" name="opcao" id="cinco" class="opcao" value="5" onfocus="HabilitarInicio()">05:00
                     </label>
-                    <label for="dez" onclick="DesabilitarDigitacao()">
+                    <label for="dez" onclick="DesabilitarDigitacao()" class="radioBtn">
                         <input type="radio" name="opcao" id="dez" class="opcao" value="10" onfocus="HabilitarInicio()">10:00
                     </label>
-                    <label for="quinze" onclick="DesabilitarDigitacao()">
+                    <label for="quinze" onclick="DesabilitarDigitacao()" class="radioBtn">
                         <input type="radio" name="opcao" id="quinze" class="opcao" value="15" onfocus="HabilitarInicio()">15:00
                     </label>
 
@@ -52,10 +50,10 @@
                     </label>
                 </form>
             </div>
-            <div class="botao">
-                <button onclick="Iniciar()" disabled id="btnIniciar">Começar / Continuar</button>
-                <button onclick="Pausar()" disabled id="btnPausar">Pausar</button>
-                <button onclick="Resetar()" type="reset" id="btnResetar" disabled>Resetar</button>
+            <div>
+                <button onclick="Iniciar()" disabled id="btnIniciar" class="botao">Começar / Continuar</button>
+                <button onclick="Pausar()" disabled id="btnPausar" class="botao">Pausar</button>
+                <button onclick="Resetar()" type="reset" id="btnResetar" disabled class="botao">Resetar</button>
             </div>
         </section>
 
@@ -64,25 +62,22 @@
             <div id="timer">
                 <p>Cronometrando..</p>
             </div>
-            <div class="info">
-                <ul>
-                    <li>Hr</li>
-                    <li>Min</li>
-                    <li>Seg</li>
-                </ul>
-            </div>
-
-            <div class="botao">
-                <button onclick="IniciarTimer()" id="btnIniciarTimer">Começar / Continuar</button>
-                <button onclick="PausarTimer()" disabled id="btnPausarTimer">Pausar</button>
-                <button onclick="ResetarTimer()" type="reset" id="btnResetarTimer" disabled>Resetar</button>
+            <ul id="listaInfo">
+                <li class="info">Hr</li>
+                <li class="info">Min</li>
+                <li class="info">Seg</li>
+            </ul>
+            <div>
+                <button onclick="IniciarTimer()" id="btnIniciarTimer" class="botao">Começar / Continuar</button>
+                <button onclick="PausarTimer()" disabled id="btnPausarTimer" class="botao">Pausar</button>
+                <button onclick="ResetarTimer()" type="reset" id="btnResetarTimer" disabled class="botao">Resetar</button>
             </div>
 
         </section>
 
     </main>
     <footer>
-
+        <p>Página de Login criada por <a href="https://github.com/Michelle-Freitas">Michelle Freitas</a></p>
     </footer>
     <script src="javascript/index.js"></script>
 </body>

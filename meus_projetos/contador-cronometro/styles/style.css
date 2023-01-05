@@ -10,8 +10,9 @@
 
 :root {
     --bgcolor: #462566;
-    --bgbuttondesable: #584a66;
+    --bgbuttondesable: #584a66b9;
     --bgbutton: #b885e7;
+    --bgradio: #6556748c;
     --font: 'Paytone One', sans-serif;
 }
 
@@ -25,13 +26,110 @@ body {
     text-align: center;
 }
 
+/*CONTADOR*/
 h1 {
+    font-size: 8vw;
     margin: 30px 0;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.315);
 }
 
+#contador {
 
 
+}
+
+#contagem {
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.315);
+    font-size: 7vw;
+}
+
+#listaInfo{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 50%;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info {
+    font-size: 3vw;
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 5vw;
+    font-weight: normal;
+    padding-bottom: 10px;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.205);
+    margin-bottom: 10px;
+}
+
+.radioBtn {
+    padding: 8px;
+    border-radius: 15px;
+    background-color: var(--bgradio);
+    margin: 10px;
+}
+
+#formDigitar{
+    margin: 25px 0 15px 0;
+    font-size: 3vw;
+}
+
+/*BOTÕES*/
+.botao{
+    background-color: var(--bgbutton);
+    padding: 7px;
+    margin: 0 5px;
+    border-radius: 10px;
+    color: white;
+    font-family: var(--font);
+    font-weight: normal;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.205);
+}
+
+.botao:disabled{
+    background-color: var(--bgbuttondesable);
+    padding: 7px;
+    margin: 0 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+/*CRONOMETRO*/
 #cronometro{
     margin-top: 50px;
-    border-top: 2.5px solid black;
+    border-top: 2.5px solid rgba(255, 255, 255, 0.788);
 }
+
+#timer {
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.315);
+    font-size: 7vw;
+}
+
+/*footer*/
+
+footer{
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 30%;
+    font-size: 1.65vh;
+    font-weight: normal;
+    background-color: #584a6644;
+    border-radius: 10px;
+
+}
+
+a {
+    text-decoration: none;
+    color: #b885e7;
+}
+
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
