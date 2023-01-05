@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Contador</title>
+    <link rel="stylesheet" href="styles/media-query.css">
+    <title>Contador e Cronometro</title>
 </head>
 <body>
     <header>
@@ -17,7 +18,7 @@
             <div id="contagem">
                 <p>Contagem..</p>
             </div>
-            <div id="info">
+            <div class="info">
                 <ul>
                     <li>Hr</li>
                     <li>Min</li>
@@ -51,11 +52,32 @@
                     </label>
                 </form>
             </div>
-            <div>
+            <div class="botao">
                 <button onclick="Iniciar()" disabled id="btnIniciar">Começar / Continuar</button>
                 <button onclick="Pausar()" disabled id="btnPausar">Pausar</button>
                 <button onclick="Resetar()" type="reset" id="btnResetar" disabled>Resetar</button>
             </div>
+        </section>
+
+        <section id="cronometro">
+            <h1>Cronometro Online</h1>
+            <div id="timer">
+                <p>Cronometrando..</p>
+            </div>
+            <div class="info">
+                <ul>
+                    <li>Hr</li>
+                    <li>Min</li>
+                    <li>Seg</li>
+                </ul>
+            </div>
+
+            <div class="botao">
+                <button onclick="IniciarTimer()" id="btnIniciarTimer">Começar / Continuar</button>
+                <button onclick="PausarTimer()" disabled id="btnPausarTimer">Pausar</button>
+                <button onclick="ResetarTimer()" type="reset" id="btnResetarTimer" disabled>Resetar</button>
+            </div>
+
         </section>
 
     </main>

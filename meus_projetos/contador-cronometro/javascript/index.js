@@ -1,3 +1,4 @@
+//VARIAVEIS CONTAGEM
 const contador = document.querySelector('#contagem')
 let btnResetar = document.querySelector('#btnResetar')
 let btnPausar = document.querySelector('#btnPausar')
@@ -8,6 +9,17 @@ let formDigitar = document.querySelector('#formDigitar')
 let segundos = 59
 var horas = 0
 
+//VARIAVEIS CRONOMETRO
+const cronometro = document.querySelector('#timer')
+let btnResetarTimer = document.querySelector('#btnResetarTimer')
+let btnPausarTimer = document.querySelector('#btnPausarTimer')
+
+let horaTimer = minTimer = 0
+let segTimer = 1
+cronometro.innerHTML = ` ${horaTimer} : ${minTimer} : ${00} `
+
+
+//FUNÇÕES CONTAGEM
 
 function Iniciar(){
     if (document.querySelector('input[name="opcao"]:checked')){
@@ -43,15 +55,15 @@ function ContagemRadio(){ //iniciar contagem do radio
 
 
     contagem = setInterval(function(){
-
+        if (valorContagem < 0) {
+            Resetar()
+        }
 
         if (segundos > 0) {
             segundos-= 1
         } else if (segundos == 0 && valorContagem >= 0) {
             segundos = 59
             valorContagem -= 1
-        } else if (valorContagem < 0) {
-            Resetar()
         }
         contador.innerHTML = ` ${0} : ${valorContagem} : ${segundos} `
     }, 1000)
@@ -124,15 +136,6 @@ function ContagemDigitada(horas=0, minutos=0, segundos=0) { //iniciar contagem p
 }
 
 
-
-
-function FinalizarContagem(){
-    contador.innerHTML = ` 00 : 00 : 00 `
-    alert('tempo esgotado!')
-    clearInterval(contagem)
-}
-
-
 function Resetar(){
     formRadio.reset();
     formDigitar.reset();
@@ -170,6 +173,9 @@ function DesabilitarInicio(){
     if (document.querySelector('#btnIniciar').disabled == false) {
         document.querySelector('#btnIniciar').disabled = true
     }
+    if (document.querySelector('#btnIniciarTimer').disabled == false) {
+        document.querySelector('#btnIniciarTimer').disabled = true
+    }
 }
 
 
@@ -197,3 +203,57 @@ function DesabilitarDigitacao(){
 }
 
 
+//FUNÇÕES CRONOMETRO
+function IniciarTimer(){
+    DesabilitarInicio()
+    HabilitarPausarResetTimer()
+    //segTimer = 55
+    //minTimer = 59
+    timer = setInterval(function(){
+        cronometro.innerHTML = ` ${horaTimer} : ${minTimer} : ${segTimer} `
+        segTimer += 1
+
+        if (segTimer == 60 && minTimer !== 59) {
+            minTimer += 1
+            segTimer = 0
+        }
+        if (segTimer == 60 && minTimer == 59){
+            horaTimer += 1
+            minTimer = 0
+            segTimer = 0
+        }
+    }, 1000)
+}
+
+function HabilitarInicioTimer(){
+    if (document.querySelector('#btnIniciarTimer').disabled == true) {
+        document.querySelector('#btnIniciarTimer').disabled = false
+    }else{
+        document.querySelector('#btnIniciarTimer').disabled = true
+    }
+}
+
+function PausarTimer(){
+    clearInterval(timer)
+    HabilitarInicioTimer()
+}
+
+function HabilitarPausarResetTimer(){
+    if (btnPausarTimer.disabled == true) {
+        btnPausarTimer.disabled = false
+    }
+
+    if (btnResetarTimer.disabled == true) {
+        btnResetarTimer.disabled = false
+    }
+}
+
+function ResetarTimer(){
+    btnPausarTimer.disabled = true
+    btnResetarTimer.disabled = true
+    HabilitarInicioTimer()
+    horaTimer = minTimer = 0
+    segTimer = 1
+    cronometro.innerHTML = ` ${horaTimer} : ${minTimer} : 0 `
+    clearInterval(timer)
+}
