@@ -26,6 +26,10 @@ body {
     text-align: center;
 }
 
+.container {
+    margin-bottom: 50px;
+}
+
 /*CONTADOR*/
 h1 {
     font-size: 8vw;
@@ -95,7 +99,6 @@ h3 {
 
 /*CRONOMETRO*/
 #cronometro{
-    margin-top: 50px;
     border-top: 2.5px solid rgba(255, 255, 255, 0.788);
 }
 

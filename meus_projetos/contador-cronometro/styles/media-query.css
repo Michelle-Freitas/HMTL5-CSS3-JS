@@ -60,6 +60,78 @@
         border-radius: 10px;
     }
 }
+
+@media screen and (min-width: 1300px) {
+    header{
+        margin-top: 10vh;
+    }
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #cronometro{
+        margin-top: 0;
+    }
+        /*CONTADOR*/
+    #contador {
+        border-top: 2.5px solid rgba(255, 255, 255, 0.788);
+    }
+    .container > h1 {
+        font-size: 7vh;
+    }
+    div > #contagem {
+        font-size: 5vh;
+    }
+    #contagem > p{
+        font-size: 5vh;
+    }
+    #formRadio > h3 {
+        font-size: 4vh;
+        padding: 10px 10px 0px 10px;
+    }
+    #formRadio > .radioBtn {
+        padding: 30px;
+        margin: 30px;
+        font-size: 3vh;
+    }
+    label {
+        font-size: 3vh;
+        margin: 5vh 0;
+    }
+    .inputNumber {
+        height: 5vh;
+        width: 7vh;
+        margin-right: 5vh;
+        font-size: 3vh;
+    }
+    /*BOTÕES*/
+    .botao {
+        padding: 7vh;
+        margin: 0 10px;
+        border-radius: 10px;
+        font-size: 3vh;
+    }
+    .botao:disabled{
+        padding: 15px;
+        margin: 0 10px;
+        border-radius: 10px;
+        font-size: 3vh;
+    }
+    body > footer{
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+        margin-top: 5%;
+        font-size: 2vh;
+    }
+
+}
+
 @media screen and (min-width: 1500px) {
     header{
         margin-top: 10vh;
