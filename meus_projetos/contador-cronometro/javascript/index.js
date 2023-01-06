@@ -5,9 +5,18 @@ let btnPausar = document.querySelector('#btnPausar')
 let formRadio = document.querySelector('#formRadio')
 let formDigitar = document.querySelector('#formDigitar')
 
+let horaInput = document.getElementById('hora')
+let minutoInput = document.getElementById('minuto')
+let segundoInput = document.getElementById('segundo')
 
-let segundos = 59
-var horas = 0
+const horaDigitada = document.querySelector('#hora')
+const minutoDigitado = document.querySelector('#minuto')
+const segundoDigitado = document.querySelector('#segundo')
+
+
+
+let segundos = 60
+//var horas = 0
 
 //VARIAVEIS CRONOMETRO
 const cronometro = document.querySelector('#timer')
@@ -20,23 +29,24 @@ cronometro.innerHTML = ` ${horaTimer} : ${minTimer} : ${00} `
 
 
 //FUNÇÕES CONTAGEM
-
 function Iniciar(){
     if (document.querySelector('input[name="opcao"]:checked')){
         ContagemRadio()
     } else {
-        const horaDigitada = document.querySelector('#hora')
-        const minutoDigitado = document.querySelector('#minuto')
-        const segundoDigitado = document.querySelector('#segundo')
+        /*let horaDigitada = document.querySelector('#hora')
+        let minutoDigitado = document.querySelector('#minuto')
+        let segundoDigitado = document.querySelector('#segundo')*/
 
-        if (horaDigitada.value == 0 && minutoDigitado.value == 0 && segundoDigitado.value == 0){
-            alert('Preencha pelo menos um campo com informações válidas antes de continuar')
+        if (horaDigitada.disabled == false || horaDigitada.disabled == false || horaDigitada.disabled == false){
+            if (horaDigitada.value == '' && minutoDigitado.value == '' && segundoDigitado.value == '') {
+                alert('Preencha pelo menos um campo com informações válidas antes de continuar')
             //Resetar()
-        } else {
-            horas = horaDigitada.value
-            let minutos = minutoDigitado.value
-            let segundos = segundoDigitado.value
+            } else {
+            var horas = Number(horaDigitada.value)
+            var minutos = Number(minutoDigitado.value)
+            var segundos = Number(segundoDigitado.value)
             ContagemDigitada(horas, minutos, segundos)
+            }
         }
     }
 
@@ -47,7 +57,7 @@ function ContagemRadio(){ //iniciar contagem do radio
     let valorContagem = Number.parseInt(document.querySelector('input[name="opcao"]:checked').value)
     console.log(valorContagem)
 
-    valorContagem = 1
+    //valorContagem = 1
     valorContagem -= 1
     HabilitarPausarReset()
     HabilitarInicio()
@@ -55,11 +65,9 @@ function ContagemRadio(){ //iniciar contagem do radio
 
 
     contagem = setInterval(function(){
-        if (valorContagem < 0) {
+        if (valorContagem == 0 && segundos == 0) {
             Resetar()
-        }
-
-        if (segundos > 0) {
+        } else if (segundos > 0) {
             segundos-= 1
         } else if (segundos == 0 && valorContagem >= 0) {
             segundos = 59
@@ -71,10 +79,7 @@ function ContagemRadio(){ //iniciar contagem do radio
 }
 
 
-function ContagemDigitada(horas=0, minutos=0, segundos=0) { //iniciar contagem pelos valores digitados
-
-    HabilitarPausarReset()
-    DesabilitarInicio()
+function ContagemDigitada(horas, minutos, segundos) { //iniciar contagem pelos valores digitados
 
     if (horas === ''){
         horas = 0
@@ -84,13 +89,21 @@ function ContagemDigitada(horas=0, minutos=0, segundos=0) { //iniciar contagem p
         segundos = 0
     }
 
-    contagem = setInterval(function(){
-        contador.innerHTML = ` ${horas} : ${minutos} : ${segundos} `
+    console.log(horas, minutos, segundos)
+    HabilitarPausarReset()
+    DesabilitarInicio()
+    DesabilitarInput()
 
+    //contador.innerHTML = ` ${horas} : ${minutos} : ${segundos} `
+    contagem = setInterval(function(){
+
+        contador.innerHTML = ` ${horas} : ${minutos} : ${segundos} `
         if (horas > 0 && segundos === 0 && minutos === 0) {
             horas -= 1
             segundos = 59
             minutos = 59
+        }else if(horas == 0 && minutos == 0 && segundos == 0){
+            Resetar()
         } else {
             if (segundos === 0) {
                 segundos = 59
@@ -132,7 +145,7 @@ function ContagemDigitada(horas=0, minutos=0, segundos=0) { //iniciar contagem p
         }
     }*/
 
-    formDigitar.reset()
+    //formDigitar.reset()
 }
 
 
@@ -147,6 +160,10 @@ function Resetar(){
     DesabilitarInicio()
     btnPausar.disabled = true
     btnResetar.disabled = true
+
+    horaInput.disabled = false
+    minutoInput.disabled = false
+    segundoInput.disabled = false
 }
 
 
@@ -202,6 +219,16 @@ function DesabilitarDigitacao(){
     formDigitar.blur()
 }
 
+function DesabilitarInput(){
+    horaInput.disabled = true
+    minutoInput.disabled = true
+    segundoInput.disabled = true
+
+    horaInput.value = ''
+    minutoInput.value = ''
+    segundoInput.value = ''
+
+}
 
 //FUNÇÕES CRONOMETRO
 function IniciarTimer(){
@@ -257,3 +284,4 @@ function ResetarTimer(){
     cronometro.innerHTML = ` ${horaTimer} : ${minTimer} : 0 `
     clearInterval(timer)
 }
+
