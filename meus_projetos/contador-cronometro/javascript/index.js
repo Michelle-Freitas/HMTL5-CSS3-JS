@@ -1,22 +1,19 @@
 //VARIAVEIS CONTAGEM
+
+//radio
 const contador = document.querySelector('#contagem')
 let btnResetar = document.querySelector('#btnResetar')
 let btnPausar = document.querySelector('#btnPausar')
 let formRadio = document.querySelector('#formRadio')
 let formDigitar = document.querySelector('#formDigitar')
+let segundosRadio = 60
+//var horas = 0
 
+//digitada
 let horaInput = document.getElementById('hora')
 let minutoInput = document.getElementById('minuto')
 let segundoInput = document.getElementById('segundo')
 
-const horaDigitada = document.querySelector('#hora')
-const minutoDigitado = document.querySelector('#minuto')
-const segundoDigitado = document.querySelector('#segundo')
-
-
-
-let segundos = 60
-//var horas = 0
 
 //VARIAVEIS CRONOMETRO
 const cronometro = document.querySelector('#timer')
@@ -29,23 +26,22 @@ cronometro.innerHTML = ` ${horaTimer} : ${minTimer} : ${00} `
 
 
 //FUNÇÕES CONTAGEM
-function Iniciar(){
+function Iniciar(horas, minutos, segundos){
     if (document.querySelector('input[name="opcao"]:checked')){
         ContagemRadio()
     } else {
-        /*let horaDigitada = document.querySelector('#hora')
+        let horaDigitada = document.querySelector('#hora')
         let minutoDigitado = document.querySelector('#minuto')
-        let segundoDigitado = document.querySelector('#segundo')*/
-
+        let segundoDigitado = document.querySelector('#segundo')
         if (horaDigitada.disabled == false || horaDigitada.disabled == false || horaDigitada.disabled == false){
             if (horaDigitada.value == '' && minutoDigitado.value == '' && segundoDigitado.value == '') {
                 alert('Preencha pelo menos um campo com informações válidas antes de continuar')
             //Resetar()
             } else {
-            var horas = Number(horaDigitada.value)
-            var minutos = Number(minutoDigitado.value)
-            var segundos = Number(segundoDigitado.value)
-            ContagemDigitada(horas, minutos, segundos)
+                var horas = Number(horaDigitada.value)
+                var minutos = Number(minutoDigitado.value)
+                var segundos = Number(segundoDigitado.value)
+                ContagemDigitada(horas, minutos, segundos)
             }
         }
     }
@@ -67,13 +63,13 @@ function ContagemRadio(){ //iniciar contagem do radio
     contagem = setInterval(function(){
         if (valorContagem == 0 && segundos == 0) {
             Resetar()
-        } else if (segundos > 0) {
-            segundos-= 1
-        } else if (segundos == 0 && valorContagem >= 0) {
-            segundos = 59
+        } else if (segundosRadio > 0) {
+            segundosRadio-= 1
+        } else if (segundosRadio == 0 && valorContagem >= 0) {
+            segundosRadio = 59
             valorContagem -= 1
         }
-        contador.innerHTML = ` ${0} : ${valorContagem} : ${segundos} `
+        contador.innerHTML = ` ${0} : ${valorContagem} : ${segundosRadio} `
     }, 1000)
 
 }
@@ -167,7 +163,7 @@ function Resetar(){
 }
 
 
-function Pausar(){
+function Pausar(horas, minutos, segundos){
     clearInterval(contagem)
     HabilitarInicio()
 }
