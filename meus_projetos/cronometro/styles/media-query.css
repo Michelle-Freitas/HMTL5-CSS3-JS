@@ -7,7 +7,7 @@
     --bgcolor: #462566;
     --bgbuttondesable: #584a66b9;
     --bgbutton: #b885e7;
-    --bgradio: #6556748c;
+    --bgbody: #6556748c;
     --font: 'Paytone One', sans-serif;
 }
 
@@ -20,34 +20,18 @@
     h1 {
         font-size: 5vh;
     }
-    #contagem {
-        font-size: 4vh;
-        margin-bottom: 10px;
-    }
-    .radioBtn {
-        padding: 20px;
-        border-radius: 15px;
-        background-color: var(--bgradio);
-        font-size: 25px;
-    }
-    #formDigitar{
-        margin: 40px 0 30px 0;
-        padding: 10px;
-        font-size: 3vw;
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .inputNumber {
-        width: 80px;
-        height: 40px;
-        font-size: 3vw;
-    }
+
         /*BOTÕES*/
+    #botoes{
+        padding: 20px;
+    }
+
     .botao{
         padding: 15px;
         margin: 0 5px;
         font-size: 2.5vw;
     }
+
     .botao:disabled{
         padding: 15px;
     }
@@ -69,47 +53,18 @@
         height: 100vh;
         width: 100vw;
     }
-    main {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
     #cronometro{
-        margin-top: 0;
-    }
-        /*CONTADOR*/
-    #contador {
-        border-top: 2.5px solid rgba(255, 255, 255, 0.788);
+        padding: 20px;
+        margin: 0 60px;
     }
     .container > h1 {
         font-size: 7vh;
     }
-    div > #contagem {
-        font-size: 5vh;
-    }
-    #contagem > p{
-        font-size: 5vh;
-    }
-    #formRadio > h3 {
-        font-size: 4vh;
-        padding: 10px 10px 0px 10px;
-    }
-    #formRadio > .radioBtn {
-        padding: 30px;
-        margin: 30px;
-        font-size: 3vh;
-    }
-    label {
-        font-size: 3vh;
-        margin: 5vh 0;
-    }
-    .inputNumber {
-        height: 5vh;
-        width: 7vh;
-        margin-right: 5vh;
-        font-size: 3vh;
-    }
+
     /*BOTÕES*/
+    #botoes{
+        padding: 40px;
+    }
     .botao {
         padding: 7vh;
         margin: 0 10px;
@@ -140,47 +95,14 @@
         height: 100vh;
         width: 100vw;
     }
-    main {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
     #cronometro{
         margin-top: 0;
     }
-        /*CONTADOR*/
-    #contador {
-        border-top: 2.5px solid rgba(255, 255, 255, 0.788);
-    }
-    .container > h1 {
-        font-size: 7vh;
-    }
-    div > #contagem {
-        font-size: 5vh;
-    }
-    #contagem > p{
-        font-size: 5vh;
-    }
-    #formRadio > h3 {
-        font-size: 4vh;
-        padding: 10px 10px 0px 10px;
-    }
-    #formRadio > .radioBtn {
-        padding: 30px;
-        margin: 30px;
-        font-size: 3vh;
-    }
-    label {
-        font-size: 3vh;
-        margin: 5vh 0;
-    }
-    .inputNumber {
-        height: 5vh;
-        width: 7vh;
-        margin-right: 5vh;
-        font-size: 3vh;
-    }
+
     /*BOTÕES*/
+    #botoes{
+        padding: 60px;
+    }
     .botao {
         padding: 7vh;
         margin: 0 10px;
