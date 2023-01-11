@@ -10,7 +10,7 @@ Estudante de ADS - 2º Semestre
   <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/calculadora/index.html" target="_blank">Calculadora Simples</a></li>
   <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/cronometro/index.html" target="_blank">Cronometro Simples</a></li>
 
-
+([https://stackoverflow.blog/2021/03/31/the-key-copy-paste/](https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/calculadora/index.html) {:target="_blank"}
 
  </ul>
 
