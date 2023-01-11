@@ -85,16 +85,6 @@ section > h1 {
     height: 100vh;
 
 }
-/*p {
-    font-size: 2vw;
-    color: white;
-    /*padding: 20px;*/
-    /*line-height: 2vw;
-    size: 100%;
-    max-width: 100vw;*/
-
-    /*background-color: #612d2c33;*/
-
 
 
 .foto-direita > p {
@@ -137,5 +127,16 @@ footer p {
     text-align: center;
     font-family: var(--font-titulo);
     font-size: 1vw;
+    padding: 10px;
+}
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkgray;
+    text-decoration: underline;
+    font-weight: bold;
 }
