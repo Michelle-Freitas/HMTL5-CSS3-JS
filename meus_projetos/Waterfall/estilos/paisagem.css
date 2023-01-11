@@ -143,3 +143,8 @@ footer > p {
     font-weight: bold;
     text-align: center;
 }
+
+a:hover {
+    font-size: 1.15em;
+
+}
