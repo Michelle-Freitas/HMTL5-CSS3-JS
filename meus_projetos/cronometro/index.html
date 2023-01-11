@@ -14,50 +14,6 @@
 
     </header>
     <main>
-        <section id="contador" class="container">
-            <h1>Contador Online</h1>
-            <div id="contagem">
-                <p>Contagem..</p>
-            </div>
-            <ul id="listaInfo">
-                <li class="info">Hr</li>
-                <li class="info">Min</li>
-                <li class="info">Seg</li>
-            </ul>
-            <div>
-                <form action="#" id="formRadio">
-                    <h3>Escolha uma opção ou digite: </h3>
-                    <label for="cinco" onclick="DesabilitarDigitacao()" class="radioBtn">
-                        <input type="radio" name="opcao" id="cinco" class="opcao" value="5" onfocus="HabilitarInicio()" class="inputNumber"> 05:00
-                    </label>
-                    <label for="dez" onclick="DesabilitarDigitacao()" class="radioBtn">
-                        <input type="radio" name="opcao" id="dez" class="opcao" value="10" onfocus="HabilitarInicio()" class="inputNumber"> 10:00
-                    </label>
-                    <label for="quinze" onclick="DesabilitarDigitacao()" class="radioBtn">
-                        <input type="radio" name="opcao" id="quinze" class="opcao" value="15" onfocus="HabilitarInicio()" class="inputNumber"> 15:00
-                    </label>
-
-                </form>
-
-                <form action="#" id="formDigitar">
-                    <label for="hora" onclick="DesabilitarRadio()">Hora:
-                        <input type="number" name="hora" id="hora" min="0" max="24" maxlength="2" size="2" class="inputNumber">
-                    </label>
-                    <label for="minuto" onclick="DesabilitarRadio()">Minuto:
-                        <input type="number" name="minuto" id="minuto" min="0" max="60" maxlength="2" size="2" class="inputNumber">
-                    </label>
-                    <label for="segundo" onclick="DesabilitarRadio()">Segundos:
-                        <input type="number" name="segundo" id="segundo" min="0" max="60" maxlength="2" size="2" class="inputNumber">
-                    </label>
-                </form>
-            </div>
-            <div>
-                <button onclick="Iniciar()" disabled id="btnIniciar" class="botao">Começar / Continuar</button>
-                <button onclick="Pausar()" disabled id="btnPausar" class="botao">Pausar</button>
-                <button onclick="Resetar()" type="reset" id="btnResetar" disabled class="botao">Resetar</button>
-            </div>
-        </section>
-
         <section id="cronometro" class="container">
             <h1>Cronometro Online</h1>
             <div id="timer">
@@ -78,7 +34,7 @@
 
     </main>
     <footer>
-        <p>Página de Login criada por <a href="https://github.com/Michelle-Freitas">Michelle Freitas</a></p>
+        <p>Cronômetro de Login criada por <a href="https://github.com/Michelle-Freitas">Michelle Freitas</a></p>
     </footer>
     <script src="javascript/index.js"></script>
 </body>

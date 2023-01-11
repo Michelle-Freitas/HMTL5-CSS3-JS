@@ -12,12 +12,12 @@
     --bgcolor: #462566;
     --bgbuttondesable: #584a66b9;
     --bgbutton: #b885e7;
-    --bgradio: #6556748c;
+    --bgbody: #6556748c;
     --font: 'Paytone One', sans-serif;
 }
 
 body {
-    background-color: var(--bgcolor);
+    background-color: var(--bgbody);
     font-family: var(--font);
     color: white;
     height: 100vh;
@@ -26,20 +26,10 @@ body {
     text-align: center;
 }
 
-.container {
-    margin-bottom: 50px;
-}
-
-/*CONTADOR*/
 h1 {
     font-size: 8vw;
     margin: 30px 0;
     text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.315);
-}
-
-#contagem {
-    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.315);
-    font-size: 7vw;
 }
 
 #listaInfo{
@@ -65,17 +55,22 @@ h3 {
     margin-bottom: 5vw;
 }
 
-.radioBtn {
-    padding: 8px;
-    border-radius: 15px;
-    background-color: var(--bgradio);
-    margin: 10px;
+/*CRONOMETRO*/
+#cronometro{
+    border-top: 2.5px solid rgba(255, 255, 255, 0.788);
+    background-color: var(--bgcolor);
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.315);
+    padding: 10px;
+    margin-top: 10vh;
+
 }
 
-#formDigitar{
-    margin: 25px 0 15px 0;
-    font-size: 3vw;
+#timer {
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.315);
+    font-size: 7vw;
 }
+
 
 /*BOTÕES*/
 .botao{
@@ -97,15 +92,7 @@ h3 {
     color: white;
 }
 
-/*CRONOMETRO*/
-#cronometro{
-    border-top: 2.5px solid rgba(255, 255, 255, 0.788);
-}
 
-#timer {
-    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.315);
-    font-size: 7vw;
-}
 
 /*footer*/
 
@@ -123,7 +110,7 @@ footer{
 
 a {
     text-decoration: none;
-    color: #b885e7;
+    color: var(--bgcolor);
 }
 
 a:hover{
