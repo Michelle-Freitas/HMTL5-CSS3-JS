@@ -4,12 +4,11 @@
 Estudante de ADS - 2º Semestre
 
 # PROJETINHOS
- Projetos iniciantes desenvolvidos durante o aprendizado em HTML, CSS e JavaScript
+ Projetos iniciantes, desenvolvidos durante o aprendizado em HTML, CSS e JavaScript
  <ul>
 
-  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/calculadora/index.html" target="_blank">Calculadora Simples</a></li>
-  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/cronometro/index.html" target="_blank">Cronometro Simples</a></li>
-
+  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/calculadora/index.html" target="_blank">Calculadora Simples</a></li>
+  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/cronometro/index.html" target="_blank">Cronometro Simples</a></li>
 
 
  </ul>
@@ -20,10 +19,10 @@ Estudante de ADS - 2º Semestre
 
  <ul>
 
-  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Ballet%20Page/index.html" target="_blank">Primeiro site</a> - Finalizando módulo 02</li>
-  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Barber/index.html" target="_blank">Aprendendo Efeito Parallax</a> - Finalizando módulo 03</li>
-  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Waterfall/contato.html" target="_blank">Aprendendo formulário</a> - Módulo 04</li>
-   <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/Login/index.html" target="_blank">Tela de Login</a> - Finalizando módulo 04</li>
+  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/Ballet%20Page/index.html" target="_blank">Primeiro site</a> - Finalizando módulo 02</li>
+  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/Barber/index.html" target="_blank">Aprendendo Efeito Parallax</a> - Finalizando módulo 03</li>
+  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/Waterfall/contato.html" target="_blank">Aprendendo formulário</a> - Módulo 04</li>
+   <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/Login/index.html" target="_blank">Tela de Login</a> - Finalizando módulo 04</li>
 
 
  </ul>
@@ -32,8 +31,8 @@ Estudante de ADS - 2º Semestre
   JavaScript com <a href="https://www.alura.com.br/" target="_blank"> Imersão Alura </a> com algumas inclusões pesquisadas.
 
 <ul>
-  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/media/index.html" target="_blank">Notas</a> - Calculadora de notas </li>
-    <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/genio/index.html" target="_blank">Gênio</a> - Adivinhe o número </li>
+  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/media/index.html" target="_blank">Notas</a> - Calculadora de notas </li>
+    <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/genio/index.html" target="_blank">Gênio</a> - Adivinhe o número </li>
 </ul>
 
 
