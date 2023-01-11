@@ -3,8 +3,18 @@
 # Michelle Freitas
 Estudante de ADS - 2º Semestre
 
+# PROJETINHOS
+ Projetos iniciantes desenvolvidos durante o aprendizado em HTML, CSS e JavaScript
+ <ul>
 
-# HMTL5-CSS3-JS
+  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/calculadora/index.html" target="_blank">Calculadora Simples</a></li>
+  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3/meus_projetos/cronometro/index.html" target="_blank">Cronometro Simples</a></li>
+
+
+
+ </ul>
+
+# HMTL5-CSS3-JS com CursoemVídeo
  Aprendendo HTML5, CSS3 e JavaScript com <a href="https://www.cursoemvideo.com/" target="_blank"> CursoemVídeo </a><br>
  Páginas criadas baseadas no aprendizado e projetos desenvolvidos no curso
 
@@ -27,7 +37,7 @@ Estudante de ADS - 2º Semestre
 </ul>
 
 
-# .
+# Me encontre aqui:
 
 <a href="https://www.linkedin.com/in/michelle-afreitas/" ><img width="5%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" /> LinkedIn</a>
 <a href="https://github.com/Michelle-Freitas" ><img width="5%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> GitHub</a>
