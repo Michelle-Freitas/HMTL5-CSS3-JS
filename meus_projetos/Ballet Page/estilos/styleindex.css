@@ -175,3 +175,15 @@ footer > p {
     padding: 10px;
     font-size: 0.9em;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    text-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.548);
+    text-decoration: underline;
+    font-size: 1.05em;
+}
