@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="calc-container">
+        <h1>Calculadora JS</h1>
+        <p id="resultado"></p>
+        <div id="botoes">
+            <button class="btn, duplo" onclick="limpar()">CE</button>
+            <button class="btn, operacao, bkspace" onclick="backSpace()">&lt;</button>
+            <button class="btn, operacao" onclick="preencher('/')">/</button>
+            <button class="btn, number" onclick="preencher('7')">7</button>
+            <button class="btn, number" onclick="preencher('8')">8</button>
+            <button class="btn, number" onclick="preencher('9')">9</button>
+            <button class="btn, operacao" onclick="preencher('*')">X</button>
+            <button class="btn, number" onclick="preencher('4')">4</button>
+            <button class="btn, number" onclick="preencher('5')">5</button>
+            <button class="btn, number" onclick="preencher('6')">6</button>
+            <button class="btn, operacao"onclick="preencher('-')">-</button>
+            <button class="btn, number" onclick="preencher('1')">1</button>
+            <button class="btn, number" onclick="preencher('2')">2</button>
+            <button class="btn, number" onclick="preencher('3')">3</button>
+            <button class="btn, operacao" onclick="preencher('+')">+</button>
+            <button class="btn, number" onclick="preencher('0')">0</button>
+            <button class="btn, number" onclick="preencher('.')">.</button>
+            <button class="btn, duplo" onclick="calcular()">=</button>
+        </div>
+    </div>
+    <footer>
+        <p>Calculadora criada por <a href="https://github.com/Michelle-Freitas">Michelle Freitas</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
