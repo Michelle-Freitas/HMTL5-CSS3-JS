@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --roxo: #8B4D8C;
+    --lilas: #976b9b;
+    --verde: #89D995;
+    --verdeClaro: #A7D9AA;
+    --rosa: #F2C8C4;
+    --creme: #F2DDD0;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*tablet*/
+    label #item {
+        font-size: 1.15em;
+    }
+    /*BOTÕES*/
+    #botoes {
+        margin: 10px 50px;
+    }
+
+    .btn {
+        padding: 13px;
+        margin-left: 30px;
+    }
+
+    .btn-apagarLista {
+        float: right;
+        padding: 13px;
+    }
+    /*LISTA*/
+    #list-container {
+        padding: 20px 70px;
+    }
+
+    #list p {
+        font-size: 1.15em;
+        padding: 15px 25px;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /*desktop*/
+    #item {
+        font-size: 1.15em;
+        width: 80vw;
+    }
+    /*BOTÕES*/
+    #botoes {
+        margin: 10px 55px;
+    }
+}
+
+@media screen and (min-width: 1200px) { /*telas grandes*/
+    #container {
+        margin: 30px 80px 30px 70px;
+    }
+    form{
+        margin: auto;
+        margin: 20px 100px 0px 100px;
+        padding: 0;
+
+    }
+
+    #item {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    /*BOTÕES*/
+    #botoes {
+        margin: 10px 50px;
+    }
+
+    .btn {
+        padding: 13px;
+        margin-left: 30px;
+    }
+
+    .btn-apagarLista {
+        float: right;
+        padding: 13px;
+    }
+    /*LISTA*/
+    #list-container {
+        padding: 20px 70px;
+    }
+
+    #list p {
+        font-size: 1.15em;
+        padding: 15px 25px;
+        margin-bottom: 15px;
+    }
+
+}

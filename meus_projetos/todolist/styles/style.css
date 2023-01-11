@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --roxo: #8B4D8C;
+    --lilas: #976b9b;
+    --verde: #89D995;
+    --verdeClaro: #A7D9AA;
+    --rosa: #F2C8C4;
+    --creme: #F2DDD0;
+}
+
+html {
+    background-image: linear-gradient(to right, var(--verdeClaro), var(--creme));
+    width: 100vw;
+    height: 100vh;
+}
+
+#container {
+    background-color: white;
+    margin: auto;
+    margin: 25px;
+}
+
+h1 {
+    color: var(--roxo);
+    padding: 20px;
+    margin: 50px;
+    text-align: center;
+    border-bottom: 1px solid var(--roxo);
+}
+
+form{
+    padding: 25px;
+
+}
+
+label {
+    padding: 10px;
+
+    font-weight: bold;
+    color: var(--lilas);
+    font-size: 1.2em;
+}
+
+#item {
+    width: 70vw;
+    height: 50px;
+
+    margin: auto;
+    margin: 10px 10px 20px 10px;
+    padding: 5px;
+
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 2px 2px 2px rgba(110, 108, 108, 0.123);
+    background-color: var(--creme);
+}
+
+/*BOTÕES*/
+.btn {
+    font-weight: bold;
+    background-color: var(--verdeClaro);
+    color:var(--roxo);
+
+    margin: 5px;
+    padding: 7px;
+
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-apagarLista {
+    float: right;
+
+    font-weight: bold;
+    background-color: var(--verdeClaro);
+    color:var(--roxo);
+
+    margin: 5px;
+    padding: 7px;
+
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--rosa);
+}
+input[type="reset"]:hover {
+    background-color: var(--rosa);
+}
+
+.item-list > button {
+    background-color: var(--roxo);
+    float: right;
+    padding: 5px 8px;
+    margin: -2px;
+
+    border-radius: 80%;
+    border: none;
+
+    color: var(--verde);
+    font-weight: bold;
+}
+
+.item-list > button:hover {
+    background-color: var(--verde);
+    color: var(--roxo);
+}
+
+/*LISTA*/
+#list-container {
+    margin: auto;
+    padding: 20px;
+
+    font-size: 1.2em;
+}
+
+#inicial-text {
+    background-color: white;
+    color: var(--lilas);
+    font-weight: bold;
+    text-align: center;
+
+}
+
+#list p {
+    color: var(--roxo);
+    font-weight: bold;
+    background-color: var(--rosa);
+
+    padding: 7px 15px;
+    margin-bottom: 7px;
+
+    word-wrap:  break-word;
+}
+
+
+/*footer*/
+footer {
+    background-color: #a7d9aa70;
+    padding: 15px;
+    text-align: center;
+
+    color: var(--lilas);
+
+}
+
+a {
+    color: var(--roxo);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: white;
+}

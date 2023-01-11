@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mediaquery.css">
+    <title>To-do List</title>
+</head>
+<body onload="text()">
+    <div id="container">
+        <header>
+            <h1>To-do List</h1>
+        </header>
+        <main>
+            <form action="#">
+                <label for="item">To-do: <input type="text" name="item" id="item" required minlength="1" placeholder="Digite sua tarefa"></label><br>
+                <div id="botoes">
+                    <button onclick="adicionar()" onkeydown= "enter()" class="btn">Add</button>
+                    <input type="reset" class="btn" value="Limpar">
+                    <input type="reset" class="btn, btn-apagarLista" value="Apagar Lista" onclick="limpar()">
+                </div>
+            </form>
+            <div id="list-container">
+                <p id="inicial-text"></p>
+                <div id="list">
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>To-do List criada por <a href="https://github.com/Michelle-Freitas" target="_blank">Michelle Freitas</a></p>
+    </footer>
+    <script src="javascript/index.js"></script>
+
+</body>
+</html>
