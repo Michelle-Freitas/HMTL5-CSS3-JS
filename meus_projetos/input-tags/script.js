@@ -38,6 +38,9 @@ function exibir(){
 }
 
 function remover(index) {
-    tagList.splice(index, 1)
-    exibir()
+    const confirma = confirm('Tem certeza que deseja excluir?')
+    if (confirma){
+        tagList.splice(index, 1)
+        exibir()
+    }
 }
