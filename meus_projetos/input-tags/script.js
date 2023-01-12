@@ -33,7 +33,7 @@ function verificar(tagFormatada){
 function exibir(){
     tagsContainer.innerHTML  = ''
     for (let i = 0; i < tagList.length; i++){
-        tagsContainer.innerHTML += `<li class="tag-item">${tagList[i]}<button onclick="remover(${i})" class="x-btn">x</button></li>`
+        tagsContainer.innerHTML += `<li class="tag-item">${tagList[i]} <button onclick="remover(${i})" class="x-btn">x</button></li>`
     }
 }
 

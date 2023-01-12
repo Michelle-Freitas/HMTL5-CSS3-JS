@@ -4,12 +4,135 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--font);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+:root{
+    --font: #026E81;
+    --bg: rgba(212, 218, 224, 0.712);
+    --bgtag: #A1C7E0;
+    --border: #00ABBD;
+    --detail: #FF9933;
+}
 
+html {
+    background-color: var(--bg);
+    margin-top: 40px;
+}
 
+main {
+    width: 300px;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    height: 70vh;
+}
 
+#inicio {
+    margin-bottom: 50px;
+}
 
+h1 {
+    font-size: 1.7em;
+    padding: 15px 5px;
+}
+
+#itag {
+    height: 25px;
+    width: 50vw;
+    border: none;
+    border-radius: 2px;
+
+    background-color: var(--bg);
+    padding: 3px;
+    margin: 7px;
+}
+
+/*BOTÕES*/
+.btn {
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--border);
+    color: white;
+    font-weight: bold;
+    font-size: .8em;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: var(--detail);
+    color: black;
+}
+
+#add-btn {
+    float: left;
+}
+
+#limpar-btn {
+    float: right;
+}
+
+.x-btn {
+    color: var(--detail);
+    font-weight: bolder;
+    width: 20px;
+
+    background-color: var(--bg);
+    padding: 2px;
+    border: 0.2px solid var(--detail);
+    border-radius: 15px;
+}
+
+.x-btn:hover {
+    color: white;
+    background-color: var(--detail);
+}
+
+/*TAGS*/
 .container {
-    border: 1px solid black;
+    border: 0.5px solid var(--font);
+    margin: auto;
+    /*height: 50px;*/
+    max-width: 70vw;
+    min-height: 20vh;
+
+
+}
+
+#tag-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-item {
+    margin: 5px;
+    padding: 5px 10px 5px 10px;
+
+    border-radius: 15px;
+    background-color: var(--bgtag);
+
+    list-style: none;
+}
+
+/*FOOTER*/
+footer {
+    background-color: var(--bgtag);
+    margin-top: 18vh;
+    padding: 5px;
+}
+
+footer > p{
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--detail);
+    font-size: 1.05em;
 }

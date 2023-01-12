@@ -9,13 +9,15 @@
 </head>
 <body>
     <main>
-        <h1>JavaScript Tag Input</h1>
-        <label for="tag">Inclua a sua tag:
-            <input type="text" name="tag" id="itag">
-        </label>
-        <br>
-        <button id="add-btn" onclick="adicionar()" onkeydown= "enter()">Add </button>
-
+        <div id="inicio">
+            <h1>JavaScript Tag Input</h1>
+            <label for="tag">Incluir tag:
+                <input type="text" name="tag" id="itag">
+            </label>
+            <br>
+            <button id="add-btn" class="btn" onclick="adicionar()" onkeydown= "enter()">Add </button>
+            <button id="limpar-btn" class="btn" onclick="limpar()" >Limpar Tags</button>
+        </div>
         <div class="container">
             <ul id="tag-list">
             </ul>
