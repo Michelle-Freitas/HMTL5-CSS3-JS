@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 768px){ /*tablet*/
+    main {
+        width: 70vw;
+        height: 70vh;
+    }
+    #inicio {
+        margin: 5vh;
+    }
+    #itag {
+        height: 30px;
+        padding: 5px;
+        margin: 10px;
+        width: 75%;
+    }
+    /*BOTÕES*/
+    .btn {
+        padding: 5px;
+        font-size: .8em;
+    }
+
+    .btn:hover {
+        background-color: var(--detail);
+        color: black;
+    }
+    #add-btn {
+        float: left;
+        margin-left: 2.5vw;
+    }
+
+    #limpar-btn {
+        float: right;
+        margin-right: 2.5vw;
+    }
+    /*TAGS*/
+    .container {
+        max-width: 60vw;
+    }
+
+    .tag-item {
+        margin: 8px;
+    }
+}
+
+@media screen and (min-width: 992px) { /*desktop*/
+    #inicio {
+        margin: 10vh;
+    }
+    #itag {
+        padding: 10px;
+        width: 75%;
+        font-size: 1.05em;
+    }
+    .container {
+        max-width: 35vw;
+    }
+}
+
+@media screen and (min-width: 1200px) { /*telas grandes*/
+    main {
+        max-width: 900px;
+    }
+
+    #itag {
+        width: 83%;
+    }
+    /*TAGS*/
+    .container {
+        max-width: 35vw;
+    }
+
+}
+
+
