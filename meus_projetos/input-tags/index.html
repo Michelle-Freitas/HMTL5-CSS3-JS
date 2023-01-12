@@ -10,22 +10,20 @@
 <body>
     <main>
         <h1>JavaScript Tag Input</h1>
-        <form action="#">
-            <label for="tag">Inclua a sua tag:<input type="text" name="tag" id="itag" required minlength="1"></label>
-            <input type="submit" value="Add" onclick="adicionar()">
+        <label for="tag">Inclua a sua tag:
+            <input type="text" name="tag" id="itag">
+        </label>
+        <br>
+        <button id="add-btn" onclick="adicionar()" onkeydown= "enter()">Add </button>
 
-
-        </form>
         <div class="container">
             <ul id="tag-list">
             </ul>
-
-
         </div>
 
     </main>
     <footer>
-
+        <p>Input Tags criada por <a href="https://github.com/Michelle-Freitas" target="_blank">Michelle Freitas</a></p>
     </footer>
     <script src="script.js"></script>
 

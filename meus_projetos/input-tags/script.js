@@ -2,13 +2,13 @@ const tag = document.querySelector('#itag')
 const tagsContainer = document.querySelector('#tag-list')
 
 let tagFormatada = ''
-
 let tagList = []
 
 
 function adicionar(){
     formatarTag()
-
+    tag.value = ''
+    tag.focus()
 }
 
 function formatarTag(){
@@ -19,7 +19,6 @@ function formatarTag(){
         tagFormatada = tag.value.trim().replace(' ', '-')
         verificar(tagFormatada)
     }
-
 }
 
 function verificar(tagFormatada){
@@ -27,6 +26,18 @@ function verificar(tagFormatada){
         alert('Tag já inclusa anteriormente')
     } else {
         tagList.push(tagFormatada)
+        exibir()
     }
 }
 
+function exibir(){
+    tagsContainer.innerHTML  = ''
+    for (let i = 0; i < tagList.length; i++){
+        tagsContainer.innerHTML += `<li class="tag-item">${tagList[i]}<button onclick="remover(${i})" class="x-btn">x</button></li>`
+    }
+}
+
+function remover(index) {
+    tagList.splice(index, 1)
+    exibir()
+}
