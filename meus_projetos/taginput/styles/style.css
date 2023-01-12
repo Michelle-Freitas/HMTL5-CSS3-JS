@@ -14,6 +14,7 @@
     --bgtag: #A1C7E0;
     --border: #00ABBD;
     --detail: #FF9933;
+
 }
 
 html {
@@ -53,6 +54,11 @@ h1 {
     list-style: none;
     width: 100px;
     height: 30px;
+}
+
+#itag:hover {
+    background-color: #D2E8E3;
+
 }
 
 /*BOTÕES*/
