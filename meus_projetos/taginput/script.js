@@ -10,7 +10,7 @@ function formatarTag(){
     if (tagLength == 0){
         alert('Digite uma tag no campo')
     } else {
-        tagFormatada = tag.value.trim().replace(' ', '-')
+        tagFormatada = tag.value.toLowerCase().trim().replace(' ', '-')
         verificar(tagFormatada)
     }
 }
