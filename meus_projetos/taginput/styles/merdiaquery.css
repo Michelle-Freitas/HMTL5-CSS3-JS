@@ -7,13 +7,14 @@
         height: 70vh;
     }
     #inicio {
-        margin: 5vh;
+        margin: 5vh 1vh 2vh 1vh;
     }
     #itag {
+        width: 150px;
         height: 30px;
         padding: 5px;
         margin: 10px;
-        width: 75%;
+
     }
     /*BOTÕES*/
     .btn {
@@ -25,14 +26,10 @@
         background-color: var(--detail);
         color: black;
     }
-    #add-btn {
-        float: left;
-        margin-left: 2.5vw;
-    }
 
     #limpar-btn {
         float: right;
-        margin-right: 2.5vw;
+        margin-right: 5vw;
     }
     /*TAGS*/
     .container {
@@ -44,31 +41,34 @@
     }
 }
 
+
 @media screen and (min-width: 992px) { /*desktop*/
     #inicio {
-        margin: 10vh;
+        margin: 10vh 15vh 5vh 15vh;
     }
     #itag {
         padding: 10px;
-        width: 75%;
         font-size: 1.05em;
     }
     .container {
-        max-width: 35vw;
+        max-width: 50vw;
+    }
+    #limpar-btn {
+        float: right;
+        margin: 2vw 10vw;
     }
 }
 
 @media screen and (min-width: 1200px) { /*telas grandes*/
+    #inicio {
+        margin: 10vh 20vh 5vh 20vh;
+    }
     main {
         max-width: 900px;
     }
-
-    #itag {
-        width: 83%;
-    }
     /*TAGS*/
     .container {
-        max-width: 35vw;
+        max-width: 600px;
     }
 
 }

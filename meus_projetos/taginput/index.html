@@ -6,27 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/merdiaquery.css">
-    <title>Input de Tags</title>
+    <title>Tags</title>
 </head>
 <body>
     <main>
         <div id="inicio">
             <h1>JavaScript Tag Input</h1>
-            <label for="tag">Incluir tag:
-                <input type="text" name="tag" id="itag">
-            </label>
-            <br>
-            <button id="add-btn" class="btn" onclick="adicionar()" onkeydown= "enter()">Add </button>
-            <button id="limpar-btn" class="btn" onclick="limpar()" >Limpar Tags</button>
+            <p>Incluia suas tags:</p>
         </div>
         <div class="container">
-            <ul id="tag-list">
-            </ul>
+            <span id="tag-list">
+            </span>
+            <input type="text" name="tag" id="itag" onkeydown= "enter()">
         </div>
+        <button id="limpar-btn" class="btn" onclick="limpar()" >Limpar Tags</button>
 
     </main>
     <footer>
-        <p>Input Tags criada por <a href="https://github.com/Michelle-Freitas" target="_blank">Michelle Freitas</a></p>
+        <p>Tag Input criada por <a href="https://github.com/Michelle-Freitas" target="_blank">Michelle Freitas</a></p>
     </footer>
     <script src="script.js"></script>
 

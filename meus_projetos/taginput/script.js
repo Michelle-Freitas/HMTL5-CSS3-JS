@@ -5,12 +5,6 @@ let tagFormatada = ''
 let tagList = []
 
 
-function adicionar(){
-    formatarTag()
-    tag.value = ''
-    tag.focus()
-}
-
 function formatarTag(){
     const tagLength = tag.value.length
     if (tagLength == 0){
@@ -23,7 +17,7 @@ function formatarTag(){
 
 function verificar(tagFormatada){
     if(tagList.includes(tagFormatada)) {
-        alert('Tag já inclusa anteriormente')
+        alert('Tag já inclusa')
     } else {
         tagList.push(tagFormatada)
         exibir()
@@ -33,7 +27,7 @@ function verificar(tagFormatada){
 function exibir(){
     tagsContainer.innerHTML  = ''
     for (let i = 0; i < tagList.length; i++){
-        tagsContainer.innerHTML += `<li class="tag-item">${tagList[i]} <button onclick="remover(${i})" class="x-btn">x</button></li>`
+        tagsContainer.innerHTML += `<span class="tag-item">${tagList[i]} <button onclick="remover(${i})" class="x-btn">x</button></span>`
     }
 }
 
@@ -53,6 +47,9 @@ function limpar() {
 // Para dar enter
 document.addEventListener("keydown", function(e) {
     if(e.keyCode === 13) {
-        adicionar()
+        formatarTag()
+        tag.value = ''
+        tag.focus()
     }
 });
+

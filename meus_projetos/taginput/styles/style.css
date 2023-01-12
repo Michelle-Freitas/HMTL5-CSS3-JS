@@ -30,7 +30,7 @@ main {
 }
 
 #inicio {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 h1 {
@@ -38,17 +38,21 @@ h1 {
     padding: 15px 5px;
 }
 
-label {
-    width: 100%;
+#inicio > p {
+    padding-left: 20px;
 }
-#itag {
-    height: 25px;
-    border: none;
-    border-radius: 2px;
 
-    background-color: var(--bg);
-    padding: 3px;
-    margin: 7px;
+#itag {
+    margin: 5px;
+    padding: 5px 10px 5px 10px;
+
+    border: none;
+    border-radius: 15px;
+    background-color: var(--bgtag);
+
+    list-style: none;
+    width: 100px;
+    height: 30px;
 }
 
 /*BOTÕES*/
@@ -66,11 +70,6 @@ label {
 .btn:hover {
     background-color: var(--detail);
     color: black;
-}
-
-#add-btn {
-    float: left;
-    margin-left: 20px;
 }
 
 #limpar-btn {
@@ -101,11 +100,7 @@ label {
     /*height: 50px;*/
     max-width: 70vw;
     min-height: 20vh;
-}
 
-#tag-list {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .tag-item {
@@ -116,6 +111,8 @@ label {
     background-color: var(--bgtag);
 
     list-style: none;
+    display: inline-block;
+
 }
 
 /*FOOTER*/
