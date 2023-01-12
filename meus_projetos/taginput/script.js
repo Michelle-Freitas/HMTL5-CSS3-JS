@@ -40,8 +40,12 @@ function remover(index) {
 }
 
 function limpar() {
-    tagList = []
-    exibir()
+    const confirma = confirm('Tem certeza que deseja excluir todas as tags?')
+    if (confirma){
+        tagList = []
+        exibir()
+    }
+
 }
 
 // Para dar enter
