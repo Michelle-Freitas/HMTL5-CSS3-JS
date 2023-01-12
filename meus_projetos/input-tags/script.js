@@ -44,3 +44,15 @@ function remover(index) {
         exibir()
     }
 }
+
+function limpar() {
+    tagList = []
+    exibir()
+}
+
+// Para dar enter
+document.addEventListener("keydown", function(e) {
+    if(e.keyCode === 13) {
+        adicionar()
+    }
+});
