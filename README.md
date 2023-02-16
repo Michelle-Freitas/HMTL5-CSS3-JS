@@ -1,10 +1,10 @@
 <img src="meus_projetos/perfil.png" width="30%">
 
 # Michelle Freitas
-Estudante de ADS - 2º Semestre
+Estudante de ADS - 3º Semestre.
 
 # PROJETINHOS
- Projetos iniciantes, desenvolvidos durante o aprendizado em HTML, CSS e JavaScript
+ Projetos iniciantes, desenvolvidos durante o aprendizado em HTML, CSS e JavaScript.
  <ul>
 
   <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/calculadora/index.html" target="_blank">Calculadora Simples</a></li>
