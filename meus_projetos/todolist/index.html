@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="styles/mediaquery.css">
     <title>To-do List</title>
 </head>
-<body onload="text()">
+<body onload="loadApp()">
     <div id="container">
         <header>
             <h1>To-do List</h1>
         </header>
         <main>
             <form action="#">
-                <label for="item">To-do: <input type="text" name="item" id="item" required minlength="1" placeholder="Digite sua tarefa"></label><br>
-                <div id="botoes">
-                    <button onclick="adicionar()" onkeydown= "enter()" class="btn">Add</button>
+                <label for="item">To-do: <input type="text" name="item" id="item" required minlength="1" placeholder="Digite sua tarefa" required ></label><br>
+                <div id="buttons">
+                    <input type="submit" value="Add" class="btn">
                     <input type="reset" class="btn" value="Limpar">
-                    <input type="reset" class="btn, btn-apagarLista" value="Apagar Lista" onclick="limpar()">
+                    <input type="reset" class="btn  btn-deleteList" value="Apagar Lista" onclick="clearAll()">
                 </div>
             </form>
             <div id="list-container">
@@ -30,9 +30,9 @@
         </main>
     </div>
     <footer>
-        <p>To-do List criada por <a href="https://github.com/Michelle-Freitas" target="_blank">Michelle Freitas</a></p>
+        <p>Visite o <a href="https://github.com/Michelle-Freitas/HMTL5-CSS3-JS/tree/main/meus_projetos/todolist" target="_blank">repositório do projeto</a></p>
+        <p>To-do List criada por <a href="https://michelle-freitas.vercel.app/" target="_blank">Michelle Freitas</a></p>
     </footer>
     <script src="javascript/index.js"></script>
-
 </body>
 </html>

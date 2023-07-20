@@ -7,44 +7,48 @@
 }
 
 :root {
-    --roxo: #8B4D8C;
-    --lilas: #976b9b;
-    --verde: #89D995;
-    --verdeClaro: #A7D9AA;
-    --rosa: #F2C8C4;
-    --creme: #F2DDD0;
+    --principal-color: #8B4D8C;
+    /* --lilas: #976b9b; */
+    --second-color: #89D995;
+    --bg-one: #A7D9AA;
+    --btn-hover: #F2C8C4;
+    --bg-two: #F2DDD0;
 }
 
 html {
-    background-image: linear-gradient(to right, var(--verdeClaro), var(--creme));
+    background-image: linear-gradient(to right, var(--bg-one), var(--bg-two));
     width: 100vw;
     height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #container {
     background-color: white;
     margin: auto;
     margin: 25px;
+
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.11);
 }
 
 h1 {
-    color: var(--roxo);
+    color: var(--principal-color);
     padding: 20px;
     margin: 50px;
     text-align: center;
-    border-bottom: 1px solid var(--roxo);
+    border-bottom: 1px solid var(--principal-color);
 }
 
 form{
     padding: 25px;
-
 }
 
 label {
     padding: 10px;
 
     font-weight: bold;
-    color: var(--lilas);
+    color: var(--principal-color);
     font-size: 1.2em;
 }
 
@@ -59,14 +63,14 @@ label {
     border-radius: 5px;
     border: none;
     box-shadow: 1px 2px 2px 2px rgba(110, 108, 108, 0.123);
-    background-color: var(--creme);
+    background-color: var(--bg-two);
 }
 
 /*BOTÕES*/
 .btn {
     font-weight: bold;
-    background-color: var(--verdeClaro);
-    color:var(--roxo);
+    background-color: var(--bg-one);
+    color:var(--principal-color);
 
     margin: 5px;
     padding: 7px;
@@ -75,12 +79,12 @@ label {
     border-radius: 5px;
 }
 
-.btn-apagarLista {
+.btn-deleteList {
     float: right;
 
     font-weight: bold;
-    background-color: var(--verdeClaro);
-    color:var(--roxo);
+    background-color: var(--bg-one);
+    color:var(--principal-color);
 
     margin: 5px;
     padding: 7px;
@@ -89,30 +93,10 @@ label {
     border-radius: 5px;
 }
 
-button:hover {
-    background-color: var(--rosa);
-}
-input[type="reset"]:hover {
-    background-color: var(--rosa);
+.btn:hover {
+    background-color: var(--btn-hover);
 }
 
-.item-list > button {
-    background-color: var(--roxo);
-    float: right;
-    padding: 5px 8px;
-    margin: -2px;
-
-    border-radius: 80%;
-    border: none;
-
-    color: var(--verde);
-    font-weight: bold;
-}
-
-.item-list > button:hover {
-    background-color: var(--verde);
-    color: var(--roxo);
-}
 
 /*LISTA*/
 #list-container {
@@ -120,27 +104,50 @@ input[type="reset"]:hover {
     padding: 20px;
 
     font-size: 1.2em;
+    max-width: 600px;
 }
 
 #inicial-text {
     background-color: white;
-    color: var(--lilas);
+    color: var(--principal-color);
     font-weight: bold;
     text-align: center;
 
 }
 
-#list p {
-    color: var(--roxo);
+.item-list {
+    display: block;
+    color: var(--principal-color);
     font-weight: bold;
     background-color: var(--rosa);
 
-    padding: 7px 15px;
-    margin-bottom: 7px;
+    padding: 15px 25px;
+    margin-bottom: 15px;
 
     word-wrap:  break-word;
+
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.11);
 }
 
+/*BOTÕES LISTA*/
+.remove-btn {
+    background-color: var(--principal-color);
+    float: right;
+    padding: 5px 8px;
+    margin: -2px;
+
+    border-radius: 80%;
+    border: none;
+
+    color: var(--second-color);
+    font-weight: bold;
+}
+
+.remove-btn:hover {
+    background-color: var(--second-color);
+    color: var(--principal-color);
+}
 
 /*footer*/
 footer {
@@ -148,12 +155,16 @@ footer {
     padding: 15px;
     text-align: center;
 
-    color: var(--lilas);
+    color: var(--principal-color);
+    font-weight: bold;
 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 a {
-    color: var(--roxo);
+    color: var(--principal-color);
     text-decoration: none;
     font-weight: bold;
 }

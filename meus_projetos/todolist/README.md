@@ -1,0 +1,16 @@
+# TO DO LIST
+
+<p align="center">
+Lista de tarefas desenvolvida com armazenamento das tarefas no Local Storage, assim, lista permanece com os itens adicionados mesmo caso a página seja atualizada ou fechada.<br/>
+</p>
+<p align="center">
+Também não podendo repetir exatamente a mesma tarefa dentro da lista.<br/>
+</p>
+
+<p align="center">Imagem de lista de tarefas vazia
+  <img alt="Imagem de lista de tarefas vazia" src="./public/todolist.png">
+</p>
+
+<p align="center">Imagem de lista de tarefas incluindo tarefas
+  <img alt="Imagem de lista de tarefas incluindo tarefas" src="./public/list.png">
+</p>
