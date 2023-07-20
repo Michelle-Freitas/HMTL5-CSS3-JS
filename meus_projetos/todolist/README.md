@@ -6,6 +6,7 @@ Lista de tarefas desenvolvida com armazenamento das tarefas no Local Storage, as
 <p align="center">
 Também não podendo repetir exatamente a mesma tarefa dentro da lista.<br/>
 </p>
+[Visite a TO-DO List](https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/todolist/index.html)
 
 <p align="center">Imagem de lista de tarefas vazia
   <img alt="Imagem de lista de tarefas vazia" src="./public/todolist.png">
