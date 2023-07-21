@@ -119,23 +119,57 @@ label {
     display: block;
     color: var(--principal-color);
     font-weight: bold;
+    font-size: 1.1em;
     background-color: var(--rosa);
 
-    padding: 15px 25px;
+    padding: 20px 25px;
     margin-bottom: 15px;
 
     word-wrap:  break-word;
 
     border-radius: 5px;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.11);
+
+    cursor: pointer;
+}
+.done {
+    text-decoration: line-through;
+}
+
+/* CHECK BOX*/
+.box {
+    border: 1px solid var(--principal-color);
+    background-color: white;
+    margin-right: 15px;
+    padding: 0px 12px;
+    color:var(--principal-color);
+    font-size: 24px;
+}
+
+.material-symbols-outlined {
+    border: 1px solid var(--bg-one);
+    background-color: white;
+    margin-right: 15px;
+    padding: 1.3px 0px;
+    color:var(--principal-color);
+    font-size: 24px;
+
+}
+
+.box:hover {
+    border: 1px solid var(--principal-color);
+    background-color: var(--principal-color);
+    opacity: .5;
+
+
 }
 
 /*BOTÕES LISTA*/
 .remove-btn {
     background-color: var(--principal-color);
     float: right;
-    padding: 5px 8px;
-    margin: -2px;
+    padding: 8px 10px;
+    /* margin: -2px; */
 
     border-radius: 80%;
     border: none;
