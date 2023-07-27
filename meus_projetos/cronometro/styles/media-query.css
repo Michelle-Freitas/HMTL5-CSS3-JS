@@ -3,14 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 
 
-:root {
-    --bgcolor: #462566;
-    --bgbuttondesable: #584a66b9;
-    --bgbutton: #b885e7;
-    --bgbody: #6556748c;
-    --font: 'Paytone One', sans-serif;
-}
-
 ::-webkit-scrollbar {
     width: 0px;
     height: 0px;
@@ -18,110 +10,75 @@
 
 @media screen and (min-width: 768px) {
     h1 {
+        margin: 10vh 0;
+        font-size: 4vh;
+    }
+
+    .time-container{
+        width: 600px;
+        /* margin: auto; */
+    }
+    .time-container ul{
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    #buttons {
+        padding-top: 50px;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .btn{
+        padding: 20px;
+        margin: 50px 0px;
+        font-size: 1.2em;
+    }
+
+    footer{
+        font-size: 1.8vh;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        margin: 5vh 0;
         font-size: 5vh;
     }
-
-        /*BOTÕES*/
-    #botoes{
+    .time-container{
+        width: 900px;
+    }
+    .time-data {
+        width: 250px;
+        height: 250px;
         padding: 20px;
     }
-
-    .botao{
-        padding: 15px;
-        margin: 0 5px;
-        font-size: 2.5vw;
+    .time-number{
+        font-size: 5em;
+    }
+    .time-info {
+        font-size: 2em;
+        color: rgb(141, 103, 179);
     }
 
-    .botao:disabled{
-        padding: 15px;
-    }
-    footer{
-        padding: 25px;
-        margin-top: 20%;
-        font-size: 2vh;
-        font-weight: normal;
-        background-color: #584a6644;
-        border-radius: 10px;
-    }
-}
-
-@media screen and (min-width: 1300px) {
-    header{
-        margin-top: 10vh;
-    }
-    body {
-        height: 100vh;
-        width: 100vw;
-    }
-    #cronometro{
-        padding: 20px;
-        margin: 0 60px;
-    }
-    .container > h1 {
-        font-size: 7vh;
-    }
-
-    /*BOTÕES*/
-    #botoes{
-        padding: 40px;
-    }
-    .botao {
-        padding: 7vh;
-        margin: 0 10px;
-        border-radius: 10px;
-        font-size: 3vh;
-    }
-    .botao:disabled{
-        padding: 15px;
-        margin: 0 10px;
-        border-radius: 10px;
-        font-size: 3vh;
-    }
-    body > footer{
-        width: 90%;
-        margin: auto;
-        padding: 20px;
-        margin-top: 5%;
-        font-size: 2vh;
+    @keyframes ball-animation {
+        0%{
+            transform: translate(0px, 0px);
+        }
+        12.5%{
+            transform: translate(0px, -100px);
+        }
+        37.5% {
+            transform: translate(180px, -100px);
+        }
+        62.5% {
+            transform: translate(180px, 100px);
+        }
+        87.5% {
+            transform: translate(0px, 100px);
+        }
+        100% {
+            transform: translate(0px, 0px);
+        }
     }
 
 }
-
-@media screen and (min-width: 1500px) {
-    header{
-        margin-top: 10vh;
-    }
-    body {
-        height: 100vh;
-        width: 100vw;
-    }
-    #cronometro{
-        margin-top: 0;
-    }
-
-    /*BOTÕES*/
-    #botoes{
-        padding: 60px;
-    }
-    .botao {
-        padding: 7vh;
-        margin: 0 10px;
-        border-radius: 10px;
-        font-size: 3vh;
-    }
-    .botao:disabled{
-        padding: 15px;
-        margin: 0 10px;
-        border-radius: 10px;
-        font-size: 3vh;
-    }
-    body > footer{
-        width: 90%;
-        margin: auto;
-        padding: 20px;
-        margin-top: 5%;
-        font-size: 2vh;
-    }
-
-}
-

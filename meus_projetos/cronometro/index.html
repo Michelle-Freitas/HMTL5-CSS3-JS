@@ -4,38 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/media-query.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-query.css">
 
     <title>Contador e Cronometro</title>
 </head>
-<body>
-    <header>
+<body onload="loadPause()">
+    <div class="container">
+        <h1>Cronômetro Online</h1>
+        <section id="cronometro">
+            <div class="time-container">
+                <ul>
 
-    </header>
-    <main>
-        <section id="cronometro" class="container">
-            <h1>Cronômetro Online</h1>
-            <div id="timer">
-                <p>Cronometrando..</p>
+                    <div class="time-data">
+                        <span class="ball hour-ball"></span>
+                        <li id="hour" class="time-number">00</li>
+                        <span class="time-info">Hr</span>
+                    </div>
+                    <div class="time-data">
+                        <span class="ball min-ball"></span>
+                        <li id="min" class="time-number">00</li>
+                        <span class="time-info">Min</span>
+                    </div>
+                    <div class="time-data">
+                        <span class="ball sec-ball"></span>
+                        <li id="sec" class="time-number">00</li>
+                        <span class="time-info">Seg</span>
+                    </div>
+                </ul>
             </div>
-            <ul id="listaInfo">
-                <li class="info">Hr</li>
-                <li class="info">Min</li>
-                <li class="info">Seg</li>
-            </ul>
-            <div id="botoes">
-                <button onclick="IniciarTimer()" id="btnIniciarTimer" class="botao">Começar / Continuar</button>
-                <button onclick="PausarTimer()" disabled id="btnPausarTimer" class="botao">Pausar</button>
-                <button onclick="ResetarTimer()" type="reset" id="btnResetarTimer" disabled class="botao">Resetar</button>
-            </div>
-
         </section>
-
-    </main>
-    <footer>
-        <p>Cronômetro criado por <a href="https://github.com/Michelle-Freitas" target="_blank">Michelle Freitas</a></p>
-    </footer>
+        <div id="buttons">
+            <button onclick="startTimer()" id="btnStartTimer" class="btn">Começar / Continuar</button>
+            <button onclick="pauseTimer()" disabled="disabled" id="btnPauseTimer" class="btn">Pausar</button>
+            <button onclick="resetTimer()" type="reset" id="btnResetTimer" disabled="disabled" class="btn">Resetar</button>
+        </div>
+        <footer>
+            <p>Visite o <a href="https://github.com/Michelle-Freitas/HMTL5-CSS3-JS/tree/main/meus_projetos/cronometro" target="_blank" class="link">repositório do projeto</a></p>
+            <p>Cronômetro criado por <a href="https://michelle-freitas.vercel.app/" target="_blank" class="link">Michelle Freitas</a></p>
+        </footer>
+    </div>
     <script src="javascript/index.js"></script>
 </body>
 </html>

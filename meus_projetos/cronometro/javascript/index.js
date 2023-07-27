@@ -1,23 +1,40 @@
 //VARIAVEIS CRONOMETRO
-const cronometro = document.querySelector('#timer')
-let btnResetarTimer = document.querySelector('#btnResetarTimer')
-let btnPausarTimer = document.querySelector('#btnPausarTimer')
+const body = document.querySelector('body')
+const hour = document.querySelector('#hour')
+const min = document.querySelector('#min')
+const sec = document.querySelector('#sec')
+
+const btnStartTimer = document.querySelector('#btnStartTimer')
+const btnPauseTimer = document.querySelector('#btnPauseTimer')
+const btnResetTimer = document.querySelector('#btnResetTimer')
+
+const secAnimationBall = document.querySelector('.sec-ball')
+const minAnimationBall = document.querySelector('.min-ball')
+const hourAnimationBall = document.querySelector('.hour-ball')
 
 
-cronometro.innerHTML = ` 00 : 00 : 00 `
-let horaTimer = minTimer = 0
+let hourTimer = minTimer = 0
 let segTimer = 1
-//cronometro.innerHTML = ` ${horaTimer} : ${minTimer} : ${00} `
+let timer
 
+body.addEventListener('load', loadPause)
+
+function loadPause(){
+    secAnimationBall.style.animationPlayState = "paused"
+    minAnimationBall.style.animationPlayState = "paused"
+    hourAnimationBall.style.animationPlayState = "paused"
+}
 
 //FUNÇÕES CRONOMETRO
-function IniciarTimer(){
-    DesabilitarInicioTimer()
-    HabilitarPausarResetTimer()
-    //segTimer = 55
-    //minTimer = 59
+function startTimer(){
+    toggleBtnTimer(btnStartTimer)
+    toggleBtnTimer(btnPauseTimer)
+    btnResetTimer.disabled = false
+
     timer = setInterval(function(){
-        cronometro.innerHTML = ` ${horaTimer < 10 ? '0'+horaTimer : horaTimer} : ${minTimer < 10 ? '0'+minTimer : minTimer} : ${segTimer < 10 ? '0'+segTimer : segTimer} `
+        hour.textContent = `${hourTimer < 10 ? '0'+ hourTimer : hourTimer}`
+        min.textContent = `${minTimer < 10 ? '0'+minTimer : minTimer}`
+        sec.textContent = `${segTimer < 10 ? '0'+segTimer : segTimer}`
         segTimer += 1
 
         if (segTimer == 60 && minTimer !== 59) {
@@ -25,48 +42,33 @@ function IniciarTimer(){
             segTimer = 0
         }
         if (segTimer == 60 && minTimer == 59){
-            horaTimer += 1
+            hourTimer += 1
             minTimer = 0
             segTimer = 0
         }
     }, 1000)
+    startAnimation()
 }
 
-function HabilitarInicioTimer(){
-    if (document.querySelector('#btnIniciarTimer').disabled == true) {
-        document.querySelector('#btnIniciarTimer').disabled = false
-    }else{
-        document.querySelector('#btnIniciarTimer').disabled = true
-    }
+function toggleBtnTimer(btn){
+    btn.toggleAttribute(disabled="disabled")
 }
 
-function DesabilitarInicioTimer(){
-    if (document.querySelector('#btnIniciarTimer').disabled == false) {
-        document.querySelector('#btnIniciarTimer').disabled = true
-    }
-}
-
-function PausarTimer(){
+function pauseTimer(){
     clearInterval(timer)
-    HabilitarInicioTimer()
+    toggleBtnTimer(btnPauseTimer)
+    toggleBtnTimer(btnStartTimer)
+    startAnimation()
 }
 
-function HabilitarPausarResetTimer(){
-    if (btnPausarTimer.disabled == true) {
-        btnPausarTimer.disabled = false
-    }
-
-    if (btnResetarTimer.disabled == true) {
-        btnResetarTimer.disabled = false
-    }
+function resetTimer(){
+    location.reload()
 }
 
-function ResetarTimer(){
-    btnPausarTimer.disabled = true
-    btnResetarTimer.disabled = true
-    HabilitarInicioTimer()
-    horaTimer = minTimer = 0
-    segTimer = 1
-    cronometro.innerHTML = ` 00 : 00 : 00 `
-    clearInterval(timer)
+function startAnimation(){
+    const running = secAnimationBall.style.animationPlayState === 'running';
+    secAnimationBall.style.animationPlayState = running ? 'paused' : 'running'
+    minAnimationBall.style.animationPlayState = running ? 'paused' : 'running'
+    hourAnimationBall.style.animationPlayState = running ? 'paused' : 'running'
 }
+
