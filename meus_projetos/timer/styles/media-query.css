@@ -1,0 +1,36 @@
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+@media screen and (min-width: 768px){
+    .time-number {
+        font-size: 4rem;
+    }
+
+    .suggestions-container, #buttons {
+        flex-direction: row;
+    }
+
+    .time-info, .suggestions-time {
+        font-size: 1.5rem;
+    }
+
+    .suggestions-time {
+        width: 35%;
+        padding: 16px;
+    }
+    .btn, .choose-container, #choose-time, footer {
+        font-size: 1.3rem;
+        padding: 8px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .container{
+        padding: 4%;
+        width: 60%;
+        margin: 2% auto;
+    }
+}

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #E9D5E1;
+    --timer-bg: #B08FA2;
+    --principal: #A47893;
+    --btn: #C4ADBA;
+    --highlight: #6F465C;
+    --principal-font: 'Rubik', sans-serif;
+    --numbers-font: 'Kanit', sans-serif;
+
+}
+
+html, body {
+    background-color: var(--bg);
+    font-family: var(--principal-font);
+    color: var(--highlight);
+}
+
+.container {
+    background-color: var(--timer-bg);
+    margin: 4%;
+    padding: 12vw;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.bar {
+    width: 100%;
+    height: 5px;
+    margin-top: 4%;
+
+    background-color: var(--highlight);
+}
+
+.show-time {
+    margin: 4% 0;
+    padding: 4%;
+    border: 2px solid var(--highlight);
+    border-radius: 8px;
+
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+
+}
+
+li {
+    list-style: none;
+}
+
+.time-number {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.suggestions-container, #buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+.suggestions-time , .btn{
+    width: 50%;
+    border: 2px solid var(--principal);
+    border-radius: 8px;
+    padding: 4px;
+
+    background-color: var(--btn);
+    color: var(--highlight);
+}
+
+.suggestions-time:hover, .btn:hover {
+    border-color: var(--btn);
+    background-color: var(--principal);
+    color: white;
+
+    cursor: pointer;
+}
+
+.choose-container {
+    margin: 4% 0;
+    font-weight: bold;
+}
+
+#choose-time {
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 8px;
+
+    color: var(--highlight);
+    font-family: var(--numbers-font);
+    font-weight: semi-bold;
+}
+
+#choose-time:hover {
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.btn {
+    /* restante junto com .suggestions-time  */
+    font-weight: bold;
+}
+
+.btn:disabled {
+    background-color: var(--principal);
+    cursor: not-allowed;
+}
+
+.btn:disabled:hover{
+    background-color: var(--principal);
+    cursor: not-allowed;
+    border: 2px solid var(--principal);
+    color: var(--highlight);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px;
+    gap: 8px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--highlight)
+}
+
+a:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+
+
