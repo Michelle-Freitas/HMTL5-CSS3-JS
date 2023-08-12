@@ -9,5 +9,5 @@ Timer / Temporizador desenvolvido com contagem podendo ser pausada e retomada, c
 
 
 ### Imagem de timer iniciado
-  <img alt="Imagem de timer iniciado" src="./public/time-started.png">
+  <img alt="Imagem de timer iniciado" src="./public/timer-started.png">
 
