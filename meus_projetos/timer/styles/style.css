@@ -41,6 +41,7 @@ html, body {
     height: 5px;
     margin-top: 4%;
 
+    border-radius: 5px;
     background-color: var(--highlight);
 }
 
@@ -110,8 +111,13 @@ li {
     cursor: pointer;
 }
 
-input[type="radio"] {
-    display: none;
+/* input[type="radio"], input[type="radio"]:checked {
+    appearance: none;
+} */
+
+[data-checked="checked"], [data-checked="checked"]:hover{
+    background-color: var(--highlight);
+    color: var(--btn);
 }
 
 .btn {

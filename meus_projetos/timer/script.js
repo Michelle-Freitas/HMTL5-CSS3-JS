@@ -16,29 +16,53 @@ const timeSuggestInputRadio = document.querySelector('#radio')
 
 const bar = document.querySelector('.bar')
 
-
-let timeValue = inputsValue[0].value
+let timeValue
+// let timeValue = inputsValue[0].value
 let hourTimer = minTimer = secTimer = fullWidth = 0
 let timer
 
 timeInputTime.addEventListener('click', setCheckedInputTime)
+timeInputTime.addEventListener('blur', clearInputTime)
 
 function setCheckedInputTime(){
-    console.log('cliquei', timeSuggestInputRadio)
     timeSuggestInputRadio.checked = true
+
+    if (timeSuggestInputRadio.value !== 'on'){
+        btnStartTimer.disabled = false
+    }
 }
+function clearInputTime(){
+    inputsValue[3].value = '00:00:00'
+    console.log('blur')
+
+}
+
 
 function load(){
     for(let i = 0; i < inputsValue.length; i++){
+
         inputsValue[i].addEventListener('change', () => {
             timeValue = inputsValue[i].value
             console.log('cliquei ', timeValue)
+
+            btnStartTimer.disabled = false
+
+            if (inputsValue[i].checked){
+                inputsValue[i].parentElement.setAttribute('data-checked', 'checked')
+            }
+        })
+
+        inputsValue[i].addEventListener('blur', () => {
+            inputsValue[i].parentElement.setAttribute('data-checked', 'not-checked')
+            btnStartTimer.disabled = true
         })
     }
 }
 
 
+
 function startTimer(){
+
     toggleBtnTimer(btnStartTimer)
     toggleBtnTimer(btnPauseTimer)
     toggleBtnTimer(btnResetTimer)

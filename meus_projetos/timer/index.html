@@ -31,13 +31,13 @@
         </section>
 
         <section class="suggestions-container">
-            <label for="ten-min" class="suggestions-time">00:10:00
-            <input type="radio" name="suggestions" id="ten-min" class="time-value" value="00:10:00" checked></label>
+            <label for="ten-min" class="suggestions-time" data-checked="not-checked">00:10:00
+            <input type="radio" name="suggestions" id="ten-min" class="time-value" value="00:10:00"></label>
 
-            <label for="fifith-min" class="suggestions-time">00:15:00
+            <label for="fifith-min" class="suggestions-time" data-checked="not-checked">00:15:00
             <input type="radio" name="suggestions" id="fifith-min" class="time-value" value="00:15:00"></label>
 
-            <label for="thirty-min" class="suggestions-time">00:30:00
+            <label for="thirty-min" class="suggestions-time" data-checked="not-checked">00:30:00
             <input type="radio" name="suggestions" id="thirty-min" class="time-value" value="00:30:00"></label>
         </section>
 
@@ -45,7 +45,7 @@
             <p>Escolha:</p>
             <label for="choose-time" class="choose-time">Timer
                 <label for="radio" class="choose-time">
-                    <input type="radio" name="suggestions" id="radio">
+                    <input type="radio" name="suggestions" id="radio" data-checked="not-checked">
                     <input type="time" name="suggestions" id="choose-time" step="2" class="time-value" value="00:00:00">
                 </label>
             </label>
@@ -53,7 +53,7 @@
         </section>
 
         <div id="buttons">
-            <button onclick="startTimer()" id="btnStartTimer" class="btn">Começar</button>
+            <button onclick="startTimer()" disabled="disabled" id="btnStartTimer" class="btn">Começar</button>
             <button onclick="resumeTimer()" disabled="disabled" id="btnResumeTimer" class="btn">Continuar</button>
             <button onclick="pauseTimer()" disabled="disabled" id="btnPauseTimer" class="btn">Pausar</button>
             <button onclick="resetTimer()" type="reset" id="btnResetTimer" disabled="disabled" class="btn">Resetar</button>
