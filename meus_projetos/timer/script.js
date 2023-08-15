@@ -15,56 +15,58 @@ const timeInputTime = document.querySelector('#choose-time')
 const timeSuggestInputRadio = document.querySelector('#radio')
 
 const bar = document.querySelector('.bar')
+const audio = document.querySelector('audio')
 
 let timeValue
-// let timeValue = inputsValue[0].value
+const splitedTime = null
 let hourTimer = minTimer = secTimer = fullWidth = 0
 let timer
 
 timeInputTime.addEventListener('click', setCheckedInputTime)
 timeInputTime.addEventListener('blur', clearInputTime)
 
+
 function setCheckedInputTime(){
     timeSuggestInputRadio.checked = true
-
     if (timeSuggestInputRadio.value !== 'on'){
         btnStartTimer.disabled = false
     }
 }
 
+
 function clearInputTime(){
     inputsValue[3].value = '00:00:00'
-    console.log('blur')
 }
 
 
 function load(){
-
     for(let i = 0; i < inputsValue.length; i++){
-
-        inputsValue[i].addEventListener('click', () => {
+        inputsValue[i].addEventListener('change', () => {
             timeValue = inputsValue[i].value
             console.log('cliquei ', timeValue)
             btnStartTimer.disabled = false
-
-
-            if (inputsValue[i].checked){
-                inputsValue[i].parentElement.setAttribute('data-checked', 'checked')
-
-            }
+            showTimeChoosed()
         })
-
-        inputsValue[i].addEventListener('blur', () => {
-            inputsValue[i].parentElement.setAttribute('data-checked', 'not-checked')
-            // btnStartTimer.disabled = true
-        })
-
-
-
     }
-
 }
 
+
+function showTimeChoosed(){
+    const splitedTime = timeValue.split(':')
+
+    if(timeValue === '00:00:00'|| timeValue === '00:00' || timeValue === '00' || timeValue === ''){
+        btnStartTimer.disabled = true
+    }
+
+    hourTimer = (!splitedTime[2] ? '0' : Number.parseInt(splitedTime[0]))
+    minTimer = (!splitedTime[2] ? '0' : Number.parseInt(splitedTime[1]))
+    secTimer = (!splitedTime[2] ? '0' : Number.parseInt(splitedTime[2]))
+
+    // show timer numbers
+    hour.textContent = `${hourTimer < 10 ? '0'+ hourTimer : hourTimer}`
+    min.textContent = `${minTimer < 10 ? '0'+minTimer : minTimer}`
+    sec.textContent = `${secTimer < 10 ? '0'+secTimer : secTimer}`
+}
 
 
 function startTimer(){
@@ -74,20 +76,14 @@ function startTimer(){
     toggleBtnTimer(btnPauseTimer)
     toggleBtnTimer(btnResetTimer)
 
-    const splitedTime = timeValue.split(':')
-    hourTimer = Number.parseInt(splitedTime[0])
-    minTimer = Number.parseInt(splitedTime[1])
-    secTimer = Number.parseInt(splitedTime[2])
-
     fullWidth = (hourTimer * 3600) + (minTimer * 60) + (secTimer)
-    inputsValue[3].value = '00:00:00'
-    console.log(splitedTime)
     startCountTimer()
 }
 
+
 function startCountTimer(){
     timer = setInterval(function(){
-        console.log(`${hourTimer}:${minTimer}:${secTimer}`)
+        // console.log(`${hourTimer}:${minTimer}:${secTimer}`)
 
         if (minTimer > 0 && secTimer === 0 ){
             console.log('aqui')
@@ -139,11 +135,10 @@ function resetTimer(){
 }
 
 function finished() {
+    toggleBtnTimer(btnPauseTimer)
     clearInterval(timer)
     secTimer = `00`
-
-    alert('Acabou!')
-    resetTimer()
+    audio.play()
 }
 
 function startAnimation(){

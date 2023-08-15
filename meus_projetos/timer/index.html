@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="ico" href="./assets/favicon.ico">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/media-query.css">
     <title>Timer</title>
@@ -31,13 +32,13 @@
         </section>
 
         <section class="suggestions-container">
-            <label for="ten-min" class="suggestions-time" data-checked="not-checked">00:10:00
+            <label for="ten-min" class="suggestions-time">00:10:00
             <input type="radio" name="suggestions" id="ten-min" class="time-value" value="00:10:00"></label>
 
-            <label for="fifith-min" class="suggestions-time" data-checked="not-checked">00:15:00
+            <label for="fifith-min" class="suggestions-time">00:15:00
             <input type="radio" name="suggestions" id="fifith-min" class="time-value" value="00:15:00"></label>
 
-            <label for="thirty-min" class="suggestions-time" data-checked="not-checked">00:30:00
+            <label for="thirty-min" class="suggestions-time">00:30:00
             <input type="radio" name="suggestions" id="thirty-min" class="time-value" value="00:30:00"></label>
         </section>
 
@@ -45,7 +46,7 @@
             <p>Escolha:</p>
             <label for="choose-time" class="choose-time">Timer
                 <label for="radio" class="choose-time">
-                    <input type="radio" name="suggestions" id="radio" data-checked="not-checked">
+                    <input type="radio" name="suggestions" id="radio">
                     <input type="time" name="suggestions" id="choose-time" step="2" class="time-value" value="00:00:00">
                 </label>
             </label>
@@ -60,7 +61,7 @@
         </div>
 
     </div>
-
+    <audio src="./assets/Mechanical-Clock-Ring.mp3" loop></audio>
     <footer>
         <p>Visite o <a href="https://github.com/Michelle-Freitas/HMTL5-CSS3-JS/tree/main/meus_projetos/timer" target="_blank" class="link">repositório do projeto</a></p>
         <p>Timer criado por <a href="https://michelle-freitas.vercel.app/" target="_blank" class="link">Michelle Freitas</a></p>
