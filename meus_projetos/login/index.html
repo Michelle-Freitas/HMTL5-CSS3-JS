@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/media-query.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="image">
+        <img
+          src="./assets/image.jpg"
+          alt="Imagem gamer com teclado, mouse, fone de ouvido (headphone), controle de vídeo game, café e boneco"
+        />
+      </div>
+      <div class="user">
+          <h1>My Games</h1>
+          <div class="loading"></div>
+          <div class="tabs">
+            <div class="nav-tabs">
+              <button data-id="log-in" class="nav-btn">Log in</button>
+              <button data-id="sign-in" class="nav-btn">Sign in</button>
+            </div>
+            <div class="tab-content">
+              <section id="log-in">
+                <h4>Bem vindo de volta!</h4>
+                <p class="text">Faça login e aproveite seus jogos favoritos!</p>
+                <form action="#" method="post" autocomplete="on" data-form="log-in">
+                  <div class="input-field">
+                    <label for="iemail">
+                      <i class="material-symbols-outlined"> account_circle</i>
+                    </label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="iemail"
+                      required
+                      autocomplete="email"
+                      class="field"
+                    />
+                  </div>
+                  <div class="input-field">
+                    <label for="isenha">
+                      <i class="material-symbols-outlined">Key</i>
+                    </label>
+                    <input
+                      type="password"
+                      name="senha"
+                      id="isenha"
+                      required
+                      autocomplete="current-password"
+                      class="field"
+                    />
+                  </div>
+                  <input class="btn" type="submit" value="Entrar" />
+                  <a class="forgot-password" href="#">Esqueci a senha</a>
+                </form>
+              </section>
+
+              <section id="sign-in">
+                <h4>Bem vindo!</h4>
+                <p class="text">Crie sua conta e aproveite seus jogos favoritos!</p>
+                <form
+                  action="#"
+                  method="post"
+                  autocomplete="on"
+                  data-form="sign-in"
+                >
+                  <div class="input-field">
+                    <label for="iname">Nome Completo</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="iname"
+                      required
+                      autocomplete="name"
+                      class="field"
+                    />
+                  </div>
+                  <div class="input-field">
+                    <label for="iemail-create">
+                      <i class="material-symbols-outlined"> email</i>
+                    </label>
+                    <input
+                      type="email"
+                      name="email-create"
+                      id="iemail-create"
+                      required
+                      autocomplete="email"
+                      class="field"
+                    />
+                  </div>
+                  <div class="input-field">
+                    <label for="isenha-create">
+                      <i class="material-symbols-outlined">Key</i>
+                    </label>
+                    <input
+                      type="password"
+                      name="password-create"
+                      id="isenha-create"
+                      required
+                      autocomplete="current-password"
+                      class="field"
+                    />
+                  </div>
+                  <input class="btn" type="submit" value="Cadastrar" />
+                </form>
+              </section>
+            </div>
+          </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        Página de Login criada por
+        <a href="https://michelle-freitas.vercel.app/" target="_blank">Michelle Freitas</a>
+      </p>
+      <p>Visite o <a href="https://github.com/Michelle-Freitas/HMTL5-CSS3-JS/tree/main/meus_projetos/login-signin" target="_blank">repositório</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
