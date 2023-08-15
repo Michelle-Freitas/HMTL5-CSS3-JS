@@ -1,7 +1,7 @@
 <img src="meus_projetos/perfil.png" width="20%">
 
 # Michelle Freitas
-Estudante de ADS - 4º Semestre.
+Estudante de ADS - 4º Semestre.<br>
 <a href = "https://michelle-freitas.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/-Portfolio-%230077B5?style=for-the-badge&logo=portfolio&logoColor=white" target="_blank"></a>
 
 ## PROJETINHOS
@@ -20,8 +20,8 @@ Estudante de ADS - 4º Semestre.
  Páginas criadas baseadas no aprendizado e projetos desenvolvidos no curso
 
  <ul>
-  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/Ballet%20Page/index.html" target="_blank">Primeiro site</a> - Finalizando módulo 02</li>
-  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/Barber/index.html" target="_blank">Aprendendo Efeito Parallax</a> - Finalizando módulo 03</li>
+  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/Ballet%20Page/index.html" target="_blank">Primeiro site</a> Módulo 02</li>
+  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/Barber/index.html" target="_blank">Aprendendo Efeito Parallax</a> - Módulo 03</li>
   <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/Waterfall/contato.html" target="_blank">Aprendendo formulário</a> - Módulo 04</li>
  </ul>
 
