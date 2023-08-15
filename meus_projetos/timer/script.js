@@ -31,37 +31,44 @@ function setCheckedInputTime(){
         btnStartTimer.disabled = false
     }
 }
+
 function clearInputTime(){
     inputsValue[3].value = '00:00:00'
     console.log('blur')
-
 }
 
 
 function load(){
+
     for(let i = 0; i < inputsValue.length; i++){
 
-        inputsValue[i].addEventListener('change', () => {
+        inputsValue[i].addEventListener('click', () => {
             timeValue = inputsValue[i].value
             console.log('cliquei ', timeValue)
-
             btnStartTimer.disabled = false
+
 
             if (inputsValue[i].checked){
                 inputsValue[i].parentElement.setAttribute('data-checked', 'checked')
+
             }
         })
 
         inputsValue[i].addEventListener('blur', () => {
             inputsValue[i].parentElement.setAttribute('data-checked', 'not-checked')
-            btnStartTimer.disabled = true
+            // btnStartTimer.disabled = true
         })
+
+
+
     }
+
 }
 
 
 
 function startTimer(){
+    console.log('start')
 
     toggleBtnTimer(btnStartTimer)
     toggleBtnTimer(btnPauseTimer)
@@ -74,6 +81,7 @@ function startTimer(){
 
     fullWidth = (hourTimer * 3600) + (minTimer * 60) + (secTimer)
     inputsValue[3].value = '00:00:00'
+    console.log(splitedTime)
     startCountTimer()
 }
 
@@ -95,7 +103,7 @@ function startCountTimer(){
 
         secTimer -= 1
 
-        // exibir
+        // show timer numbers
         hour.textContent = `${hourTimer < 10 ? '0'+ hourTimer : hourTimer}`
         min.textContent = `${minTimer < 10 ? '0'+minTimer : minTimer}`
         sec.textContent = `${secTimer < 10 ? '0'+secTimer : secTimer}`
