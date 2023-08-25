@@ -1,0 +1,13 @@
+@mixin flex($direction, $justify, $align, $gap, $wrap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+    flex-wrap: $wrap;
+}
+
+@mixin borderAndShadow($size, $color){
+    border: $size solid $color;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.116);
+}

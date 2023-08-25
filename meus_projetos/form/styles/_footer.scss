@@ -1,0 +1,25 @@
+@import './_variables';
+
+footer {
+    margin: 16px 0;
+    padding: 8px;
+
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+p {
+    padding: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+    &:hover {
+        color: $button;
+        text-decoration: underline;
+    }
+
+}
+
