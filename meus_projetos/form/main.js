@@ -110,7 +110,7 @@ form.addEventListener('change', () => {
 
 cep.addEventListener('focusout', (e) => {
   let cepValueInput = e.target.value
-  let convetedCep = Number.parseInt(cepValueInput.replace('.', '').replace('-', ''))
+  let convetedCep = cepValueInput.replace('.', '').replace('-', '')
   getCep(convetedCep)
 
 })

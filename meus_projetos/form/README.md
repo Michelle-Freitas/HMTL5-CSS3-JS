@@ -5,16 +5,19 @@ Formulário / Form de cadastro com validação de preenchimento mínimo, caso o 
 [Visite o Formulário](https://michelle-freitas-form.vercel.app/)
 
 ### Imagem de formulário / form
- <img alt="Imagem de formulário / form" src="./public/form-image.png">
+<img alt="Imagem de formulário / form" src="./public/form-image.png">
+
+### Imagem de formulário / form preenchido com exemplo
+<img alt="Imagem de formulário / form" src="./public/form-full.png">
 
 
 ### 🚀 Tecnologias
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-HTML e SASS
-JavaScript
-Vite
-iMask
-[cepApi](https://viacep.com.br/)
+* HTML e SASS
+* JavaScript
+* Vite
+* iMask
+* [cepApi](https://viacep.com.br/)
 
 
