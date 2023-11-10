@@ -1,0 +1,188 @@
+@import "variables.css";
+
+body {
+    background: url('../assets/bg-index.jpg') right no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+main {
+    padding: 5vh 0 0 0;
+}
+
+.principal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 25px;
+
+    text-align: center;
+}
+
+.about {
+    padding: 10px 0;
+}
+
+.about > p {
+    padding: 5px;
+    line-height: 1.5;
+    font-weight: 560;
+}
+
+.main-img {
+    width: 50vw;
+    position: relative;
+
+    animation: astronaut 20s linear infinite alternate;
+}
+
+#phrases-card {
+    height: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.arrow-icon {
+    color: var(--primary-color);
+    height: 10vw;
+    width: 10vw;
+
+    transition: scale 0.8s;
+}
+
+.arrow-icon:hover {
+    color: var(--mark-color);
+    scale: 1.1;
+    cursor: pointer;
+
+    transition: scale 0.8s;
+}
+
+#phrase-text {
+    text-align: center;
+    color: var(--bg-color);
+    font-weight: bold;
+    line-height: 1.5rem;
+
+    padding: 3%;
+    background-color: var(--secondary-bg-color);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    z-index: 1;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 2.5vw;
+    padding: 2.5vw;
+}
+
+.choice-btn {
+    height: 5vw;
+    width: 5vw;
+    background-color: var(--secondary-bg-color);
+    border-radius: 50%;
+    border: 1px solid var(--secondary-color);
+}
+
+.choice-btn:hover, .selected:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.selected {
+    background-color: var(--mark-color);
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+}
+
+@media screen and (min-width: 768px){
+    .main-img {
+        width: 40%;
+    }
+    .about {
+        padding: 0 10vh;
+    }
+    #phrase-text, .about > p, .header-link , footer {
+        font-size: 1.3rem;
+    }
+    #phrases-card {
+        height: 40%;
+    }
+    .choice-btn{
+        height: 3vh;
+        width: 3vh;
+    }
+    .selected {
+        height: 3vh;
+        width: 3vh;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        background-attachment: fixed;
+    }
+    .principal-container {
+        flex-direction: row;
+        padding: 0px;
+    }
+    .main-img {
+        width: 40vh;
+    }
+    .phrases-container {
+        padding: 3vh 8vh 0 8vh;
+    }
+    .btn-container {
+        gap: 2.5vh;
+    }
+    .arrow-icon {
+        color: var(--primary-color);
+        height: 5vh;
+        width: 5vh;
+    }
+    .choice-btn{
+        height: 2.5vh;
+        width: 2.5vh;
+    }
+    .selected {
+        height: 2.5vh;
+        width: 2.5vh;
+    }
+}
+
+@keyframes astronaut {
+    0%{
+        transform: translate(-20%, 10%);
+    }
+    1.5% {
+        transform: translate(-18%, 8%);
+    }
+    25% {
+        transform: translate(30%, -5%);
+    }
+    50% {
+        transform: translate(55%, 10%);
+    }
+    75% {
+        transform: translate(30%, 20%);
+    }
+    98.5% {
+        transform: translate(-13%, 30%);
+    }
+    100% {
+        transform: translate(-15%, 32%);
+    }
+}

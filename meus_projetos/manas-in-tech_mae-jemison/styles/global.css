@@ -1,0 +1,99 @@
+@import "variables.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--bg-color);
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    box-shadow: var(--shadow);
+    z-index: 2;
+}
+
+.header-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+
+    transition: scale 0.8s;
+}
+
+.header-link:hover {
+    color: var(--secondary-color);
+    scale: 1.1;
+    cursor: pointer;
+
+    transition: scale 0.8s;
+}
+
+.profile-img {
+    height: 8vh;
+}
+
+h1 {
+    margin-top: 8vh;
+    padding: 15px 10px 30px 10px;
+    text-shadow: 2px 5px 5px var(--primary-color);
+    font-size: 2em;
+}
+
+.freepik {
+    text-align: end;
+    font-size: smaller;
+    display: block;
+    padding: 15px 5px 5px 5px;
+}
+
+footer {
+    background-color: var(--mark-color);
+    padding: 10px 15px;
+}
+
+footer > p {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+footer > p > a {
+    color: var(--bg-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px){
+    h1 {
+        font-size: 4em;
+    }
+    .header-link {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    h1 {
+        padding: 5% 0 8% 0;
+    }
+    footer {
+        font-size: 1.1em;
+    }
+}

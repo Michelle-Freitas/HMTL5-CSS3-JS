@@ -1,0 +1,15 @@
+{
+  "name": "projeto_final",
+  "version": "1.0.0",
+  "description": "Projeto final do programa Manas In Tech da WoMakersCode",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Michelle Freitas",
+  "license": "ISC",
+  "dependencies": {
+    "react-icons": "^4.11.0"
+  }
+}

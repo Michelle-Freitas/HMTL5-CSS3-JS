@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/profile.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <title>Mae Jemison</title>
+</head>
+<body id="home" onload="loadPhrase()">
+    <header>
+    </header>
+    <main>
+        <div class="principal-container">
+            <img class="main-img" src="assets/astronaut.png" alt="astronaut01" >
+            <div class="about">
+                <h1>Mae Jemison</h1>
+                <p>Médica, engenheira e ex-astronauta, foi a primeira astronauta negra a embarcar em uma viagem espacial.</p>
+                <p>Precisou quebrar muitos preconceitos durante sua vida, mas sempre teve o apoio e incentivo da sua família. Mostrou-se mais do que capaz ir ao infinito e  além!
+                </p>
+                <p>Projeto dedicado a ela, que assim como eu, é apaixonada pela dança!</p>
+            </div>
+        </div>
+        <section class="phrases-container">
+            <div id="phrases-card">
+                <button id="back-btn" onclick="backPhrase()"><ion-icon class="arrow-icon" name="arrow-dropleft-circle"></ion-icon></button>
+                <q id="phrase-text"></q>
+                <button id="forward-btn" onclick="forwardPhrase()"><ion-icon class="arrow-icon" name="arrow-dropright-circle"></ion-icon></button>
+            </div>
+
+            <div class="btn-container">
+                <button class="choice-btn" value="0" onclick="selectPhrase(value)"></button>
+                <button class="choice-btn" value="1" onclick="selectPhrase(value)"></button>
+                <button class="choice-btn" value="2" onclick="selectPhrase(value)"></button>
+                <button class="choice-btn" value="3" onclick="selectPhrase(value)"></button>
+            </div>
+        </section>
+
+        <a class="freepik" href="https://www.freepik.com/free-vector/gradient-galaxy-background_72657851.htm#page=4&query=cartoon space&position=43&from_view=search&track=ais" target="_blank" alt="Link para imagem plano de fundo: universo com planetas">Image by Freepik</a>
+    </main>
+    <footer>
+    </footer>
+
+      <script src="js/global.js"></script>
+    <script src="js/index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
