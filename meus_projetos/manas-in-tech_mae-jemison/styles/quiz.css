@@ -1,0 +1,79 @@
+@import "variables.css";
+
+body {
+    background: url('../assets/bg-bio.jpg') right no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    text-align: center;
+}
+
+header {
+    top:0;
+}
+
+#title {
+    text-align: center;
+    padding: 1% 0;
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-section {
+    background-color: var(--secondary-bg-color);
+    font-weight: bold;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin: 15px;
+}
+
+label, input, .quest {
+    color: var(--bg-color);
+    padding: 4px;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.selected-correct {
+    color: green;
+}
+
+.selected-incorrect {
+    color: red;
+}
+
+.btn , #result{
+    margin: 1%;
+    padding: 12px;
+
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+
+    font-weight: bold;
+    font-size: 1.05em;
+    color: var(--bg-color);
+}
+
+.btn:hover {
+    background-color: var(--secondary-bg-color);
+    border: 1px solid var(--secondary-bg-color);
+    cursor: pointer;
+}
+
+.btn:disabled {
+    background-color: gray;
+    border: 1px solid gray;
+    cursor: not-allowed;
+}

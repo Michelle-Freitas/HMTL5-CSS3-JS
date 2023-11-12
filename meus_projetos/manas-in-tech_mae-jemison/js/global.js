@@ -6,6 +6,7 @@ const renderHeader = () => {
         <img class="profile-img" src="assets/profile.png" alt="Imagem desenho perfil de Mae Jemison">
         </a>
         <a href="bio.html" class="header-link">Biografia</a>
+        <a href="quiz.html" class="header-link">Quiz</a>
         <a href="awards.html" class="header-link">Prêmios</a>
     `
     header.innerHTML = headerElement

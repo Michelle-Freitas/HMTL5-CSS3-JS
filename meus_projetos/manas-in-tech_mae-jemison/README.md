@@ -14,6 +14,9 @@ No momento que foi informado que o projeto seria sobre mulheres inspiradoras e i
 ### Imagem da BIO
 <img alt="Imagem da bio - Mae Jemison" src="./public/bio.png">
 
+### Imagem da QUIZ
+<img alt="Imagem do quiz - Mae Jemison" src="./public/quiz.png">
+
 
 ### Imagem da PRÊMIOS
 <img alt="Imagem da prêmios - Mae Jemison" src="./public/awards.png">
