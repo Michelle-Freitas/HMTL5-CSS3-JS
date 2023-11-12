@@ -7,21 +7,32 @@ const answers = [
     'Investigar células ósseas durante o vôo',
     'Endeavour'
 ]
+const inputList = ['full-name', 'space-year', 'star-trek', 'dance', 'jemison-group', 'investigate', 'spacial-bus']
 
-let inputs = document.querySelectorAll('input[type="radio"]')
+const inputs = document.querySelectorAll('input[type="radio"]')
 const result = document.querySelector('#result')
+const submitBtn = document.querySelector('#submit-btn')
 const resetBtn = document.querySelector('#reset-btn')
+
 const answersUserList = []
 let correctCount = 0
 
+
+const verifyIfAllAnswersChecked = () => {
+    const allInputsTest = document.querySelectorAll(`input[type="radio"]:checked`)
+
+    if(allInputsTest.length !== 7) {
+        alert('Prencha todos os campos!')
+    } else {
+        getAnswers()
+    }
+}
+
 const getAnswers = () => {
-    answersUserList.push(document.querySelector(`input[name="full-name"]:checked`))
-    answersUserList.push(document.querySelector(`input[name="space-year"]:checked`))
-    answersUserList.push(document.querySelector(`input[name="star-trek"]:checked`))
-    answersUserList.push(document.querySelector(`input[name="dance"]:checked`))
-    answersUserList.push(document.querySelector(`input[name="jemison-group"]:checked`))
-    answersUserList.push(document.querySelector(`input[name="investigate"]:checked`))
-    answersUserList.push(document.querySelector(`input[name="spacial-bus"]:checked`))
+    for(let i = 0; i < answers.length ; i++) {
+        let inputTag = document.querySelector(`input[name="${inputList[i]}"]:checked`)
+        answersUserList.push(inputTag)
+    }
 }
 
 const compareAnswers = () => {
@@ -29,7 +40,6 @@ const compareAnswers = () => {
         if(answers[i] === answersUserList[i].value) {
             correctCount += 1
             answersUserList[i].parentNode.setAttribute('class', 'selected-correct')
-            console.log(answersUserList[i].parentNode)
         }
         else {
             answersUserList[i].parentNode.setAttribute('class', 'selected-incorrect')
@@ -54,17 +64,13 @@ const cleanInputs = () => {
     location.reload()
 }
 
-
 const checkAnswers = (e) => {
     e.preventDefault()
-    console.log('recebido')
-    getAnswers()
+    verifyIfAllAnswersChecked()
     compareAnswers()
     disableInputs()
     showResult()
 }
-
-const submitBtn = document.querySelector('#submit-btn')
 
 submitBtn.addEventListener('click', (e) => checkAnswers(e))
 resetBtn.addEventListener('click', cleanInputs)
