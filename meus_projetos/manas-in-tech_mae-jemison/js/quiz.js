@@ -7,7 +7,7 @@ const answers = [
     'Investigar células ósseas durante o vôo',
     'Endeavour'
 ]
-const inputList = ['full-name', 'space-year', 'star-trek', 'dance', 'jemison-group', 'investigate', 'spacial-bus']
+const inputsList = ['full-name', 'space-year', 'star-trek', 'dance', 'jemison-group', 'investigate', 'spacial-bus']
 
 const inputs = document.querySelectorAll('input[type="radio"]')
 const result = document.querySelector('#result')
@@ -22,7 +22,7 @@ const verifyIfAllAnswersChecked = () => {
     const allInputsTest = document.querySelectorAll(`input[type="radio"]:checked`)
 
     if(allInputsTest.length !== 7) {
-        alert('Prencha todos os campos!')
+        alert('Preencha todos os campos do quiz!')
     } else {
         getAnswers()
     }
@@ -30,7 +30,7 @@ const verifyIfAllAnswersChecked = () => {
 
 const getAnswers = () => {
     for(let i = 0; i < answers.length ; i++) {
-        let inputTag = document.querySelector(`input[name="${inputList[i]}"]:checked`)
+        let inputTag = document.querySelector(`input[name="${inputsList[i]}"]:checked`)
         answersUserList.push(inputTag)
     }
 }
