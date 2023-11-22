@@ -34,15 +34,6 @@ Projeto final do Manas In Tech da <a href="https://www.maismulheres.tech/" targe
   <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/Waterfall/contato.html" target="_blank">Aprendendo formulário</a> - Módulo 04</li>
  </ul>
 
-## Imersão Alura - JavaScript
-  JavaScript com <a href="https://www.alura.com.br/" target="_blank"> Imersão Alura </a> com algumas inclusões pesquisadas.
-
-<ul>
-  <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/media/index.html" target="_blank">Notas</a> - Calculadora de notas </li>
-    <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/genio/index.html" target="_blank">Gênio</a> - Adivinhe o número </li>
-</ul>
-
-
 ## Me encontre aqui:
 
 <a href="https://www.linkedin.com/in/michelle-afreitas/" ><img width="5%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" /> LinkedIn</a>
