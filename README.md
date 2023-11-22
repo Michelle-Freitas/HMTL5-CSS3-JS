@@ -14,6 +14,7 @@ Estudante de ADS - 4º Semestre.<br>
   <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/taginput/index.html" target="_blank">Tag Input</a> - <a href="https://github.com/Michelle-Freitas/HMTL5-CSS3-JS/tree/main/meus_projetos/taginput" target="_blank">Repositório</a></li>
   <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/timer/index.html" target="_blank">Timer</a> - <a href="https://github.com/Michelle-Freitas/HMTL5-CSS3-JS/tree/main/meus_projetos/timer" target="_blank">Repositório</a></li>
   <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/todolist/index.html" target="_blank">To-do List</a> - <a href="https://github.com/Michelle-Freitas/HMTL5-CSS3-JS/tree/main/meus_projetos/todolist" target="_blank">Repositório</a></li>
+    <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/crystal-ball/index.html" target="_blank">Crystal Ball - Mentalista</a> - <a href="https://github.com/Michelle-Freitas/HMTL5-CSS3-JS/tree/main/meus_projetos/crystal-ball" target="_blank">Repositório</a></li>
  </ul>
 
  ## Manas In Tech - WoMakersCode
