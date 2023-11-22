@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <main>
+        <h1>Adivinhe o número</h1>
+        <h3>Escolha um número de 0 a 10 e tente acertar.</h3>
+        <p>Você tem 3 tentativas, boa sorte!</p>
+        <form action="">
+            <label for="number">Digite um número (0 à 10):
+                <input type="number" name="number" id="number" class="input" min="0" max="10" autofocus minlength="1" maxlength="2" size="2">
+            </label>
+            <div class="btn-container">
+                <button type="submit" id="guess-btn" class="btn">Chutar</button>
+                <button type="reset" id="reset-btn" class="btn">Recomeçar</button>
+            </div>
+        </form>
+        <section>
+            <p id="response">
+            </p>
+        </section>
+    </main>
+    <section class="image-contaier">
+        <img src="assets/crystal-ball.svg" alt="" class="crystal-ball-image rotating">
+        <img src="assets/sparkles.gif" alt="" class="sparkles scaling">
+        <small>Imagem de <a href="https://br.freepik.com/vetores-gratis/ilustracao-de-maos-de-cura-energetica-com-flores_10023230.htm#query=bola%20de%20cristal&position=3&from_view=search&track=ais">Freepik</a></small>
+    </section>
+    <footer>
+        <p>Visite o <a href="https://github.com/Michelle-Freitas/HMTL5-CSS3-JS/tree/main/meus_projetos/guess-game" target="_blank" class="my-lnks">repositório do projeto</a></p>
+        <p>Crystal Ball criada por <a href="https://michelle-freitas.vercel.app/" target="_blank" class="my-lnks">Michelle Freitas</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
