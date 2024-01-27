@@ -1,0 +1,16 @@
+:root {
+    --bg-color: #f3ede0;
+    --contrast-bg-color: #B3E8E4;
+
+    --primary-color: #544FC9;
+    --secondary-color: #fff;
+    --hover-primary-color: rgba(219, 93, 219, 0.432);
+
+    --title-color: #4641a8;
+    --text-height: 450px;
+    --line-height-text: 1.4rem;
+}
+
+/* #87EEED */
+/* #544FC9 */
+/* 7C77EB */

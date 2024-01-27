@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/global.css">
+    <link rel="stylesheet" href="src/styles/media-queries.css">
+    <link rel="shortcut icon" href="./src/assets/icon/favicon.png" type="image/x-icon">
+    <title>Decodificar de Mensagens</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo-alura logo">
+                <img src="./src/assets/logo/logo-alura.svg" alt="" class="logo__image">
+            </div>
+            <div class="logo-one logo">
+                <img src="./src/assets/logo/logo-ONE.png" alt="" class="logo__image">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Decodificar de Mensagens</h1>
+        <div class="content__container">
+            <div class="insert-text__container">
+                <label for="insert-text">Digite abaixo seu texto:</label>
+                <p class="alert">
+                    <span class="fa-solid fa-circle-exclamation"></span> Apenas letras minúsculas e sem acento</p>
+                <textarea name="insert-text" id="insert-text" cols="30" rows="10" wrap="hard" required></textarea>
+            </div>
+            <div class="buttons-container">
+                <button id="cripto__button" class="btn alter-color" disabled >Criptografia</button>
+                <button id="descripto__button" class="btn" disabled>Descriptografia</button>
+            </div>
+            <div class="result-container">
+                <img src="./src/assets/images/no_data.png" alt="Imagem informando nenhum texto" class="result__image">
+                <p class="image__credits">Imagem de <a href="https://br.freepik.com/vetores-gratis/mao-desenhada-sem-conceito-de-dados_55024599.htm#fromView=search&term=insira+o+texto+not+found&track=ais&regularType=vector&page=1&position=32&uuid=322d3881-73be-46f0-8219-80aa56bf3fc6" target="_blank" rel="noopener noreferrer" class="link__image">Freepik</a></p>
+                <div class="result__texts">
+                    <p class="not-found-msg__text">Ops...Nenhuma mensagem encontrada. <br> Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    <p id="result" class="hidden"></p>
+                </div>
+                <button class="hidden btn" id="copy__button">Copiar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            Challenge desenvolvido por
+            <a href="https://michelle-freitas.vercel.app/" target="_blank">Michelle Freitas</a>
+            para a formação de Iniciante em Programação T6 - ONE <a href="https://www.oracle.com/br/education/oracle-next-education/" target="_blank">Oracle Next Education</a> em parceria com a <a href="https://www.alura.com.br/" target="_blank">Alura</a>
+        </p>
+        <p>Visite o <a href="https://github.com/Michelle-Freitas/HMTL5-CSS3-JS/tree/main/meus_projetos/..." target="_blank">repositório</a></p>
+    </footer>
+
+    <script src="./src/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/f1a0c8e604.js" crossorigin="anonymous"></script>
+</body>
+</html>
