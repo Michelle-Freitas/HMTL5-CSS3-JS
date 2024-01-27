@@ -17,6 +17,13 @@ Estudante de ADS - 4º Semestre.<br>
     <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/crystal-ball/index.html" target="_blank">Crystal Ball - Mentalista</a> - <a href="https://github.com/Michelle-Freitas/HMTL5-CSS3-JS/tree/main/meus_projetos/crystal-ball" target="_blank">Repositório</a></li>
  </ul>
 
+  ## ONE - Oracle Next Education
+  Programa de formação de Iniciante em Programação T6 - ONE da <a href="https://www.oracle.com/br/education/oracle-next-education" target="_blank">Oracle Next Education</a> em parceria com a
+  <a href="https://www.alura.com.br/" target="_blank">Alura</a>.</br>
+ <ul>
+    <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/one_oracle-next-education/challenge_decodificador/index.html" target="_blank">Challenge - Decodificador</a> - <a href="https://github.com/Michelle-Freitas/HMTL5-CSS3-JS/tree/main/meus_projetos//one_oracle-next-education/challenge_decodificador" target="_blank">Repositório</a></li>
+ </ul>
+
  ## Manas In Tech - WoMakersCode
 Projeto final do Manas In Tech da <a href="https://www.maismulheres.tech/" target="_blank">WoMakersCode</a> em parceria com a <a href="https://www.linkedin.com/company/epharma/" target="_blank">epharma</a>.</br>
 <p>Projeto sobre mulheres importantes na tecnologia: Mae Jemison, a primeira astronauta negra a embarcar em uma viagem espacial</p>
