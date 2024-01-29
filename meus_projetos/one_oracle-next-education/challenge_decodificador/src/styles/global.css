@@ -1,9 +1,5 @@
 @import './variables.css';
 
-/*
-textarea {
-
-} */
 * {
     margin: 0;
     padding: 0;
@@ -40,6 +36,7 @@ header .logo-container {
 main {
     background-color: var(--bg-color);
     padding: 8vw;
+    /* max-height: 100%; */
 }
 
 main h1 {
@@ -134,6 +131,9 @@ main .content__container {
 
 .result__texts {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .result__texts p {
@@ -176,14 +176,13 @@ main .content__container {
 /* FOOTER */
 footer {
     background-color: var(--contrast-bg-color);
-    /* padding: 10px 15px; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    /* height: 8vh; */
 }
 
 footer > p {
-    /* color: var(--primary-color); */
     font-weight: bold;
     text-align: center;
     padding: 10px;

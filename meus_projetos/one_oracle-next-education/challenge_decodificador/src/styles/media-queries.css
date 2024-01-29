@@ -14,7 +14,7 @@
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1000px){
     html {
         height: 100vh;
     }
@@ -46,7 +46,7 @@
         justify-content: space-evenly;
         align-items: center;
         gap: 50px;
-        height: 90%;
+        height: 80%;
     }
     .insert-text__container {
         width: 40%;
@@ -54,7 +54,8 @@
     .insert-text__container textarea {
         padding: 4%;
         border: 2px dashed var(--secondary-color);
-        height: var(--text-height);
+        /* height: 80%; */
+
     }
     .buttons-container {
         flex-direction: column;
@@ -66,11 +67,13 @@
         justify-content: space-evenly;
     }
     .result-container .result__image {
-        max-width: 30%;
+        max-width: 25%;
     }
     #result {
-        height: var(--text-height);
+        /* height: 450px; */
         font-size: 1.1rem;
+        height: 80%;
+        padding: 8px;
     }
     footer {
         height: 8vh;
