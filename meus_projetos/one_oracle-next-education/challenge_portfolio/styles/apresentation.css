@@ -1,0 +1,119 @@
+@import './variables.css';
+
+.apresentation_section {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.profile-image > img {
+    border-radius: 3em 10em 10em 10em;
+    height: 16em;
+    width: 16em;
+    padding: 1em;
+}
+
+h1 {
+    color: var(--bg-image-color);
+    text-indent: 1em;
+}
+
+h2 {
+    color: var(--secondary-color);
+    text-indent: 1.35em;
+}
+
+.social-medias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.social-medias li {
+    width: 70%;
+    padding: .7em;
+    border: 1.8px solid var(--secondary-color);
+    border-radius: 1em;
+
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+}
+
+.social-medias li:hover {
+    color: var(--secondary-color);
+    border: 1.8px solid var(--primary-color);
+}
+.social-medias li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.social-medias .rede-icon {
+    width: 1.5rem;
+    align-self: center;
+    justify-self: center;
+}
+
+.welcome {
+    text-align: justify;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*tablet*/
+    .apresentation_section {
+        padding-top: 10rem;
+    }
+    .home {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .social-medias {
+        flex-direction: row;
+    }
+    .social-medias li {
+        min-width: 120px;
+    }
+    .welcome {
+        margin: 3em auto;
+        max-width: 80vw;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .apresentation_section {
+        padding-top: 5rem;
+        align-items: center;
+    }
+    .profile-image {
+        height: 24.5em;
+        width: 24.5em;
+        background: var(--bg-image-color);
+        border-radius: 16px;
+    }
+    .profile-image > img {
+        border-radius: 3em 10em 10em 10em;
+        height: 24em;
+        width: 24em;
+    }
+    .home {
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
+    }
+    .welcome {
+        margin: 3em auto;
+        max-width: 60vw;
+        text-align: center;
+    }
+
+}

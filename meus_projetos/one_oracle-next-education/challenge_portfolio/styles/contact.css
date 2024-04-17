@@ -1,0 +1,134 @@
+@import './variables.css';
+
+form {
+    background-color: var(--bg-form);
+    color: black;
+    padding: 16px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 8px;
+    width: 100%;
+    border: none;
+}
+
+.msg-container {
+    gap: .5rem;
+}
+
+legend {
+    padding: 4px 8px;
+}
+
+label {
+    padding: 2px;
+    background-color: var(--bg-form);
+    cursor: pointer;
+}
+
+.data-input {
+    height: 2.5rem;
+    padding: 8px 8px 0px 8px;
+    background-color: var(--bg-form);
+    border: 2px solid transparent;
+    width: 100%;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.data-input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    border-bottom: 2px solid var(--primary-color);
+    background-color: var(--bg-form);
+    color: var(--primary-color);
+}
+
+.data-input:active {
+    background-color: var(--bg-form);
+    color: var(--primary-color);
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px var(--bg-form) inset;
+    border: none;
+    background-color: var(--bg-form);
+    color: var(--primary-color);
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    color: var(--primary-color);
+    border-radius: 4px;
+    border: 2px solid transparent;
+}
+
+
+textarea:focus{
+    box-shadow: 0 0 0 0;
+    border: 1 none;
+    outline: 0;
+    border: 2px solid var(--primary-color);
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 4px;
+    padding: 4px;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    padding: 4px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+@media screen and (min-width: 768px) { /* tablet*/
+    .form-container {
+        flex-direction: row;
+        align-items: stretch;
+        height: 100%;
+    }
+    .msg-container textarea {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 1000px) { /* pc*/
+    input, textarea {
+        font-size: 1rem;
+    }
+    .submit-btn {
+        max-width: 50%;
+        align-self: center;
+        padding: 8px;
+        font-size: 1rem;
+    }
+    .submit-btn:hover {
+        padding: 8px;
+    }
+
+}

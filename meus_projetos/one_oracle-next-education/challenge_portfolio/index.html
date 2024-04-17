@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Portfólio Michelle Freitas</title>
+</head>
+<body>
+  <header>
+    <div class="name">
+      <p>
+        <span>&lt;</span><a href="#home" class="item">MichelleFreitas</a><span>/&gt;</span>
+      </p>
+    </div>
+    <nav class="nav-container">
+      <button id="menu-button"><span class="material-symbols-outlined">
+        menu
+        </span></button>
+      <ul class="menu-list menu-hidden">
+        <li>
+          <a href="#home" class="item">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="item">Sobre</a>
+        </li>
+        <li>
+          <a href="#skills" class="item">Skills</a>
+        </li>
+        <li>
+          <a href="#projects" class="item">Projetos</a>
+        </li>
+        <li>
+          <a href="#contact" class="item">Contato</a>
+        </li>
+        <li class="cv-container">
+          <a href='./assets/CV_MichelleFreitas.pdf' download="CV_MichelleFreitas.pdf" target="_blank" rel="noreferrer" class="btn">CV</a>
+        </li>
+      </a>
+      </ul>
+    </nav>
+  </header>
+  <main id="home">
+    <section class="apresentation_section">
+      <div class="home">
+        <div class="profile-image">
+          <img
+          src="https://github.com/Michelle-Freitas.png"
+          alt="Imagem de perfil"
+          />
+        </div>
+        <div class="profile">
+          <p>Olá, sou</p>
+          <h1>Michelle Freitas</h1>
+          <h2>Desenvolvora Front-End</h2>
+          <ul class="social-medias">
+            <!-- {/* LinkedIn */} -->
+            <li>
+                <a
+                    href="https://www.linkedin.com/in/michelle-afreitas/" target="_blank" rel="noreferrer">
+                    <img src='./assets/icons/linkedin.svg' class="rede-icon"/>
+                    LinkedIn
+                </a>
+            </li>
+            <!-- {/* GitHub */} -->
+            <li>
+                <a href="https://github.com/Michelle-Freitas" target="_blank" rel="noreferrer">
+                    <img src='./assets/icons/github.svg' class="rede-icon"/>
+                    GitHub
+                </a>
+            </li>
+            <!-- {/* Email */} -->
+            <li>
+                <a href="mailto:michelle.afreitas7@gmail.com">
+                  <p class="material-symbols-outlined rede-icon">mail</p>
+                    E-mail
+                </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="welcome">
+      Bem-vindo ao meu portfólio, sou uma desenvolvedora front-end que está
+      sempre se aventurando em novos desafios. Veja meus projetos e visite meu
+      repositório!
+      </p>
+    </section>
+
+    <section id="about" class="about_section">
+      <div class="portfolio-item">
+        <h3>Sobre mim</h3>
+          <p>
+            Formada em engenharia civil, migrando para a área de tecnologia.
+            Também formada em ballet clássico (Royal Academy of Dance), tem
+            persistência, disciplina e organização adquiridas principalmente em
+            sua formação do ballet clássico, motivada e superando desafios como a
+            dança ensinou.
+          </p>
+          <p id="xp-text">
+            <!-- Experience text here -->
+          </p>
+          <div class="courses">
+            <p>Principais formações e cursos finalizados ou em andamento: </p>
+            <ul class="courses-list">
+              <!-- Courses list here -->
+            </ul>
+          </div>
+      </div>
+      <h4 id="skills">Skills</h4>
+      <div class="tech-container" >
+          <!-- Techs list here -->
+      </div>
+      <p class="image-font"><a target="_blank" href="https://icons8.com" rel="noreferrer">icon by Icons8</a></p>
+    </section>
+
+    <section id="projects">
+      <h3>Projetos</h3>
+      <div class="projects-container">
+
+      </div>
+
+    </section>
+
+    <section id="contact">
+      <h3>Contato</h3>
+      <p>Gostaria de entrar em contato comigo, ou deixar uma mensagem?</p>
+      <p>É só preencher o formulário abaixo, e eu entrarei em contato o mais breve possível.</p>
+      <form action="" method="post" autocomplete="off">
+        <div class="form-container">
+          <fieldset>
+            <legend>Seus dados</legend>
+            <label for="name">
+              Nome: <input type="text" name="name" id="name" class="data-input" required maxlength="50">
+            </label>
+            <label for="phone">
+              Telefone: <input type="text" name="" id="phone" class="data-input" required >
+            </label>
+            <label for="email">
+              E-mail:<input type="email" name="" id="email" class="data-input" required minlength="20">
+            </label>
+          </fieldset>
+          <fieldset class="msg-container">
+            <label for="subject">
+              Assunto: <input type="text" name="subject" id="subject" class="data-input" required maxlength="50">
+            </label>
+            <label for="msg">Mensagem</label>
+            <!-- <legend>Mensagem</legend> -->
+              <textarea name="msg" id="msg" cols="30" rows="10" maxlength="300"></textarea>
+          </fieldset>
+        </div>
+
+        <input type="submit" value="Enviar" class="submit-btn">
+      </form>
+
+    </section>
+
+  </main>
+  <footer>
+    <p>
+      Challenge desenvolvido por
+      <a href="https://michelle-freitas.vercel.app/" target="_blank">Michelle Freitas</a>
+      para a formação Front End do ONE <a href="https://www.oracle.com/br/education/oracle-next-education/" target="_blank">Oracle Next Education</a> em parceria com a <a href="https://www.alura.com.br/" target="_blank">Alura</a>
+      </p>
+      <p>Visite o <a href="" target="_blank">repositório</a></p>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+</body>
+</html>

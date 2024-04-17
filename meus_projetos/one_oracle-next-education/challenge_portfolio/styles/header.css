@@ -1,0 +1,127 @@
+@import './variables.css';
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+
+    position: fixed;
+    width: 100vw;
+    padding: .3rem .6rem;
+
+    z-index: 2;
+    background-color: var(--bg-color);
+    border-bottom: 1.5px solid var(--bg-image-color);
+}
+
+.name {
+    align-items: center;
+    font-weight: semi-bold;
+    font-size: 1.2em;
+
+    cursor: pointer;
+}
+
+.name  > p, a {
+    color: var(--primary-color);
+}
+
+header span {
+    color: var(--secondary-color);
+}
+
+.nav-container  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: .5rem;
+}
+
+.menu-hidden {
+    display: none;
+}
+
+#menu-button {
+    padding: 4px 16px;
+    border: none;
+    background-color: var(--bg-color);
+}
+
+.material-symbols-outlined {
+    color: var(--primary-color);
+}
+
+.menu-list .item {
+    text-decoration: none;
+    border-bottom: 1.8px solid transparent;
+    padding: 1rem .3rem;
+}
+
+.menu-list .item:hover {
+    border-bottom: 1.8px solid transparent;
+    border-image: linear-gradient(to left, var(--secondary-color), var(--primary-color)) 1;
+    cursor: pointer;
+}
+
+.menu-list .item a {
+    color: var(--primary-color);
+}
+
+.cv-container {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    padding: 4px 16px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+}
+
+.cv-container:hover {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+}
+
+
+@media screen and (min-width: 700px) {
+    .name {
+        padding: 0 2rem;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    header {
+        border-bottom: none;
+    }
+    header .item {
+        font-size: 1em;
+    }
+    .nav-container  {
+        flex-direction: row;
+    }
+    #menu-button {
+        display: none;
+    }
+    .menu-list {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .menu-list .item {
+        padding: .5rem .8rem;
+    }
+    .btn-container {
+        margin: .5em;
+        padding: 0.4em;
+    }
+    .cv-container {
+        padding: .8em;
+    }
+}

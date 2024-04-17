@@ -1,0 +1,22 @@
+:root {
+    --bg-color: #272635;
+    --bg-image-color: #635985;
+    --bg-form: aliceblue;
+    --primary-color: #646cff;
+    --secondary-color: #B1E5F2;
+    color: rgba(255, 255, 255, 0.87);
+
+    --max-width-pc: 60vw;
+
+
+    /* --font: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+
+    --destaque: #B1E5F2;
+    --purple1: #646cff;
+    --purple2: #535bf2;
+    --purple3: #635985; */
+}
+

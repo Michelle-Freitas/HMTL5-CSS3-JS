@@ -1,0 +1,48 @@
+@import './variables.css';
+@import './header.css';
+@import './apresentation.css';
+@import './about.css';
+@import './projects.css';
+@import './contact.css';
+@import './footer.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+html body {
+    background-color: var(--bg-color);
+    width: 98vw;
+}
+
+main {
+    padding: 3rem;
+}
+
+section {
+    padding-top: 5rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+@media screen and (min-width: 900px) {
+    section {
+        max-width: 70vw;
+        margin: auto;
+    }
+}
