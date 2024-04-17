@@ -9,7 +9,7 @@ const techs = [
     {
     id: 1,
     name: "HTML5",
-    src: "../assets/techs/icons8-html-5.svg",
+    src: "assets/techs/icons8-html-5.svg",
     alt: "Ícone gradiente de HTML5 nas cores roxo e azul",
     url:"https://icons8.com/icon/CMVEhOBzk3Zp/html-5",
     font: "Icons8"
@@ -17,7 +17,7 @@ const techs = [
     {
     id: 2,
     name: "CSS3",
-    src: "../assets/techs/icons8-css3.svg",
+    src: "assets/techs/icons8-css3.svg",
     alt: "Ícone gradiente de CSS3 nas cores roxo e azul",
     url:"https://icons8.com/icon/5cVdiiKKi0vX/css3",
     font: "Icons8"
@@ -25,7 +25,7 @@ const techs = [
     {
     id: 3,
     name: "JavaScript",
-    src: "../assets/techs/icons8-javascript-logo.svg",
+    src: "assets/techs/icons8-javascript-logo.svg",
     alt: "Ícone gradiente da linguagem JavaScript nas cores roxo e azul",
     url:"https://icons8.com/icon/CMVEhOBzk3Zp/html-5",
     font: "Icons8"
@@ -33,7 +33,7 @@ const techs = [
     {
     id: 4,
     name: "ReactJs",
-    src: "../assets/techs/icons8-nativo-de-reagir.svg",
+    src: "assets/techs/icons8-nativo-de-reagir.svg",
     alt: "Ícone gradiente da biblioteca ReactJs nas cores roxo e azul",
     url:"https://icons8.com/icon/t4YbEbA834uH/nativo-de-reagir",
     font: "Icons8"
@@ -41,7 +41,7 @@ const techs = [
     {
     id: 5,
     name: "NodeJs",
-    src: "../assets/techs/icons8-node-js.svg",
+    src: "assets/techs/icons8-node-js.svg",
     alt: "Ícone gradiente de NodeJs nas cores roxo e azul",
     url:"https://icons8.com/icon/ouWtcsgDBiwO/node-js",
     font: "Icons8"
@@ -49,7 +49,7 @@ const techs = [
     {
     id: 6,
     name: "Python",
-    src: "../assets/techs/icons8-python.svg",
+    src: "assets/techs/icons8-python.svg",
     alt: "Ícone gradiente da linguagem Python nas cores roxo e azul",
     url:"https://icons8.com/icon/uLDrtp8o8zTG/python",
     font: "Icons8"
@@ -57,7 +57,7 @@ const techs = [
     {
     id: 7,
     name: "Ruby",
-    src: "../assets/techs/icons8-linguagem-de-programação-ruby.svg",
+    src: "assets/techs/icons8-linguagem-de-programação-ruby.svg",
     alt: "Ícone gradiente da linguagem Ruby nas cores roxo e azul",
     url:"https://icons8.com/icon/55500/linguagem-de-programa%C3%A7%C3%A3o-ruby",
     font: "Icons8"
@@ -65,7 +65,7 @@ const techs = [
     {
     id: 8,
     name: "Git",
-    src: "../assets/techs/icons8-git.svg",
+    src: "assets/techs/icons8-git.svg",
     alt: "Ícone gradiente de Git nas cores roxo e azul",
     url:"https://icons8.com/icon/xBKl2pdJg5kk/git",
     font: "Icons8"
@@ -73,7 +73,7 @@ const techs = [
     {
     id: 9,
     name: "Sass",
-    src: "../assets/techs/icons8-sass.svg",
+    src: "assets/techs/icons8-sass.svg",
     alt: "Ícone gradiente de Sass nas cores roxo e azul",
     url:"https://icons8.com/icon/qsQZWvMuX4ad/sass",
     font: "Icons8"
@@ -81,7 +81,7 @@ const techs = [
     {
     id: 10,
     name: "Tailwind CSS",
-    src: "../assets/techs/icons8-tailwind-css.svg",
+    src: "assets/techs/icons8-tailwind-css.svg",
     alt: "Ícone gradiente de Tailwind CSS nas cores roxo e azul",
     url:"https://icons8.com/icon/FnnFuAIw4e8j/tailwind-css",
     font: "Icons8"
