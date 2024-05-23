@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneca Pokemon Bulbasaur",
+      "price": "35,00",
+      "image": "https://cdn.awsli.com.br/1225/1225697/produto/47028822/caneca-pokemon-bulbasaur-color-green-c3270b1a.jpg",
+      "category": "caneca"
+    },
+    {
+      "id": 2,
+      "name": "Almofada Star Wars Chill Bacca",
+      "price": "48,00",
+      "image": "https://cdn.awsli.com.br/600x450/557/557702/produto/28772888/almofada-geek-side-faces-chill-bacca-e17dc774.jpg",
+      "category": "almofada"
+    },
+    {
+      "id": 3,
+      "name": "Camiseta Mario SMASHVENGERS",
+      "price": "70,00",
+      "image": "https://cdn.awsli.com.br/600x450/1093/1093863/produto/40177065/c2bbce8c0a.jpg",
+      "category": "camiseta"
+    },
+    {
+      "id": 4,
+      "name": "Caneca Pokemon Bulbasaur",
+      "price": "35,00",
+      "image": "https://cdn.awsli.com.br/1225/1225697/produto/47028822/caneca-pokemon-bulbasaur-color-green-c3270b1a.jpg",
+      "category": "caneca"
+    },
+    {
+      "id": 5,
+      "name": "Almofada Star Wars Chill Bacca",
+      "price": "48,00",
+      "image": "https://cdn.awsli.com.br/600x450/557/557702/produto/28772888/almofada-geek-side-faces-chill-bacca-e17dc774.jpg",
+      "category": "almofada"
+    },
+    {
+      "id": 6,
+      "name": "Camiseta Mario SMASHVENGERS",
+      "price": "70,00",
+      "image": "https://cdn.awsli.com.br/600x450/1093/1093863/produto/40177065/c2bbce8c0a.jpg",
+      "category": "camiseta"
+    },
+    {
+      "id": "85fd",
+      "name": "Camiseta do HP",
+      "price": "80,00",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdCzyWrOVXUezRkStY0MFS-fkCoR6gLz0wYmzR2eI4TyFESm-ic6RmFR_CvG3Yo_lK0XM&usqp=CAU",
+      "category": "camiseta"
+    },
+    {
+      "id": "0927",
+      "name": "Camiseta JujutsuKaisen  Nobara",
+      "price": "55,00",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRv58NJrd13TnUl-Xbzb1Eq1xDPAw0du_963mGuskV3A&s",
+      "category": "camiseta"
+    }
+  ]
+}

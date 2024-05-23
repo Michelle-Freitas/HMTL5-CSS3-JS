@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+:root {
+    --font-principal: 'Silkscreen', cursive;
+
+    --bg-color: cornflowerblue;
+    --bg-input-color: rgb(180, 195, 223);
+    --primary-color: darkslateblue;
+
+    --active-filter-color: purple;
+}

@@ -1,0 +1,56 @@
+@import './reset.css';
+@import './variables.css';
+@import './form.css';
+@import './products.css';
+
+/* HEADER*/
+header, footer {
+    background-color: var(--bg-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    font-family: var(--font-principal);
+    font-size: 1.7rem;
+}
+
+/* MAIN */
+section {
+    padding: 2rem;
+}
+
+h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+@media (min-width: 900px){
+    main {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* FOOTER */
+footer a {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding-top: 1rem;
+}
+
+footer img {
+    max-width: 80px;
+}

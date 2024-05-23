@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek - Challenge</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <span>🕹️</span>
+            AluraGeek
+            <span>👾</span>
+        </h1>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Cadastre um novo produto</h2>
+            <form action="" method="post" autocomplete="off">
+                <div class="form-field">
+                    <label for="name">
+                        Nome <input type="text" name="name" id="name" minlength="15" maxlength="30" required>
+                    </label>
+                    <span class="message" data-msg-name></span>
+                </div>
+                <div class="form-field">
+                    <label for="price">
+                        Preço <input type="number" name="price" id="price" minlength="2" maxlength="5" required>
+                    </label>
+                    <span class="message" data-msg-price></span>
+                </div>
+                <div class="form-field">
+                    <label for="image">
+                        Imagem <input type="text" name="image" id="image" minlength="15" required>
+                    </label>
+                    <span class="message" data-msg-image></span>
+                </div>
+
+                <div class="form-field">
+                    <label for="category">
+                        Categoria
+                        <select name="category" id="category" required>
+                            <option value="almofada">Almofada</option>
+                            <option value="camiseta">Camiseta</option>
+                            <option value="caneca">Caneca</option>
+                        </select>
+                    </label>
+                    <span class="message" data-msg-category></span>
+                </div>
+
+                <div class="btn-container">
+                    <input type="submit" value="Cadastrar" class="submit-btn form-btn" disabled>
+                    <input type="button" value="Limpar" class="clean-form-btn form-btn" >
+                </div>
+            </form>
+        </section>
+
+        <section class="products-section">
+            <h2>Produtos Cadastrados</h2>
+            <div class="category-container">
+                <button class="category-btn active" id="todos">Todos</button>
+                <button class="category-btn" id="almofada">Almofada</button>
+                <button class="category-btn" id="caneca">Caneca</button>
+                <button class="category-btn" id="camiseta">Camiseta</button>
+            </div>
+            <div class="products-container">
+                <!-- Lista de produtos -->
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-infos">
+            <p>
+                Challenge desenvolvido por
+                <a href="https://michelle-freitas.vercel.app/" target="_blank">Michelle Freitas</a>
+                para a formação Front End do ONE <a href="https://www.oracle.com/br/education/oracle-next-education/" target="_blank">Oracle Next Education</a> em parceria com a <a href="https://www.alura.com.br/" target="_blank">Alura</a>
+                </p>
+                <p>Visite o <a href="https://github.com/Michelle-Freitas/HMTL5-CSS3-JS/tree/main/meus_projetos/one_oracle-next-education/challenge_alurageek" target="_blank">repositório</a>
+            </p>
+        </div>
+        <div class="logo-container">
+            <div class="logo-alura logo">
+                <img src="./src/assets/logo/logo-alura.svg" alt="" class="logo__image">
+            </div>
+            <div class="logo-one logo">
+                <img src="./src/assets/logo/logo-ONE.png" alt="" class="logo__image">
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./src/js/main.js"></script>
+</body>
+</html>
