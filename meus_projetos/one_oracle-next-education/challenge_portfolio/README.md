@@ -8,7 +8,7 @@ Página desenvolvida para challenge do programa de formação de Front End T6 - 
 
 ## 💻 Projeto
 
-### Imagem do decodificador sem texto
+### Imagem do portfolio
 <img alt="Imagem do portfolio" src="./public/home.png">
 
 
