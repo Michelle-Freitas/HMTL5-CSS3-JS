@@ -1,0 +1,22 @@
+.banner {
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner img {
+    width: 100vw;
+    max-width: fit-content;
+}
+
+.text {
+    padding: 1rem;
+}
+
+h1, p {
+    text-align: center;
+    color: aliceblue;
+    line-height: 1.5rem;
+    padding: .5rem;
+}

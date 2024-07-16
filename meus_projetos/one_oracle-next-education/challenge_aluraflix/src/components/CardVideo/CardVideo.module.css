@@ -1,0 +1,9 @@
+.container {
+    cursor: pointer;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

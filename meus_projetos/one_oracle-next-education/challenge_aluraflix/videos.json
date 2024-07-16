@@ -1,0 +1,68 @@
+{
+  "videos": {
+    "frontend": [
+      {
+        "id": 1,
+        "title": "Guia de carreira Front-end",
+        "img": "https://i.ytimg.com/vi/fpth65ts3cw/mqdefault.jpg",
+        "link": "https://www.youtube.com/embed/fpth65ts3cw?si=eBHRwiXNTWwjY1cD",
+        "category": "Frontend"
+      },
+      {
+        "id": 2,
+        "title": "O que é o JavaScript?",
+        "img": "https://i.ytimg.com/vi/fpth65ts3cw/mqdefault.jpg",
+        "link": "https://www.youtube.com/embed/N1BSG02z-Mw",
+        "category": "Frontend"
+      },
+      {
+        "id": 3,
+        "title": "Guia de carreira Front-end",
+        "img": "https://i.ytimg.com/vi/fpth65ts3cw/mqdefault.jpg",
+        "link": "https://www.youtube.com/embed/fpth65ts3cw?si=eBHRwiXNTWwjY1cD",
+        "category": "Frontend"
+      },
+      {
+        "id": 4,
+        "title": "Guia de carreira Front-end",
+        "img": "https://i.ytimg.com/vi/fpth65ts3cw/mqdefault.jpg",
+        "link": "https://www.youtube.com/embed/fpth65ts3cw?si=eBHRwiXNTWwjY1cD",
+        "category": "Frontend"
+      }
+    ],
+    "backend": [
+      {
+        "id": 1,
+        "title": "Guia de carreira Front-end",
+        "img": "https://i.ytimg.com/vi/fpth65ts3cw/mqdefault.jpg",
+        "link": "https://www.youtube.com/embed/fpth65ts3cw?si=eBHRwiXNTWwjY1cD",
+        "category": "Frontend"
+      },
+      {
+        "id": 2,
+        "title": "O que é o JavaScript?",
+        "img": "https://i.ytimg.com/vi/fpth65ts3cw/mqdefault.jpg",
+        "link": "https://www.youtube.com/embed/N1BSG02z-Mw",
+        "category": "Frontend"
+      },
+      {
+        "id": 3,
+        "title": "Guia de carreira Front-end",
+        "img": "https://i.ytimg.com/vi/fpth65ts3cw/mqdefault.jpg",
+        "link": "https://www.youtube.com/embed/fpth65ts3cw?si=eBHRwiXNTWwjY1cD",
+        "category": "Frontend"
+      },
+      {
+        "id": 4,
+        "title": "Guia de carreira Front-end",
+        "img": "https://i.ytimg.com/vi/fpth65ts3cw/mqdefault.jpg",
+        "link": "https://www.youtube.com/embed/fpth65ts3cw?si=eBHRwiXNTWwjY1cD",
+        "category": "Frontend"
+      }
+
+    ],
+    "mobile": [
+
+    ]
+  }
+}

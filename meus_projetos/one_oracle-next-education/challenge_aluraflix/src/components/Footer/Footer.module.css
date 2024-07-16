@@ -1,0 +1,35 @@
+.footer {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+.footer > p {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    font-size: .9rem;
+    line-height: 1.4rem;
+}
+
+.footer > p > a {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.footer > p > a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media (min-width: 1000px){
+    .footer {
+        height: 8vh;
+
+    }
+    .footer > p {
+        padding: 0px;
+    }
+}

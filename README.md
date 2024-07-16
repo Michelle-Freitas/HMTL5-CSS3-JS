@@ -24,6 +24,8 @@ Estudante de ADS - 4º Semestre.<br>
  <ul>
     <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/one_oracle-next-education/challenge_decodificador/index.html" target="_blank">Challenge - Decodificador</a> - <a href="https://github.com/Michelle-Freitas/HMTL5-CSS3-JS/tree/main/meus_projetos/one_oracle-next-education/challenge_decodificador" target="_blank">Repositório</a></li>
    <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/one_oracle-next-education/challenge_portfolio/index.html" target="_blank">Challenge - Portfólio</a> - <a href="https://github.com/Michelle-Freitas/HMTL5-CSS3-JS/tree/main/meus_projetos/one_oracle-next-education/challenge_portfolio" target="_blank">Repositório</a></li>
+   <li><a href="https://michelle-freitas.github.io/HMTL5-CSS3-JS/meus_projetos/one_oracle-next-education/challenge_alurageek/index.html" target="_blank">Challenge - AluraGeek</a> - <a href="https://github.com/Michelle-Freitas/HMTL5-CSS3-JS/tree/main/meus_projetos/one_oracle-next-education/challenge_alurageek" target="_blank">Repositório</a></li>
+   <li>Challenge - AluraFlix - <a href="https://github.com/Michelle-Freitas/HMTL5-CSS3-JS/tree/main/meus_projetos/one_oracle-next-education/challenge_aluraflix" target="_blank">Repositório</a></li>
  </ul>
 
  ## Manas In Tech - WoMakersCode

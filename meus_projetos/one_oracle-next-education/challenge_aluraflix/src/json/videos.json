@@ -1,0 +1,66 @@
+{
+  "videos": [
+    {
+      "id": "1",
+      "title": "O que é o JavaScript?",
+      "img": "https://i.ytimg.com/vi/fpth65ts3cw/mqdefault.jpg",
+      "link": "https://www.youtube.com/embed/N1BSG02z-Mw",
+      "category": "frontend"
+    },
+    {
+      "id": "2",
+      "title": "Guia de carreira Front-end",
+      "img": "https://i.ytimg.com/vi/fpth65ts3cw/mqdefault.jpg",
+      "link": "https://www.youtube.com/embed/fpth65ts3cw?si=eBHRwiXNTWwjY1cD",
+      "category": "frontend"
+    },
+    {
+      "id": "3",
+      "title": "Como testar seu Front-end? com Mario Souto",
+      "img": "https://i.ytimg.com/vi/fpth65ts3cw/mqdefault.jpg",
+      "link": "https://www.youtube.com/embed/CaTbfdsVydE?si=wT9Tt5mRUVK4xlx5",
+      "category": "frontend"
+    },
+    {
+      "id": "4",
+      "title": "O que faz uma desenvolvedora front-end?",
+      "img": "https://i.ytimg.com/vi/fpth65ts3cw/mqdefault.jpg",
+      "link": "https://www.youtube.com/embed/ZY3-MFxVdEw?si=3QeYEuQaWUFnmUTu",
+      "category": "frontend"
+    },
+    {
+      "id": "5",
+      "title": "O que faz uma desenvolvedora Back-end? com Juliana Amoasei",
+      "img": "https://i.ytimg.com/vi/fpth65ts3cw/mqdefault.jpg",
+      "link": "https://www.youtube.com/embed/fiPfvylj6rk?si=s3NzWhQ7eWzr-X42",
+      "category": "backend"
+    },
+    {
+      "id": "6",
+      "title": "O que é o Java?",
+      "img": "https://i.ytimg.com/vi/fpth65ts3cw/mqdefault.jpg",
+      "link": "https://www.youtube.com/embed/90NcVNsKGik?si=jeuslXtNmEIcFNSl",
+      "category": "backend"
+    },
+    {
+      "id": "7",
+      "title": "Desmistificando Mobile- Por onde eu começo? ",
+      "img": "https://i.ytimg.com/vi/fpth65ts3cw/mqdefault.jpg",
+      "link": "https://www.youtube.com/embed/2z6f8VN_Pro?si=w4WFI2klIEgDVei7",
+      "category": "mobile"
+    },
+    {
+      "id": "8",
+      "title": "Desenvolvimento Android",
+      "img": "",
+      "link": "https://www.youtube.com/embed/fWscDFHKgw8?si=vhMbSzjogOOvD9Lr",
+      "category": "mobile"
+    },
+    {
+      "id": "9",
+      "title": "Executando código mobile pelo Smartphone",
+      "link": "https://www.youtube.com/embed/U885ON-D_G0?si=yhexj4ENQcWacBqa",
+      "category": "mobile"
+    }
+  ]
+}

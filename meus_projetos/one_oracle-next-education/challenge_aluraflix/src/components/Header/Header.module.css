@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    background-color: var(--bg-color);
+    padding: 1rem;
+    width: 100vw;
+    height: 10vh;
+
+    position: fixed;
+}
+
+.header img {
+    width: 40%;
+    max-width: 150px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.link {
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: all 0.5s;
+}
+
+.link:hover {
+    scale: 1.1;
+    transition: all 0.5s;
+}
+
+@media screen and (min-width: 1000px){ /*grande*/
+    .header{
+        height: 6vh;
+        padding: 1rem;
+    }
+    nav {
+        gap: 5rem;
+        padding: 1rem;
+        padding-right: 10rem;
+    }
+}

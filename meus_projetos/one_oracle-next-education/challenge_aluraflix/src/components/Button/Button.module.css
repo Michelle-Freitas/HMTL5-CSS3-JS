@@ -1,0 +1,20 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    background-color: var(--bg-main-color);
+    padding: .5rem .8rem;
+    border: none;
+
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    
+    transition: all .5s;
+}
+
+.button:hover {
+    scale: 1.05;
+    transition: all .5s;
+}
